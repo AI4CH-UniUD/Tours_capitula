@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Genesis summaries in Tours' Bibles</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>digital editions of summaries in Tours' Bibles</p>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <head>bibliographical abbreviations</head>
+               <bibl xml:id="DBsomm">
+                  <author>D. de Bruyne</author>
+                  <title>Sommaires, divisions et rubriques de la Bible latine</title>
+                  <pubPlace>Namur</pubPlace>
+                  <date>1914</date>
+               </bibl>
+            </listBibl>
+            <listWit>
+               <witness xml:id="Sg1">Sankt Gallen, Stiftsbibliothek, 75<note>ff.</note></witness>
+               <witness xml:id="P10">Paris testimone fittizio</witness>
+               <witness xml:id="P8">Paris, Bibliothèque nationale de France, 11514</witness>
+               <witness xml:id="Br1">Bern, Burgerbibliothek, 3</witness>
+               <witness xml:id="Z">Zürich, Zentralbibliothek, Car C 1</witness>
+               <witness xml:id="A">Milano, Biblioteca Ambrosiana, E 53 inf. (according to
+                  DBsomm)</witness>
+               <witness xml:id="C">Montecassino, Biblioteca e Archivio dell'Abbazia, 531 (according
+                  to DBsomm)</witness>
+               <witness xml:id="B">Milano, Biblioteca Ambrosiana, E 51 inf. (according to
+                  DBsomm)</witness>
+               <witness xml:id="P">Paul according to DBsomm</witness>
+               <witness xml:id="G">Sankt Gallen, Stiftsbibliothek, 77 (according to
+                  DBsomm)</witness>
+               <witness xml:id="T">Tours, Bibliothèque municipale, 10</witness>
+            </listWit>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc> 
+         <tagsDecl>
+            <rendition xml:id="CU">mixed capital and uncial letters</rendition>
+            <rendition xml:id="U">uncial letters</rendition>
+            <rendition xml:id="Ca">capital letters</rendition>
+            <rendition xml:id="red">red color letter(s)</rendition>
+            <rendition xml:id="textink"/>
+            <rendition xml:id="bw">the digital reproduction is b/w, impossible to determine
+               color</rendition>
+         </tagsDecl>
+      </encodingDesc>
+      <profileDesc>
+         <handNotes>
+            <handNote xml:id="m">main scribe</handNote>
+            <handNote xml:id="l">later hand</handNote>
+            <handNote xml:id="u">unknown, impossible to determine</handNote>
+         </handNotes>
+
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>
+            <app>
+               <rdgGrp>
+                  <rdg wit="#Sg1">incipiunt capitula</rdg>
+                  <note>not aligned with column</note>
+                  <rdg wit="#T">incipiunt capitula</rdg>
+               </rdgGrp>
+               <rdg wit="#P8">incipiunt capitula libri genesis</rdg>
+               <rdg wit="#Br1">incipiunt capitula libri genes(is)</rdg>
+               <rdg wit="Z">incipiunt capitula libri geneseos</rdg>
+               <note>INDICARE LE ABBREVIAZIONI SE LO SCIOGLIMENTO E' INCERTO (cfr Br1)? VA MESSO UN
+                  LEM PER VISUALIZZARE IL TITOLO SU EVT</note>
+            </app>
+         </head>
+         <list>
+            <item n="1">
+               <num><app>
+                     <lem>I</lem>
+                     <rdg type="omission" cause="no_rubrication" wit="T"><note>the rubricator did
+                           not intervene, and all numbers and initials are missing [CAUSE OK????
+                           RIPETUTA ANCHE SOTTO FINO AL PUNTO IN CUI ERO ARRIVATA A
+                           COLLAZIONARE T]</note></rdg>
+                     <rdg type="omission" cause="damage" wit="#Br1"/>
+                     <note>[CAUSE OK???? RIPETUTA ANCHE SOTTO ]</note>
+                  </app></num>
+               <title><app>
+                     <lem>De</lem>
+                     <rdg type="omission" cause="no_rubrication" wit="#T">e</rdg>
+                  </app>die primo in quo lux facta est</title>
+            </item>
+            <item n="2">
+               <num><app>
+                     <lem>II</lem>
+                     <rdg type="omission" cause="no_rubrication" wit="T"/>
+                     <rdg type="omission" cause="damage" wit="#Br1"/>
+                  </app></num>
+               <title><app>
+                     <lem>De</lem>
+                     <rdg type="omission" cause="no_rubrication" wit="#T">e</rdg>
+                  </app> die secundo in quo caelum factum est</title>
+            </item>
+            <item n="3">
+               <num><app>
+                     <lem>III</lem>
+                     <rdg type="omission" cause="no_rubrication" wit="T"/>
+                     <rdg type="omission" cause="damage" wit="Br1"/>
+                  </app></num>
+               <title><app>
+                     <lem>De</lem>
+                     <rdg type="omission" cause="no_rubrication" wit="#T">e</rdg>
+                  </app> die tertio in quo terra et mare</title>
+               <app>
+                  <lem/>
+                  <rdg wit="#A"><add>facta sunt</add></rdg>
+                  <note>ELIMINARE</note>
+               </app>
+            </item>
+            <item n="4">
+               <num><app>
+                     <lem>IIII</lem>
+                     <rdg type="omission" cause="no_rubrication" wit="T"/>
+                     <rdg type="omission" cause="damage" wit="Br1"/>
+                  </app></num>
+               <title><app>
+                     <lem>De die</lem>
+                     <rdg wit="#T" varSeq="1" type="minor" cause="slip"><hi rend="bold"
+                        >ede</hi></rdg>
+                     <note>PER CONVENZIONE QUANDO C'E' VARSEQ METTERE PRIMA IL TESTIMONE? </note>
+                     <rdg wit="#T" varSeq="2" type="omission" cause="no_rubrication">edie</rdg>
+                  </app> quarto in quo sol et luna<app>
+                     <lem>et stellae</lem>
+                     <rdg type="minor" cause="unknown" wit="#P8"> et stellas</rdg>
+                     <rdg wit="#T" varSeq="1" type="minor" cause="slip"><hi rend="bold">e
+                           stell&#553;</hi></rdg>
+                     <rdg wit="#T" varSeq="2" type="minor" cause="orthographic">et stell&#553;</rdg>
+                     <rdg wit="A" type="omission" cause="unknown"/>
+                     <note>ELIMINARE A</note>
+                  </app>
+               </title></item>
+            <item n="5">
+               <num><app>
+                     <lem>V</lem>
+                     <rdg type="omission" cause="no_rubrication" wit="T"/>
+                     <rdg type="omission" cause="damage" wit="Br1"/>
+                  </app></num>
+               <title><app>
+                     <lem>De</lem>
+                     <rdg wit="#T">e</rdg>
+                  </app> die quinto in quo repentia <app>
+                     <lem>in</lem>
+                     <rdg type="omission" wit="#T"/>
+                  </app> mari et uolatilia caeli</title>
+            </item>
+            <item n="6">
+               <num><app>
+                     <lem>VI</lem>
+                     <rdg type="omission" cause="no_rubrication" wit="T"/>
+                     <rdg type="omission" cause="damage" wit="Br1"/>
+                  </app></num>
+               <title><app>
+                     <lem>De</lem>
+                     <rdg wit="#T">e</rdg>
+                  </app>die <app>
+                     <lem>sexto</lem>
+                     <rdg wit="#Z" type="minor" cause="orthographic">VI</rdg>
+                  </app>
+                  <app>
+                     <lem>in quo</lem>
+                     <rdg wit="#P8" varSeq="1" type="omission" cause="unknown"/>
+                     <rdg wit="#P8" varSeq="2" type="addition" cause="correction">in quo<add
+                           place="above"/></rdg>
+                  </app><app>
+                     <lem>quadrupedia</lem>
+                     <rdg type="minor" cause="orthographic" wit="#T">quatrupedia</rdg>
+                  </app><app>
+                     <lem>et</lem>
+                     <rdg type="omission" cause="unknown" wit="C"/>
+                  </app>serpentes <app>
+                     <lem>et</lem>
+                     <rdg wit="#Z" varSeq="1" type="omission" cause="slip"/>
+                     <rdg wit="#Z" varSeq="2" type="addition" cause="correction">et</rdg>
+                  </app>
+                  <app>
+                     <lem>bestiae</lem>
+                     <rdg type="minor" cause="orthographic" wit="#T">besti&#553;</rdg>
+                     <rdg wit="#Z" varSeq="1" type="omission" cause="slip"/>
+                     <rdg wit="#Z" varSeq="2" type="addition" cause="correction">bestiae</rdg>
+                  </app> et omnia pecora et repentia et homo</title>
+            </item>
+            <item n="7">
+               <num><app>
+                     <lem>VII</lem>
+                     <rdg rendition="#red" wit="#Sg75"/>
+                     <rdg rendition="#bw" wit="#P1"/>
+                     <rdg type="omission" cause="no_rubrication" wit="T"/>
+                     <rdg type="omission" cause="damage" wit="Br1"/>
+                  </app></num>
+               <title><app>
+                     <lem>De</lem>
+                     <rdg type="omission" cause="no_rubrication" wit="#T">e</rdg>
+                  </app>die <app>
+                     <lem>septimo</lem>
+                     <rdg wit="#Z" type="minor" cause="orthographic">VII</rdg>
+                  </app> in quo <app>
+                     <lem>requieuit</lem>
+                     <rdg wit="#T" varSeq="1" type="omission" cause="unknown"/>
+                     <rdg wit="#T" varSeq="2" type="addition" cause="correction">requieuit</rdg>
+                  </app><app>
+                     <lem>ab</lem>
+                     <rdg wit="#Z" type="omission" cause="unknown"/>
+                  </app> omni opere consummato deus</title>
+            </item>
+            <item n="8">
+               <num><app>
+                     <lem>VIII</lem>
+                     <rdg rendition="#red" wit="#Sg75"/>
+                     <rdg rendition="#bw" wit="#P1"/>
+                     <rdg type="omission" cause="no_rubrication" wit="T"/>
+                     <rdg type="omission" cause="damage" wit="Br1"/>
+                  </app></num>
+               <title><app>
+                     <lem>De</lem>
+                     <rdg type="omission" cause="no_rubrication" wit="#T">e</rdg>
+                  </app> hoc libro in quo uniuersa quae facta sunt dicit</title>
+            </item>
+            <item n="9">
+               <num><app>
+                     <lem>VIIII</lem>
+                     <rdg type="omission" cause="no_rubrication" wit="T"/>
+                     <rdg type="omission" cause="damage" wit="Br1"/>
+                  </app></num>
+               <title><app>
+                     <lem>Vbi</lem>
+                     <rdg wit="#T" varSeq="1" type="maior" cause="error"><hi rend="bold">ni
+                        per</hi></rdg>
+                     <rdg wit="#T" varSeq="2" type="maior" cause="correction">per</rdg>
+                     <note>MAIOR? NON mettere del type="strikethrough"> perché si riferisce a NI,
+                        non a per</note>
+                  </app>
+                  <app>
+                     <lem>dat praeceptum</lem>
+                     <rdg type="minor" cause="transposition" wit="#Br1 #Z">praeceptum dat</rdg>
+                     <note>ALTERNATIVA: TYPE TRANSPOSITION CAUSE UNKNOWN</note>
+                  </app> dominus adae et mulieri eius</title>
+            </item>
+            <item n="10">
+               <num><app>
+                     <lem>X</lem>
+                     <rdg rendition="#red" wit="#Sg75"/>
+                     <rdg rendition="#bw" wit="#P1"/>
+                     <rdg type="omission" cause="no_rubrication" wit="T"/>
+                     <rdg type="omission" cause="damage" wit="Br1"/>
+                  </app></num>
+               <title><app>
+                     <lem>Vbi</lem>
+                     <rdg type="omission" cause="no_rubrication" wit="#T">bi</rdg>
+                  </app><app>
+                     <lem>seduxit serpens</lem>
+                  </app> mulierem</title>
+            </item>
+            <item n="11">
+               <num><app>
+                     <lem>XI</lem>
+                     <rdg type="omission" cause="no_rubrication" wit="T"/>
+                     <rdg type="omission" cause="damage" wit="Br1"/>
+                  </app></num>
+               <title><app>
+                     <lem>Vbi</lem>
+                     <rdg wit="#T">bi</rdg>
+                  </app> interrogantur de<app>
+                     <lem>transgressu</lem>
+                     <rdg type="minor" cause="grammatical" wit=" #T #Sg75 #Br1 #Z">transgresso</rdg>
+                  </app></title>
+            </item>
+            <item n="12">
+               <num><app>
+                     <lem>XII</lem>
+                     <rdg rendition="#red" wit="#Sg75"/>
+                     <rdg rendition="#bw" wit="#P1"/>
+                     <rdg type="omission" cause="damage" wit="Br1"/>
+                  </app>
+               </num>
+               <title>Educuntur de <app>
+                     <lem>paradiso</lem>
+                     <rdg type="minor" cause="orthographic" wit="#Br1 #Z">paradyso</rdg>
+                  </app> ne sumant de ligno uitae</title>
+            </item>
+            <item n="13">
+               <num><app>
+                     <lem>XIII</lem>
+                     <rdg type="omission" cause="damage" wit="Br1"/>
+                  </app>
+                  <title>Nati sunt adae filii cain et abel</title>
+               </num>
+            </item>
+            <item n="14">
+               <num><app>
+                     <lem>XIIII</lem>
+                     <rdg type="omission" cause="damage" wit="Br1"/>
+                  </app>
+               </num>
+               <title>Cain occidit fratrem <app> </app>
+               </title>
+            </item>
+            <item n="15">
+               <num><app>
+                     <lem>XV</lem>
+                     <rdg type="omission" cause="damage" wit="Br1"/>
+                  </app>
+               </num>
+               <title>Adae natus est <app>
+                     <lem>seth</lem>
+                     <rdg type="minor" cause="orthographic" ana="hebrew" wit="#Br1">sedh</rdg>
+                  </app> pro abel</title>
+            </item>
+            <item n="16">
+               <num><app>
+                     <lem>XVI</lem>
+                     <rdg type="omission" cause="damage" wit="Br1"/>
+                  </app>
+               </num>
+               <title>De generationibus hominum</title>
+            </item>
+            <item n="17">
+               <num><app>
+                     <lem>XVII</lem>
+                     <rdg type="omission" cause="damage" wit="Br1"/>
+                  </app>
+               </num>
+               <title><app>
+                     <lem>Enoch</lem>
+                     <rdg type="minor" cause="orthographic" ana="hebrew" wit="#Sg75">enoc</rdg>
+                  </app>placuit deo et transtulit <app>
+                     <lem>eum</lem>
+                  </app>deus</title>
+            </item>
+            <item n="18">
+               <num><app>
+                     <lem>XVIII</lem>
+                     <rdg type="omission" cause="damage" wit="Br1"/>
+                  </app>
+               </num>
+               <title>Acceperunt sibi uxores <app>
+                     <lem>filii</lem>
+                     <rdg type="minor" cause="grammatical" wit="#Sg75 #Br1 #Z">fili</rdg>
+                  </app> dei et iratus est deus</title>
+            </item>
+            <item n="19">
+               <num><app>
+                     <lem>XVIIII</lem>
+                     <rdg rendition="#red" wit="#Sg75"/>
+                     <rdg rendition="#bw" wit="#P1">XLIIII</rdg>
+                     <rdg type="omission" cause="damage" wit="Br1"/>
+                  </app></num>
+               <title>Noe placuit deo et praecepit illi deus ut faceret arcam</title>
+            </item>
+            <item n="20">
+               <num><app>
+                     <lem>XX</lem>
+                     <rdg type="omission" cause="damage" wit="Br1"/>
+                  </app></num>
+               <title>Et ingressus est noe in arcam et factum est diluuium</title>
+            </item>
+            <item n="21">
+               <num><app>
+                     <lem>XXI</lem>
+                     <rdg wit="#P8">XLI</rdg>
+                     <rdg type="omission" cause="damage" wit="Br1"/>
+                  </app></num>
+               <title><app>
+                     <lem>Memoratus</lem>
+                     <note>ATTENZIONE LE VARIANTI SUCCESSIVE SONO SOLO LE DIVERSE E IN PARTE
+                        FITTIZIE SPERIMENTAZIONI E VANNO POI ELIMINATE MANTENENDO LA SOLUZIONE
+                        SCELTA</note>
+                     <witDetail wit="#T" type="pc"/>
+                     <rdg wit="#T">moratus</rdg>
+                     <witDetail wit="T" type="ac"/>
+                     <rdg wit="#P10" varSeq="1" type="minor"><hi rend="bold">moratus</hi></rdg>
+                     <rdg wit="#P10" varSeq="2" hand="#m" cause="correction">memorati</rdg>
+                     <rdg wit="#Sg1" cause="correction">
+                        <subst>
+                           <del>moratus</del>
+                           <add>memorati</add>
+                        </subst>
+                     </rdg>
+                  </app>est dominus noe<app>
+                     <lem/>
+                     <rdg type="addition" cause="unknown" wit="#B">in arca<add place="inline"
+                        /></rdg>
+                     <note>LASCIATO PROVVISORIAMENTE COME ESEMPIO, ELIMINARE POI PERCHE' E' VARIANTE
+                        RIFERITA DA DE BRUYNE</note>
+                  </app> et eorum qui cum illo erant et siccata est aqua</title>
+            </item>
+            <item n="22">
+               <num><app>
+                     <lem>XXII</lem>
+                     <rdg type="omission" cause="damage" wit="Br1"/>
+                  </app></num>
+               <title>Anno <app>
+                     <lem>sexcentesimo</lem>
+                     <rdg wit="#Z" type="minor" cause="orthographic">dc</rdg>
+                  </app> et uno noe exiuit de arca ipse et qui <app>
+                     <lem>cum eo erant</lem>
+                     <rdg type="minor" cause="transposition" wit="#Br1">erant cum eo</rdg>
+                  </app></title>
+            </item>
+            <item n="23">
+               <num>XXIII</num>
+               <title>Benedixit dominus noe et filios eius</title>
+            </item>
+            <item n="24">
+               <num>XXIIII</num>
+               <title>Statuit dominus diluuium minime futurum</title>
+            </item>
+            <item n="25">
+               <num>XXV</num>
+               <title>De tribus filiis noe sem cham et <app>
+                     <lem>iapheth</lem>
+                     <rdg type="minor" cause="ortographic" ana="hebrew" wit="#Br1 #Z">iafeth</rdg>
+                  </app> et de ipso ubi inebriatus est</title>
+            </item>
+            <item n="26">
+               <num>XXVI</num>
+               <title>De generationibus noe et filiorum eius</title>
+            </item>
+            <item n="27">
+               <num>XXVII</num>
+               <title>De commixtione linguarum</title>
+            </item>
+            <item n="28">
+               <num>XXVIII</num>
+               <title>De generationibus thare patris<app>
+                     <lem>abraham</lem>
+                     <rdg wit="#Br1" varSeq="1" type="minor" cause="orthographic" ana="hebrew"
+                        cert="low"><hi rend="bold">abram</hi></rdg>
+                     <rdg wit="#Br1" varSeq="2" type="minor" cause="orthographic" ana="hebrew"
+                        hand="#u">abraham</rdg>
+                  </app></title>
+            </item>
+            <item n="29">
+               <num>XXVIIII</num>
+               <title>Dixit dominus ad <app>
+                     <lem>abraham</lem>
+                     <rdg wit="#Br1" varSeq="1" type="minor" cause="orthographic" ana="hebrew"
+                        cert="low"><hi rend="bold">abram</hi></rdg>
+                     <rdg wit="#Br1" varSeq="2" type="minor" cause="orthographic" ana="hebrew"
+                        hand="#u">abraham</rdg>
+                  </app> exi de terra tua</title>
+            </item>
+            <item n="30">
+               <num><app>
+                     <lem>XXX</lem>
+                     <rdg type="omission" cause="damage" wit="Br1"/>
+                  </app></num>
+               <title>Visus est dominus deus abrahae ad locum<app>
+                     <lem>sichem</lem>
+                     <rdg type="minor" cause="orthographic" ana="hebrew" wit="#Br1">sychem</rdg>
+                  </app></title>
+            </item>
+            <item n="31">
+               <num>XXXI</num>
+               <title>Promissiones <app>
+                     <lem>abrahae</lem>
+                     <rdg wit="#Br1" varSeq="1" type="minor" cause="orthographic" ana="hebrew"
+                        cert="low"><hi rend="bold">abrae</hi></rdg>
+                     <rdg wit="#Br1" varSeq="2" type="minor" cause="orthographic" ana="hebrew"
+                        hand="#u">abrah&#553;</rdg>
+                  </app>et semini eius</title>
+            </item>
+            <item n="32">
+               <num>XXXII</num>
+               <title>Pugnauerunt reges quattuor aduersus <app>
+                     <lem>quinque</lem>
+                     <rdg wit="#Z" type="minor" cause="orthographic">V</rdg>
+                  </app> et <app>
+                     <lem>ceperunt</lem>
+                     <rdg wit="#Br1 #Z" type="minor" cause="orthographic">coeperunt</rdg>
+                  </app> loth et omnem equitatum sodomorum</title>
+            </item>
+            <item n="33">
+               <num>XXXIII</num>
+               <title>Visus est dominus <app>
+                     <lem>abrahae</lem>
+                     <rdg wit="#Br1" varSeq="1" type="minor" cause="orthographic" ana="hebrew"><hi
+                           rend="bold">abrae</hi></rdg>
+                     <rdg wit="#Br1" varSeq="2" type="minor" cause="orthographic" ana="hebrew"
+                        hand="#u">abrah&#553;</rdg>
+                  </app> et benedixit eum et dixit ei peregrinum erit semen tuum</title>
+            </item>
+            <item n="34">
+               <num>XXXIIII</num>
+               <title>Visus est dominus abrahae et dedit ei signum circumcisionis et de
+                  isaac</title>
+            </item>
+            <item n="35">
+               <num>XXXV</num>
+               <title>Visus est dominus abrahae cum <app>
+                     <lem>iret</lem>
+                     <rdg wit="#Br1" varSeq="1" type="minor" cause="slip"><hi rend="bold"
+                        >ire</hi></rdg>
+                     <rdg wit="#Br1" varSeq="2" type="minor" cause="correction" hand="u">iret</rdg>
+                  </app> perdere sodomitas</title>
+            </item>
+            <item n="36">
+               <num>XXXVI</num>
+               <title>Venerunt angeli in sodomis et manserunt apud loth</title>
+            </item>
+            <item n="37">
+               <num>XXXVII</num>
+               <title>Pluit dominus ignem et sulphur et euertit sodomam</title>
+            </item>
+            <item n="38">
+               <num>XXXVIII</num>
+               <title>Locutus est dominus ad abimelech pro <app>
+                     <lem>sarra</lem>
+                     <witDetail wit="#Br1" type="pc"/>
+                  </app></title>
+            </item>
+            <item n="39">
+               <num>XXXVIIII</num>
+               <title><app>
+                     <lem>Sarra</lem>
+                     <witDetail wit="#Br1" type="pc"/>
+                  </app> peperit filium et uocauit <app>
+                     <lem>eum</lem>
+                     <rdg wit="#Z" varSeq="1" type="omission" cause="slip"/>
+                     <rdg wit="#Z" varSeq="2" type="addition" cause="correction" hand="#m">eum</rdg>
+                  </app> pater eius isaac</title>
+            </item>
+            <item n="40">
+               <num>XL</num>
+               <title>Dixit <app>
+                     <lem>sarra</lem>
+                     <witDetail wit="#Br1" type="pc"/>
+                  </app> ad abraham proice ancillam et filium eius</title>
+            </item>
+            <item n="41">
+               <num>XLI</num>
+               <title>Iurauerunt inuicem abraham et abimelech</title>
+            </item>
+            <item n="42">
+               <num>XLII</num>
+               <title>Deus temptauit abraham in isaac</title>
+            </item>
+            <item n="43">
+               <num>XLIII</num>
+               <title>Defuncta est <app>
+                     <lem>sarra</lem>
+                     <witDetail wit="#Br1" type="pc"/>
+                  </app>et emit locum abraham ad sepulchrum ab <app>
+                     <lem>ephron</lem>
+                     <rdg wit="#Z" type="minor" cause="orthographic" ana="hebrew">efron</rdg>
+                  </app></title>
+            </item>
+            <item n="44">
+               <num>XLIIII</num>
+               <title>Praecepit seruo et profectus est et adduxit rebeccam</title>
+            </item>
+            <item n="45">
+               <num>XLV</num>
+               <title>Vixit abraham annis centum septuaginta quinque</title>
+            </item>
+            <item n="46">
+               <num>XLVI</num>
+               <title><app>
+                     <lem>Generationes</lem>
+                     <rdg wit="#Z" type="maior" cause="slip">gegenerationes</rdg>
+                  </app>
+                  <app>
+                     <lem>ismael</lem>
+                     <rdg wit="#Br1 #Z" type="minor" cause="orthographic" ana="hebrew">ismahel</rdg>
+                  </app></title>
+            </item>
+            <item n="47">
+               <num>XLVII</num>
+               <title>Generationes isaac</title>
+            </item>
+            <item n="48">
+               <num>XLVIII</num>
+               <title>Facta est <app>
+                     <lem>fames</lem>
+                     <rdg wit="#Z" type="minor" cause="grammatical">famis</rdg>
+                  </app> et uisus est dominus isaac et dixit ei noli descendere in aegyptum et
+                  habitauit in geraris <app>
+                     <lem>ubi seminauit et <app>
+                           <lem>inuenit</lem>
+                           <rdg wit="#Z" type="substantive" cause="unknown">fecit</rdg>
+                        </app> centuplum</lem>
+                     <rdg wit="#Br1" varSeq="1">///</rdg>
+                     <rdg wit="#Br1" varSeq="2" type="omission"/>
+                  </app></title>
+            </item>
+            <item n="49">
+               <num>XLVIIII</num>
+               <title>Senuit isaac et benedixit iacob pro esau et nesciuit</title>
+            </item>
+            <item n="50">
+               <num>L</num>
+               <title><app>
+                     <lem>Dimisit</lem>
+                     <rdg wit="#Z" varSeq="1" type="minor" cause="slip">disit</rdg>
+                     <rdg wit="#Z" varSeq="2" type="aaddition" cause="correction">dimisit</rdg>
+                  </app> isaac iacob filium suum ut iret in mesopotamiam</title>
+            </item>
+            <item n="51">
+               <num>LI</num>
+               <title>Vidit iacob uisum et dominus locutus est ad eum et benedixit eum</title>
+            </item>
+            <item n="52">
+               <num>LII</num>
+               <title>Venit iacob in orientem et accepit filias laban sibi uxores</title>
+            </item>
+            <item n="53">
+               <num>LIII</num>
+               <title>Peperit <app>
+                     <lem>lia iacob</lem>
+                     <rdg wit="#Z" type="minor" cause="transposition">iacob lia</rdg>
+                     <note>l addita supra lineam ante iacob></note>
+                  </app> uiro suo filios quattuor et stetit <app>
+                     <lem>a partu</lem>
+                     <witDetail wit="#Br1" type="unreadable"/>
+                  </app></title>
+            </item>
+            <item n="54">
+               <num>LIIII</num>
+               <title>Rachel dedit iacob ancillam suam balam et peperit ei duos filios</title>
+            </item>
+            <item n="55">
+               <num>LV</num>
+               <title>Et lia dedit <app>
+                     <lem>ei</lem>
+                     <rdg wit="#Br1 #Z" type="minor" cause="substitution">illi</rdg>
+                  </app> ancillam suam et peperit <app>
+                     <lem>ei</lem>
+                     <rdg wit="#Z" type="omission" cause="unknown"/>
+                  </app>
+                  <app>
+                     <lem>filios duos</lem>
+                     <rdg wit="#Z" type="minor" cause="transposition">duos filios</rdg>
+                  </app> et ipsa peperit filios <app>
+                     <lem>duos</lem>
+                     <rdg wit="#Z" type="minor" cause="orthographic">II</rdg>
+                  </app> et dinam</title>
+            </item>
+            <item n="56">
+               <num>LVI</num>
+               <title>Memoratus est deus rachel et peperit ioseph et statuit cum laban de ouibus
+                  uariis</title>
+            </item>
+
+         </list>
+      </body>
+   </text>
+</TEI>

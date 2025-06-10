@@ -1,0 +1,3032 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Exodus summaries in Tours' Bibles</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>digital editions of summaries in Tours' Bibles</p>
+         </publicationStmt>
+         <sourceDesc>
+
+            <listBibl>
+               <head>bibliographical abbreviations</head>
+               <bibl xml:id="DBsomm">
+                  <author>Donatien de Bruyne</author>
+                  <title>Sommaires, divisions et rubriques de la Bible latine</title>
+                  <pubPlace>Namur</pubPlace>
+                  <date>1914</date>
+               </bibl>
+               <bibl xml:id="Fischer"><author>Bonifatius Fischer</author><title>Lateinische
+                     Bibelhandschriften im frühen Mittelalter</title><pubPlace>Freiburg ; Basel ;
+                     Wien</pubPlace><date>1985</date>
+               </bibl>
+            </listBibl>
+            <listWit>
+               <witness xml:id="Am1">
+                  <msDesc>
+                     <msIdentifier>
+                        <settlement>Amiens</settlement>
+                        <repository>Bibliothèques d'Amiens Métropole [formerly Bibliothèque
+                           municipale]</repository>
+                        <idno>MS 6</idno>
+                        <altIdentifier type="external">
+                           <idno type="Biblissima">https://data.biblissima.fr/entity/Q121769</idno>
+                        </altIdentifier>
+                        <altIdentifier type="external">
+                           <idno type="TM">https://www.trismegistos.org/text/66875</idno>
+                        </altIdentifier>
+
+                     </msIdentifier>
+                     <head>Biblia latina, Pentateuchus. 1st volume of Mordramnus' Bible</head>
+
+                     <msContents>
+                        <msItem>
+                           <locus>f. 72ra-74rb</locus>
+                           <title>capitula Exodi</title>
+                        </msItem>
+                     </msContents>
+                     <physDesc>
+                        <objectDesc form="codex">
+                           <supportDesc material="parch">
+                              <extent>250 pages <lb/><dimensions type="leaf" unit="mm">
+                                    <height quantity="378">height 378 mm</height>
+                                    <width quantity="255">width 255 mm</width>
+                                 </dimensions></extent>
+                           </supportDesc>
+                           <layoutDesc>
+                              <layout columns="2"><lb/>2 cols.</layout>
+                           </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                           <handNote script="minusculeCaroline">Maurdramnus minuscule</handNote>
+                        </handDesc>
+                     </physDesc>
+                     <history>
+                        <origin>
+                           <origDate from-custom="796" to-custom="804">772-781</origDate>
+                           <origPlace>Corbie</origPlace>
+                        </origin>
+                     </history>
+                     <additional>
+                        
+                        <surrogates>
+                           <p> 
+                              
+                              <bibl subtype="full" type="digital_facsimile"><hi rend="bold">digital
+                                 reproduction</hi>
+                                 https://gallica.bnf.fr/ark:/12148/btv1b8452188r<ref
+                                 target="https://gallica.bnf.fr/ark:/12148/btv1b8452188r"/></bibl>
+                           <bibl type="description"><hi rend="bold"
+                              >description Sg1</hi>https://ccfr.bnf.fr/portailccfr/servlet/ViewManager?menu=public_menu_view&amp;record=eadcgm:EADI:FRCGMBPF-800216101-01a&amp;setCache=allead.PUBLIC_MANUSCRITS_EXPERT_MULTI&amp;fromList=true&amp;source=allead&amp;action=public_search_federated&amp;query=PUBLIC_MANUSCRITS_EXPERT</bibl>
+                           <bibl type="IIIF_Manifest_URL"><hi rend="bold">IIIF Manifest</hi>
+                                 https://api.irht.cnrs.fr/ark:/63955/fl3mc5w96sgt/manifest.json<ref
+                                 target="https://api.irht.cnrs.fr/ark:/63955/fl3mc5w96sgt/manifest.json"
+                              /></bibl>
+                           <bibl type="CLA"><hi rend="bold">CLA 6.707</hi>
+                                 https://elmss.nuigalway.ie/catalogue/1102<ref
+                                 target="https://elmss.nuigalway.ie/catalogue/1102"/></bibl>
+                           </p>
+                           
+                        </surrogates>
+                     </additional>
+                  </msDesc>
+               </witness>
+
+               <witness xml:id="Sg1">
+                  <msDesc>
+                     <msIdentifier>
+                        <settlement>Sankt Gallen</settlement>
+                        <repository>Stiftsbibliothek</repository>
+                        <idno>Cod. Sang. 75</idno>
+                        <altIdentifier type="external">
+                           <idno type="Biblissima">https://data.biblissima.fr/entity/Q188328</idno>
+                        </altIdentifier>
+                        <altIdentifier type="external">
+                           <idno type="TM">https://www.trismegistos.org/text/67048</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                     <head>Biblia latina Veteris et Novi Testamenti</head>
+                     <!-- alternativa summary in mscontents ma la visualizzazione è più brutta -->
+                     <msContents>
+                        <msItem>
+                           <locus>p. 39b-41a</locus>
+                           <title>capitula Exodi</title>
+                           <!-- così è corretto ma la visualizzazione va a capo e non è bellissimo -->
+                        </msItem>
+                     </msContents>
+                     <physDesc>
+                        <objectDesc form="codex">
+                           <supportDesc material="parch">
+                              <extent>840 pages <dimensions type="leaf" unit="mm">
+                                    <height quantity="500">550</height>
+                                    <width quantity="400">400</width>
+                                 </dimensions></extent>
+                           </supportDesc>
+                           <layoutDesc>
+                              <layout columns="2">2 cols.</layout>
+                           </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                           <handNote script="minusculeCaroline">Carolingian minuscule by different
+                              hands</handNote>
+                        </handDesc>
+                     </physDesc>
+                     <history>
+                        <origin>
+                           <origDate from-custom="796" to-custom="804">796-804</origDate>
+                           <origPlace>Tours, Abbey St. Martin</origPlace>
+                        </origin>
+                     </history>
+                     <additional>
+                        <adminInfo>
+                           <recordHist>
+                              <source>
+                                 <p>First period of the Turonian production according to Fischer's
+                                    classification (<bibl><ref target="#Fischer"/>p. 257</bibl>).
+                                 </p>
+                              </source>
+                           </recordHist>
+                        </adminInfo>
+                        <surrogates>
+                           <p>
+                              <bibl subtype="full" type="digital_facsimile"><hi rend="bold"
+                                    >permalink</hi>
+                                    https://www.e-codices.unifr.ch/it/list/one/csg/0075<ref
+                                    target="https://www.e-codices.unifr.ch/it/list/one/csg/0075"
+                                 /></bibl>
+                              <bibl type="IIIF_Manifest_URL"><hi rend="bold">IIIF Manifest</hi>
+                                    https://www.e-codices.unifr.ch/metadata/iiif/csg-0075/manifest.json<ref
+                                    target="https://www.e-codices.unifr.ch/metadata/iiif/csg-0075/manifest.json"
+                                 /></bibl>
+                           </p>
+                        </surrogates>
+                     </additional>
+                  </msDesc>
+               </witness>
+               <witness xml:id="Tr">Troyes, Bibliothèque municipale, 29 <note>f.
+                  22ra-22vb</note></witness>
+               <witness xml:id="P8">Paris, Bibliothèque nationale de France, lat. 11514 <note>f.
+                     22vb-23va</note></witness>
+               <witness xml:id="L2">London, British Library, Harley 2805 <note>f.
+                  20rb-21ra</note></witness>
+               <witness xml:id="L2_bis">London, British Library, Harley 2805, f. 21r
+                     <note>Integration by a later hand (12th century), beginning with title
+                     94</note>
+               </witness>
+
+               <witness xml:id="Z">
+                  <msDesc>
+                     <msIdentifier>
+                        <settlement>Zürich</settlement>
+                        <repository>Zentralbibliothek Zürich</repository>
+                        <idno>Ms Car C 1</idno>
+                     </msIdentifier>
+                     <head>Biblia latina Veteris et Novi Testamenti</head>
+                     <!-- alternativa summary in mscontents ma la visualizzazione è più brutta -->
+                     <msContents>
+                        <msItem>
+                           <locus>f. 20rb-21ra</locus>
+                           <title>capitula Exodi</title>
+                           <!-- così è corretto ma la visualizzazione va a capo e non è bellissimo -->
+                        </msItem>
+                     </msContents>
+                     <physDesc>
+                        <objectDesc form="codex">
+                           <supportDesc material="parch">
+                              <extent>422 ff.<dimensions type="leaf" unit="mm">
+                                    <height quantity="480">480</height>
+                                    <width quantity="360">360</width>
+                                 </dimensions></extent>
+                           </supportDesc>
+                           <layoutDesc>
+                              <layout columns="2">2 cols.</layout>
+                           </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                           <handNote script="minusculeCaroline">Carolingian minuscule by different
+                              hands</handNote>
+                        </handDesc>
+                     </physDesc>
+                     <history>
+                        <origin>
+                           <origDate from-custom="825" to-custom="830">825-830</origDate>
+                           <origPlace>Tours, Abbey St. Martin</origPlace>
+                        </origin>
+                     </history>
+                     <additional>
+                        <adminInfo>
+                           <recordHist>
+                              <source>
+                                 <p>Third period of the Turonian production under Fridugisus
+                                    (periode II) according to Fischer's classification (<bibl><ref
+                                          target="#Fischer"/>p. 261</bibl>). </p>
+                              </source>
+                           </recordHist>
+                        </adminInfo>
+                        <surrogates>
+                           <p>
+                              <bibl subtype="full" type="digital_facsimile"><hi rend="bold"
+                                    >permalink</hi> https://doi.org/10.7891/e-manuscripta-71492<ref
+                                    target="https://doi.org/10.7891/e-manuscripta-71492"/></bibl>
+                              <bibl type="IIIF_Manifest_URL"><hi rend="bold">IIIF Manifest</hi>
+                                    https://www.e-manuscripta.ch/i3f/v20/1956411/manifest<ref
+                                    target="https://www.e-manuscripta.ch/i3f/v20/1956411/manifest"
+                                 /></bibl>
+                           </p>
+                        </surrogates>
+                     </additional>
+                  </msDesc>
+               </witness>
+
+               <witness xml:id="Br">Bern, Burgerbibliothek, 3-4 [Esodo mutilo inizio]</witness>
+               <witness xml:id="Mb2">
+                  <msDesc>
+                     <msIdentifier>
+                        <settlement>München</settlement>
+                        <repository>Bayerische Staatsbibliothek</repository>
+                        <idno>Clm 12741</idno>
+                        <altIdentifier type="external">
+                           <idno type="Biblissima">https://data.biblissima.fr/entity/Q173853</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                     <head>Biblia latina Veteris et Novi Testamenti</head>
+                     <!-- alternativa summary in mscontents ma la visualizzazione è più brutta -->
+                     <msContents>
+                        <msItem>
+                           <locus>f. 20va-21rb</locus>
+                           <title>capitula Exodi</title>
+                           <!-- così è corretto ma la visualizzazione va a capo e non è bellissimo -->
+                        </msItem>
+                     </msContents>
+                     <physDesc>
+                        <objectDesc form="codex">
+                           <supportDesc material="parch">
+                              <extent>353 fols.<dimensions type="leaf" unit="mm">
+                                    <height quantity="550">550</height>
+                                    <width quantity="375">375</width>
+                                 </dimensions></extent>
+                           </supportDesc>
+                           <layoutDesc>
+                              <layout columns="2">2 cols.</layout>
+                           </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                           <handNote script="minusculeCaroline">Carolingian minuscule</handNote>
+                        </handDesc>
+                     </physDesc>
+                     <history>
+                        <origin>
+                           <origDate from-custom="830" to-custom="834">830-834</origDate>
+                           <origPlace>Tours, Abbey St. Martin</origPlace>
+                        </origin>
+                     </history>
+                     <additional>
+                        <adminInfo>
+                           <recordHist>
+                              <source>
+                                 <p>Fourth period of the Turonian production under Fridugisus
+                                    (periode II) according to Fischer's classification (<bibl><ref
+                                          target="#Fischer"/>p. 262</bibl>). </p>
+                              </source>
+                           </recordHist>
+                        </adminInfo>
+                        <surrogates>
+                           <p>
+                              <bibl subtype="full" type="digital_facsimile"><hi rend="bold"
+                                    >permalink</hi>
+                                    http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:de:bvb:12-bsb00047279-9<ref
+                                    target="http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:de:bvb:12-bsb00047279-9"
+                                 /></bibl>
+                              <bibl type="IIIF_Manifest_URL"><hi rend="bold">IIIF Manifest</hi>
+                                    https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00047279/manifest<ref
+                                    target="https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00047279/manifest"
+                                 /></bibl>
+                           </p>
+                        </surrogates>
+                     </additional>
+                  </msDesc>
+               </witness>
+
+               <witness xml:id="B2">
+                  <msDesc>
+                     <msIdentifier>
+                        <settlement>Berlin</settlement>
+                        <repository>Staatsbibliothek zu Berlin - Preussischer
+                           Kulturbesitz</repository>
+                        <idno>Hamilton 82</idno>
+                        <altIdentifier type="external">
+                           <idno type="Biblissima">https://data.biblissima.fr/entity/Q131043</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                     <head>Biblia latina Veteris et Novi Testamenti</head>
+                     <!-- alternativa summary in mscontents ma la visualizzazione è più brutta -->
+                     <msContents>
+                        <msItem>
+                           <locus>f. 20rb-21rb</locus>
+                           <title>capitula Exodi</title>
+                           <!-- così è corretto ma la visualizzazione va a capo e non è bellissimo -->
+                        </msItem>
+                     </msContents>
+                     <physDesc>
+                        <objectDesc form="codex">
+                           <supportDesc material="parch">
+                              <extent>435 fols.<dimensions type="leaf" unit="mm">
+                                    <height quantity="490">490</height>
+                                    <width quantity="370">370</width>
+                                 </dimensions></extent>
+                           </supportDesc>
+                           <layoutDesc>
+                              <layout columns="2">2 cols.</layout>
+                           </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                           <handNote script="minusculeCaroline">Carolingian minuscule</handNote>
+                        </handDesc>
+                     </physDesc>
+                     <history>
+                        <origin>
+                           <origDate from-custom="830" to-custom="830">830</origDate>
+                           <origPlace>Tours, Abbey St. Martin or Marmoutier (Fischer)</origPlace>
+                        </origin>
+                     </history>
+                     <additional>
+                        <adminInfo>
+                           <recordHist>
+                              <source>
+                                 <p>Fourth period of the Turonian production under Fridugisus
+                                    (periode II) according to Fischer's classification (<bibl><ref
+                                          target="#Fischer"/>p. 263</bibl>). </p>
+                              </source>
+                           </recordHist>
+                        </adminInfo>
+                        <surrogates>
+                           <p>
+                              <bibl subtype="full" type="digital_facsimile"><hi rend="bold"
+                                    >permalink</hi>
+                                    http://resolver.staatsbibliothek-berlin.de/SBB0001505900000000<ref
+                                    target="http://resolver.staatsbibliothek-berlin.de/SBB0001505900000000"
+                                 /></bibl>
+                              <bibl type="IIIF_Manifest_URL"><hi rend="bold">IIIF Manifest</hi>
+                                    https://content.staatsbibliothek-berlin.de/dc/778676021/manifest<ref
+                                    target="https://content.staatsbibliothek-berlin.de/dc/778676021/manifest"
+                                 /></bibl>
+                           </p>
+                        </surrogates>
+                     </additional>
+                  </msDesc>
+               </witness>
+
+
+               <witness xml:id="P2">
+                  <msDesc>
+                     <msIdentifier>
+                        <settlement>Paris</settlement>
+                        <repository>Bibliothèque nationale de France</repository>
+                        <idno>latin 3</idno>
+                        <altIdentifier type="external">
+                           <idno type="Biblissima">https://data.biblissima.fr/w/Item:Q63610</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                     <head>Biblia latina Veteris et Novi Testamenti</head>
+                     <!-- alternativa summary in mscontents ma la visualizzazione è più brutta -->
+                     <msContents>
+                        <msItem>
+                           <locus>f. 21ra-21vb</locus>
+                           <title>capitula Exodi</title>
+                           <!-- così è corretto ma la visualizzazione va a capo e non è bellissimo -->
+                        </msItem>
+                     </msContents>
+                     <physDesc>
+                        <objectDesc form="codex">
+                           <supportDesc material="parch">
+                              <extent>409 fols.<dimensions type="leaf" unit="mm">
+                                    <height quantity="490">490</height>
+                                    <width quantity="380">380</width>
+                                 </dimensions></extent>
+                           </supportDesc>
+                           <layoutDesc>
+                              <layout columns="2">2 cols.</layout>
+                           </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                           <handNote script="minusculeCaroline">Carolingian minuscule</handNote>
+                        </handDesc>
+                     </physDesc>
+                     <history>
+                        <origin>
+                           <origDate from-custom="834" to-custom="843">834-843 (835 according to
+                                 <ref target="#Fischer"/>p. 264)</origDate>
+                           <origPlace>Tours, Abbey St. Martin</origPlace>
+                        </origin>
+                     </history>
+                     <additional>
+                        <adminInfo>
+                           <recordHist>
+                              <source>
+                                 <p>Second period of the Turonian production under Adelard (periode
+                                    III) according to Fischer's classification (<bibl><ref
+                                          target="#Fischer"/>p. 264</bibl>). </p>
+                              </source>
+                           </recordHist>
+                        </adminInfo>
+                        <surrogates>
+                           <p>
+                              <bibl subtype="full" type="digital_facsimile"><hi rend="bold"
+                                    >permalink</hi>
+                                    https://gallica.bnf.fr/ark:/12148/btv1b8426789n<ref
+                                    target="https://gallica.bnf.fr/ark:/12148/btv1b8426789n"
+                                 /></bibl>
+                              <bibl type="IIIF_Manifest_URL"><hi rend="bold">IIIF Manifest</hi>
+                                    https://gallica.bnf.fr/iiif/ark:/12148/btv1b8426789n/manifest.json<ref
+                                    target="https://gallica.bnf.fr/iiif/ark:/12148/btv1b8426789n/manifest.json"
+                                 /></bibl>
+                           </p>
+                        </surrogates>
+                     </additional>
+                  </msDesc>
+               </witness>
+
+
+
+               <witness xml:id="P1">Paris, Bibliothèque nationale de France, lat. 1</witness>
+               <witness xml:id="L1">London, British Library, Add. 10546 <note>f.
+                  24rv</note></witness>
+               <witness xml:id="Bm">Bamberg, Staatsbibliothek, Msc.Bibl. 1</witness>
+               <witness xml:id="Tu">Tours, Bibliothèque municipale, 10</witness>
+
+            </listWit>
+
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+
+         <tagsDecl>
+            <rendition xml:id="CU">mixed capital and uncial letters</rendition>
+            <rendition xml:id="Ca">capital letters</rendition>
+            <rendition xml:id="red">red color letter(s)</rendition>
+            <rendition xml:id="textink"/>
+            <rendition xml:id="bw">the digital reproduction is b/w, impossible to determine
+               color</rendition>
+
+         </tagsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <front>
+         <p>prova prova</p>
+      </front>
+      <body>
+         <head>
+            <pb facs="data/images/single/Sg1_39.jpg" n="Sg1_39"/>
+            <pb facs="data/images/single/Am1_72r.jpeg" n="Am1_72r"/>
+            <pb facs="data/images/single/Z_20r.jpeg" n="Z_20r"/>
+            <pb facs="data/images/single/Mb2_20v.jpg" n="Mb2_20v"/>
+            <pb facs="data/images/single/B2_20r.jpg" n="B2_20r"/>
+            <pb facs="data/images/single/P2_21r.jpeg" n="P2_21r"/>
+            <pb facs="data/images/single/Tu_73r.jpg" n="Tu_73r"/>
+            <lb n="[Sg1_39] [Am1_72r] [Z_20r] [Mb2_20v] [B2_20r] [P2_21r] [Tu_73r]"/>
+            <lb/>
+            <!-- viene visualizzato un grande spazio di stacco rispetto al testo!!! -->
+            <app>
+               <lem wit="#Z #B2">INCIPIVNT CAPITVLA</lem>
+               <rdg wit="#Tu">INCiPiuNT CAPituLa EXODI</rdg>
+               <!-- RICONTROLLARE I TITOLI E USARE MAIUSCOLE-MINUSCOLE -->
+               <rdgGrp>
+                  <rdg wit="#Am1"><choice>
+                        <orig rend="compendium">incpt</orig>
+                        <expan>incipiunt</expan>
+                     </choice> capitula libri exodi</rdg>
+
+                  <rdg wit="#Sg1">incipiunt capitula</rdg>
+                  <rdg wit="#Tr">
+                     <choice>
+                        <abbr type="compendium">incpn̄t capl</abbr>
+                        <expan>incipiunt capitula</expan>
+                     </choice> in libro exodi</rdg>
+
+                  <rdg wit="#P8"><choice>
+                        <orig rend="compendium">incipn̄t</orig>
+                        <reg>incipiunt</reg>
+                     </choice>
+                     <choice>
+                        <orig rend="compendium">caplā</orig>
+                        <reg>capitula</reg>
+                     </choice> libri exodi</rdg>
+
+                  <rdg wit="#L2">capitula</rdg>
+                  <rdg wit="#Mb2">INCIPiVNT CAPiTuLa IN LIBRO EXODI</rdg>
+                  <rdg wit="#P2">INCiPiuNT CAPITuLa IN LIBRO EXODI</rdg>
+                  <rdg wit="#P1">incipiunt capitula in libro exodi (26r)</rdg>
+                  <rdg wit="#Bm">INCiPiuNT CAPituLa LIBRI EXODI</rdg>
+                  <rdg wit="#L1">incipiunt <choice>
+                        <abbr type="compendium">capl<expan>capitula</expan></abbr>
+                     </choice>libri exodi</rdg>
+
+
+               </rdgGrp>
+
+            </app>
+         </head>
+         <list>
+            <item n="1">
+               <num>I</num>
+               <title><app>
+                     <lem>De</lem>
+                     <rdg wit="#Am1" type="addition" cause="u">Et de</rdg>
+                  </app> infantibus <app>
+                     <lem><persName>Hebraeorum</persName></lem>
+                     <rdg wit="#Am1" type="addition" cause="u">numerus hebreorum</rdg>
+                     <rdg wit="#Sg1" type="minor" cause="orthographic">haebraeorum</rdg>
+                  </app>quos praecepit pharao <app>
+                     <lem>in flumen proici</lem>
+                     <rdg wit="#Am1 #Tr #P8 #L2 #Z #Mb2 #B2 #P2 #P1 #L1 #Bm #Tu" type="minor"
+                        cause="grammatical">in flumine proici</rdg>
+                     <!-- minor? sono 2 lettere tecnicamente -->
+                     <rdg wit="#Sg1" type="medium" cause="transposition_grammatical">proici in
+                        flumine</rdg>
+                  </app>
+               </title>
+            </item>
+            <item>
+               <num>II</num>
+               <title>De puero quem inuenit filia pharaonis <app>
+                     <lem>et cognominauit eum Moysen</lem>
+                     <rdg type="omission" wit="#Sg1"/>
+                  </app></title></item>
+
+            <item>
+               <num>III</num>
+               <title>De <app>
+                     <lem>Aegyptio</lem>
+                     <rdg wit="#Z" type="minor" cause="slip">Aegypto</rdg>
+                     <rdg wit="#Am1" type="minor" cause="orthographic">&#553;gyptio</rdg>
+                  </app> quem <app>
+                     <lem>occidit</lem>
+                     <rdg wit="#Z" type="minor" cause="slip">ocidit</rdg>
+                  </app> <persName>Moyses</persName><app>
+                     <lem>et fugit <app>
+                           <lem>Madian</lem>
+                           <rdg type="minor" cause="orthographical" wit="#L2 #Mb2 #B2 #P2 #L1 #Tu"
+                              >Madiam</rdg>
+                        </app></lem>
+                     <rdg wit="#Sg1" type="omission" cause="u"/>
+
+                  </app>
+               </title>
+            </item>
+
+            <item>
+               <num>IIII</num>
+               <title>Mortuo pharaone exaudiuit dominus filios Israhel</title>
+            </item>
+
+            <item><num>V</num>
+               <title>
+                  <app>
+                     <lem>Apparuit</lem>
+                     <rdg wit="#Am1" type="minor" cause="grammatical">Paruit</rdg>
+                     <rdg wit="#Tu" varSeq="1" type="minor" cause="grammatical"><hi rend="bold">Paruit</hi></rdg>
+                     <rdg wit="#Tu" varSeq="2" type="lem" cause="correction" hand="l">Apparuit</rdg>
+                  </app> angelus Moysi in <app>
+                     <lem>rubo</lem>
+                     <witDetail wit="#Bm">fort. ex rubro</witDetail>
+                  </app></title>
+            </item>
+
+            <item><num>VI</num>
+               <title>De signo<app>
+                     <lem>quod</lem>
+                     <rdg wit="#Tr #P8 #Z #Mb2 #B2 #P2 #L1 #P1 #Bm #Tu" type="minor"
+                        cause="grammatical">quem</rdg>
+                  </app> dedit <app>
+                     <lem>dominus</lem>
+                     <rdg wit="#B2" type="omission"/>
+                  </app> in manu Moysi in uirga</title>
+            </item>
+
+            <item><num>VII</num>
+               <title>De signo secundo</title>
+            </item>
+
+            <item><num>VIII</num>
+               <title>De signo tertio</title></item>
+
+            <item><num>VIIII</num>
+               <title>Vbi uenit ad socerum <app>
+                     <lem/>
+                     <rdg wit="#Am1" type="addition" cause="u">suum</rdg>
+                  </app> Moyses et dixit ei:<app>
+                     <lem>Vado</lem>
+                     <rdg wit="#Sg1 #P1" type="minor" cause="grammatical">uadam</rdg>
+                     <rdg wit="#Tr #P8 #L2 #Z #Mb2 #B2 #P2 #L1 #Bm" type="minor" cause="grammatical"
+                        >uade</rdg>
+                  </app> ad fratres meos</title></item>
+
+            <item><num>X</num>
+               <title>Mortuo pharaone dixit dominus ad Moysen: Vade in <app>
+                     <lem>Aegyptum</lem>
+                     <rdg wit="#Z" type="minor" cause="grammatical">Aegypto</rdg>
+                  </app></title></item>
+
+            <item><num>XI</num>
+               <title><app>
+                     <lem>Dixit</lem>
+                     <rdg wit="#Sg1 #Tr #P8 #L2 #Z #Mb2 #B2 #P2 #P1 #L1 #Bm #Tu" type="minor"
+                        cause="grammatical">Dicit</rdg>
+                  </app> dominus ad Aaron uade <app>
+                     <lem>in</lem>
+                     <rdg wit="#P8" varSeq="1" type="omission" subtype="layer" cause="slip"/>
+                     <rdg wit="#P8" varSeq="2" type="lem" subtype="layer" cause="correction"
+                        rend="above">in</rdg>
+                  </app>obuiam Moysi</title></item>
+
+            <item><num>XII</num>
+               <title>Dicunt pharaoni ut dimittat Israhel</title></item>
+
+            <item><num>XIII</num>
+               <title>Moysi dicit dominus ut loquatur ad populum</title></item>
+
+            <item><num>XIIII</num>
+               <title>De principibus israhel</title></item>
+
+            <item><num>XV</num>
+               <title>Dedi te dicit <app>
+                     <lem>dominus</lem>
+                     <rdg wit="#L2" varSeq="1" type="omission" cause="slip"/>
+                     <rdg wit="#L2" varSeq="2" type="lem" cause="correction">dominus</rdg>
+                  </app> deum <app>
+                     <lem>pharaoni</lem>
+                     <rdg wit="#Z" varSeq="1" type="minor" cause="grammatical" rend="erasure"
+                        >pharaonis</rdg>
+                     <rdg wit="#Z" varSeq="2" type="lem" cause="correction">pharaoni</rdg>
+                     <rdg wit="#B2 #Bm" type="minor" cause="grammatical">pharaonis</rdg>
+                  </app></title></item>
+
+            <item><num>XVI</num><title>Proiecit Aaron uirgam coram <app>
+                     <lem>pharaone</lem>
+                     <rdg wit="#Z #Mb2 #P2 #P1" type="minor" cause="grammatical">pharaonem</rdg>
+                     <rdg wit="#Tr" cert="medium">pharaon̄</rdg>
+                     <rdg wit="#Tu" type="minor" cause="grammatical">pharaoni</rdg>
+                  </app>
+                  <app>
+                     <lem>et facta</lem>
+                     <rdg wit="#Sg1" type="medium" cause="u">factaque</rdg>
+                  </app> est draco <app>
+                     <lem>fecerunt</lem>
+                     <rdg wit="#Sg1" type="omission" cause="u"/>
+                  </app><app>
+                     <lem>et</lem>
+                     <rdg wit="#Tr #P8 #Z #Mb2 #B2 #P2 #L1 #Bm #P1 #Tu" type="omission" cause="u"/>
+                  </app>
+                  <app>
+                     <lem>magi</lem>
+                     <rdg wit="#Sg1" type="substantive" subtype="adiaphoric" cause="u"
+                        >malifici</rdg>
+                  </app>
+                  <app>
+                     <lem>similiter</lem>
+                     <rdg wit="#Bm" type="omission" cause="u"/>
+                  </app>
+                  <app>
+                     <lem/>
+                     <rdg wit="#Sg1" type="addition">per incantationes</rdg>
+                  </app>
+               </title></item>
+
+            <item><app>
+                  <lem>INCIPIVNT</lem>
+                  <rdg wit="#Tr" type="omission"/>
+               </app> PLAGAE <app>
+                  <lem>AEGYPTI</lem>
+                  <rdg wit="#Am1 #Tu" type="minor" cause="orthographic">&#553;gypti</rdg>
+               </app></item>
+            <note>add. mg. sup. P8</note>
+
+            <item><num>i</num>
+               <title>Vbi aqua fluminis facta est sanguis<app>
+                     <lem>fecerunt</lem>
+                     <rdg type="omission" wit="#Sg1"/>
+                  </app>
+                  <app>
+                     <lem>et</lem>
+                     <rdg type="omission" wit="#Mb2ac"/>
+                     <rdg wit="#L1 #Mb2" varSeq="1" type="omission" subtype="layer" cause="u"/>
+                     <rdg wit="#L1 #Mb2" type="minor" cause="correction" subtype="layer" hand="m"
+                        rend="above">et</rdg>
+                  </app> magi similiter</title></item>
+            <pb facs="data/images/single/Am1_72v.jpeg" n="Am1_72v"/>
+            <pb facs="data/images/single/B2_20v.jpg" n="B2_20v"/>
+
+            <lb n="[Am1_72v] [B2_20v]"/>
+            <item><num>ii</num>
+               <title>Percussit<app>
+                     <lem><app>
+                           <lem>iterum</lem>
+                           <rdg wit="#Sg1" type="omission" cause="u"/>
+                        </app>Aaron</lem>
+                     <rdg wit="#Mb2">aaron iterum</rdg>
+                  </app>aquas<app>
+                     <lem>Aegypti</lem>
+                     <rdg type="omission" cause="u" wit="#Sg1"/>
+                     <rdg wit="#Am1" type="minor" cause="orthographic">&#553;gypti</rdg>
+                  </app> et eduxit ranas<app>
+                     <lem>fecerunt</lem>
+                     <rdg type="omission" wit="#Sg1"/>
+                     <rdg type="medium" cause="grammatical">feceruntque</rdg>
+                     <!-- grammatical? -->
+                  </app>et magi<app>
+                     <lem/>
+                     <rdg type="addition" cause="u" wit="#Sg1 #P8 #L2 #Mb2 #Z #P2 #Bm"
+                        >similiter</rdg>
+                     <!-- controllare gli altri, NO Tu -->
+                  </app></title></item>
+
+            <item>
+               <num>iii</num>
+               <title>Percussit Aaron in limo <app>
+                     <lem>terrae</lem>
+                     <rdg type="minor" cause="orthographic">terr&#553;</rdg>
+                  </app> et facti sunt <app>
+                     <lem>scyniphes</lem>
+                     <rdg type="minor" cause="orthographic" wit="#Sg1">scinifes</rdg>
+                     <rdg type="minor" cause="orthographic" wit="#Am1">sciniphes</rdg>
+                     <rdg type="minor" cause="orthographic" wit="#Mb2">schinefes</rdg>
+                     <!-- sono 3 ma hanno la stessa pronuncia -->
+                     <rdg type="minor" cause="orthographic" wit="#L2 #Z #B2 #P2 #P1 #L1 #Bm #Tu"
+                        >schinifes</rdg>
+                  </app>in <app>
+                     <lem>hominibus</lem>
+                     <rdg wit="#Bm" varSeq="1" type="minor" cause="misspelling">omnibus</rdg>
+                     <rdg wit="#Bm" varSeq="2" type="minor" cause="falseEmendation">homnibus</rdg>
+                  </app>
+                  <app>
+                     <lem>et</lem>
+                     <rdg wit="#L1" type="minor" cause="diplography">et et</rdg>
+                  </app>
+                  <app>
+                     <lem>cesserunt</lem>
+                     <rdg type="minor" cause="grammatical" wit="#Sg1 #Tr #Mb2 #B2 #P2 #Bm #P1"
+                        >cessauerunt</rdg>
+                  </app>magi</title></item>
+
+            <item>
+               <num>iiii</num>
+               <title><app>
+                     <lem>Inmittit</lem>
+                     <rdg wit="#L1" type="minor" cause="orthographic">Immittit</rdg>
+                  </app> dominus <app>
+                     <lem>cynomiam</lem>
+                     <rdg wit="#Tr #P8 #L2 #Mb2 #B2 #P2 #P1 #L1 #Bm #Tu" type="minor"
+                        cause="grammatical">cynomia</rdg>
+                     <rdg wit="#Z" type="minor" cause="orthographic">cinomiam</rdg>
+                  </app> in totam terram <app>
+                     <lem>Aegypti</lem>
+                     <rdg wit="#Am1" type="minor" cause="orthographic">&#553;gypti</rdg>
+                  </app></title></item>
+
+            <item><num>v</num>
+               <title>Mortem mittit dominus in <app>
+                     <lem>omnia</lem>
+                     <rdg wit="#Am1" type="minor" cause="grammatical">omni</rdg>
+                  </app> pecora <app>
+                     <lem>Aegyptiorum</lem>
+                     <rdg wit="#Am1" type="minor" cause="orthographic">&#553;gyptiorum</rdg>
+                  </app></title></item>
+
+            <item><num>vi</num>
+               <title>De fauilla quam sparsit moyses in caelum et facta sunt<app>
+                     <lem><app>
+                           <lem>ulcera</lem>
+                           <rdg wit="#Bm" type="minor" cause="misspelling">uulnera</rdg>
+                        </app>in homines</lem>
+                     <rdg type="omission" cause="u" wit="#Sg1"/>
+                  </app>
+               </title></item>
+
+            <item><num>vii</num>
+               <title>Extendit Moyses manum in caelum et pluit dominus ignem et
+               grandinem</title></item>
+            <pb facs="data/images/single/Sg1_40.jpg" n="Sg1_40"/>
+            <lb n="[Sg1_40]"/>
+            <item><num>viii</num><app>
+                  <rdg type="addition" wit="#Sg1">p&#322;</rdg>
+               </app><note> = plaga</note>
+               <title>Venit<app>
+                     <lem>locusta</lem>
+                     <rdg wit="#P8" varSeq="1" type="minor" cause="orthographic">lucusta</rdg>
+                     <rdg wit="#P8" varSeq="2" type="minor" cause="correction" rend="overstrike"
+                        hand="u">locusta</rdg>
+                     <rdg wit="#L2 #Am1" type="minor" cause="orthographic">lucusta</rdg>
+                  </app>super omnes fines <app>
+                     <lem>Aegypti</lem>
+                     <rdg wit="#Am1" type="minor" cause="orthographic">&#553;gypti</rdg>
+                  </app></title></item>
+
+            <item><num>viiii</num>
+               <app>
+                  <rdg type="addition" wit="#Sg1">p&#322;</rdg>
+               </app>
+               <title><app>
+                     <lem>Factae</lem>
+                     <rdg wit="#Sg1" type="minor" cause="orthographic">facte</rdg>
+                     <rdg wit="#Tr #Bm #Am1" type="minor" cause="orthographic">fact&#553;</rdg>
+                  </app> sunt <app>
+                     <lem>tenebrae</lem>
+                     <rdg wit="#Tr #Am1" type="minor" cause="orthographic">tenebr&#553;</rdg>
+                  </app> in <app>
+                     <lem>totam terram</lem>
+                     <rdg wit="#P8 #L2 #Z #Mb2 #B2 #P2 #P1 #L1 #Bm" type="minor" cause="grammatical"
+                        >tota terra</rdg>
+                  </app>
+                  <app>
+                     <lem>Aegypti</lem>
+                     <rdg wit="#Am1" type="omission" cause="u"/>
+                  </app> triduo</title></item>
+
+            <item>
+               <num><app>
+                     <lem>XVII</lem>
+                     <rdg wit="#Bm #Sg1">X</rdg>
+                     <rdg wit="#Sg1" varSeq="1" type="medium" cause="numbering">X</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="minor" cause="correction" hand="u">XVII</rdg>
+                  </app></num><app>
+                  <rdg type="addition" wit="#Sg1" cause="u">cap̄</rdg>
+               </app>
+               <title>Dicit dominus<app>
+                     <lem>ad Moysen</lem>
+                     <rdg type="medium" cause="grammatical"
+                        wit="#Sg1 #Tr #P8 #Z #Mb2 #B2 #P2 #L1 #Bm #P1 #Tu">Moysi</rdg>
+                     <rdg wit="#Am1" type="minor" cause="u">moysen</rdg>
+                  </app> adhuc unam plagam ego <app>
+                     <lem>induco</lem>
+                     <rdg wit="#P8" varSeq="1" type="minor" cause="slip">induo</rdg>
+                     <rdg wit="#P8" varSeq="2" type="minor" cause="correction" hand="u" rend="above"
+                        >induco</rdg>
+                  </app>
+                  <app>
+                     <lem>in</lem>
+                     <rdg wit="#P8" type="omission" cause="u"/>
+                  </app><app>
+                     <lem>pharaonem</lem>
+                     <rdg wit="#Z #Bm" type="minor" cause="grammatical">pharaone</rdg>
+                  </app></title></item>
+
+            <item><num>XVIII</num>
+               <app>
+                  <rdg wit="#Sg1" varSeq="1" type="medium" cause="numbering">XI</rdg>
+                  <rdg wit="#Sg1" varSeq="2" type="minor" cause="correction" hand="u">cap̄</rdg>
+                  <rdg wit="#Sg1" type="addition">cap̄</rdg>
+                  <rdg wit="#Bm">XVII</rdg>
+               </app><title>Loquitur dominus <app>
+                     <lem>ad</lem>
+
+                     <rdg wit="#Tr #P8 #L2 #Mb2 #B2 #Z #P2 #P1 #Bm #Tu" type="omission"
+                        cause="grammatical"/>
+                  </app>
+                  <app>
+                     <lem>Moysen</lem>
+                     <rdg wit="#Sg1 #P8 #Z #Mb2 #B2 #P2 #L1 #Bm #P1 #Tu" type="minor"
+                        cause="grammatical">Moysi</rdg>
+                     <!-- perché ho staccato ad e moysen? Sg1 ha ad moysi?? -->
+                  </app> et Aaron de sacramento <app>
+                     <lem>paschae</lem>
+                     <rdg type="minor" cause="orthographic" wit="#P8">phaschae</rdg>
+                     <rdg wit="#Am1" type="minor" cause="orthographic">pasch&#553;</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>x</num></lem>
+                  <rdg wit="#Sg1" varSeq="1" type="medium" cause="numbering">XII</rdg>
+                  <rdg wit="#Sg1" varSeq="2" type="minor" cause="correction">X</rdg>
+                  <rdg wit="#P8" type="minor" cause="numbering">XVIIII</rdg>
+                  <rdg wit="#Bm">XVIII</rdg>
+                  <rdg type="addition" wit="#Sg1">p&#322;a</rdg>
+                  <rdg wit="#Am1" type="omission" cause="u"/>
+               </app>
+               <title><app>
+                     <lem>De</lem>
+                     <rdg wit="#Tr #B2 #L1" type="omission" cause="slip"/>
+                     <rdg wit="#Am1" type="omission" cause="u"/>
+                  </app>
+                  <app>
+                     <lem>decima</lem>
+                     <rdg wit="#Z" varSeq="1" type="minor" subtype="layer" cause="slip">decim</rdg>
+                     <rdg wit="#Z" varSeq="2" type="minor" subtype="layer" cause="correction"
+                        rend="above">decima</rdg>
+                     <rdg wit="#Am1" type="omission" cause="u"/>
+                  </app>
+                  <app>
+                     <lem>plaga in qua percussit dominus omne <app>
+                           <lem>primogenitum</lem>
+                           <rdg wit="#Tu" type="substantive" subtype="adiaphoric">primitiuum</rdg>
+                        </app>Aegyptiorum</lem>
+                     <rdg wit="#Am1" type="omission" cause="u"/>
+                  </app></title></item>
+            <!-- se metto tutto ciò che è all'interno di item come app e lem e come rdg l'omissione di Am1
+               la visualizzazione mostra Am1 come portatore dei lem dove ci sono varianti. l'alternativa è mettere manualmente gli altri testimoni del lem -->
+
+            <item>
+               <app>
+                  <lem><num>XVIIII</num></lem>
+                  <rdg wit="#Sg1" varSeq="1" type="medium" cause="numbering">xiii</rdg>
+                  <rdg wit="#Sg1" varSeq="2" type="minor" cause="correction">XVIIII</rdg>
+                  <rdg wit="#Sg1" type="addition">cap̄</rdg>
+                  <rdg wit="#P8" type="substantive" subtype="error" cause="numbering">X</rdg>
+               </app>
+               <title>Habitauerunt filii Israhel in Aegypto <app>
+                     <lem>annos</lem>
+                     <rdg wit="#Sg1 #Tr #P8 #L2 #Z #Mb2 #B2 #P2 #L1 #P1 #Am1 #Tu" type="minor"
+                        cause="grammatical">annis</rdg>
+                     <rdg wit="#Bm" type="omission" cause="transposition"/>
+                  </app><app>
+                     <lem><app>
+                           <lem>quadringentos</lem>
+                           <rdg wit="#L1" type="minor" cause="grammatical">quadringentis</rdg>
+                        </app> triginta</lem>
+                     <rdg wit="#Sg1 #Tr #P8 #L2 #Z #P2 #Bm #Am1 #Tu" type="minor"
+                        cause="orthographic">CCCCXXX</rdg>
+                     <!-- MMHHH se guardiamo solo il numero di lettere sarebbe substantive però... -->
+                     <rdg wit="#Bm" type="addition" cause="transposition">annis</rdg>
+                  </app></title></item>
+
+
+            <item><app>
+                  <lem><num>XX</num></lem>
+                  <rdg wit="#Sg1" varSeq="1" type="medium" cause="numbering">xiiii</rdg>
+                  <rdg wit="#Sg1" varSeq="2" type="minor" cause="correction" hand="u">XX</rdg>
+               </app><title>Legem <app>
+                     <lem>paschae</lem>
+                     <rdg wit="#P8" varSeq="1" type="minor" cause="orthographic" rend="erasure"
+                        >phaschae</rdg>
+                     <rdg wit="#P8" varSeq="2" type="minor" cause="correction">phascae</rdg>
+                  </app>dat dominus</title></item>
+
+            <item><app>
+                  <lem><num>XXI</num></lem>
+                  <rdg wit="#Sg1" varSeq="1" type="medium" cause="numbering">xv</rdg>
+                  <rdg wit="#Sg1" varSeq="2" type="minor" cause="correction" hand="u">XXI</rdg>
+               </app>
+               <title>Dicit dominus ut <app>
+                     <lem>sanctificent</lem>
+                     <rdg wit="#Tr" type="minor" cause="grammatical">sanctificarent</rdg>
+                  </app> omne primitiuum</title></item>
+            <pb facs="data/images/single/Z_20v.jpeg" n="Z_20v"/>
+            <lb n="[Z_20v]"/>
+            <item><app>
+                  <lem><num>XXII</num></lem>
+                  <rdg wit="#Sg1" varSeq="1" type="medium" cause="numbering">XVI</rdg>
+                  <rdg wit="#Sg1" varSeq="1" type="medium" cause="numbering">XXII</rdg>
+               </app>
+               <title><app>
+                     <lem>Quinta <app>
+                           <lem>progenie</lem>
+                           <rdg type="minor" cause="grammatical"
+                              wit="#Tr #P8 #L2 #Z #Mb2 #P1 #L1 #Bm">progeniae</rdg>
+                        </app> ascenderunt filii israhel de <app>
+                           <lem>aegypto</lem>
+                           <rdg wit="#Z" type="substantive" subtype="adiaphoric" cause="u">terra
+                              aegypti</rdg>
+                           <rdg wit="#Am1" type="minor" cause="orthographic">egypto</rdg>
+                        </app></lem>
+                     <rdg wit="Sg1" varSeq="1" type="lem">
+                        <!-- in questi casi mettere solo type lem (senza cause) per indicare che corrisponde al testo??? 
+                           andrebbe messo un varseq 2 solo per il rend strikethrough?-->
+                        Quinta progenie ascenderunt filii israhel de aegypto</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="substantive" cause="substitution" hand="l">De
+                        egressione filiorum israhel ex egypto et translatione ossium ioseph
+                           <note>substitution by a contemporary
+                        hand</note><!-- cause substitution (nuovo tipo) o correction perché era questa l'intenzione? --></rdg>
+                  </app></title>
+            </item>
+
+            <item><app>
+                  <lem><num>XXIII</num></lem>
+                  <rdg wit="#Sg1" type="medium" cause="numbering">XVII</rdg>
+               </app>
+               <note>The corrections of the numbers in Sg1 cease</note>
+               <title>Consecutus est pharao <app>
+                     <lem>filios</lem>
+                     <rdg wit="#Sg1" varSeq="1" type="minor" cause="slip">filio</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="minor" cause="correction">filios</rdg>
+                  </app> Israhel et <app>
+                     <lem>cooperuit</lem>
+                     <rdg wit="#Bm">cooperit</rdg>
+                     <rdg wit="#Tu" type="medium" subtype="adiaphoric" cause="u">operuit</rdg>
+                  </app> Aegyptios mare<app>
+                     <rdg type="addition" cause="error" wit="#P8">canticum</rdg>
+                     <!-- cause error?? -->
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>XXIIII</num></lem>
+                  <rdg wit="#Sg1">XVIII</rdg>
+                  <rdg wit="#P8" type="omission" cause="u"/>
+               </app>
+               <app>
+                  <lem>Canticum</lem>
+                  <rdg type="addition" wit="#Sg1" cause="u">Canticum moysi</rdg>
+                  <rdg type="omission" cause="u" wit="#P8"/>
+               </app>
+            </item>
+
+            <item><app>
+                  <lem><num>XXV</num></lem>
+                  <rdg wit="#Sg1">XVIIII</rdg>
+                  <rdg wit="#P8" type="medium" cause="numbering">XXIIII</rdg>
+               </app>Cantauit et maria cum mulieribus in <app>
+                  <lem>tympanis</lem>
+                  <rdg type="minor" cause="orthographic" wit="#Mb2 #B2 #Sg1 #L2 #Tu">tymphanis</rdg>
+               </app> et choris</item>
+
+            <item><app>
+                  <lem><num>XXVI</num></lem>
+                  <rdg wit="#Sg1" type="minor" cause="numbering">XX</rdg>
+                  <!-- STANDARDIZZARE GLI ERRORI DI NUMERAZIONE type medium cause numbering?-->
+                  <rdg wit="#P8" type="minor" cause="numbering">XXV</rdg>
+               </app>
+               <app>
+                  <lem>Murmurauit</lem>
+                  <rdg wit="#Z" type="minor" cause="orthographic">Murmorauit</rdg>
+               </app> populus in deserto pro aqua</item>
+            <pb facs="data/images/single/Tu_73v.jpg" n="Tu_73v"/>
+            <lb n="[Tu_73v]"/>
+            <item><app>
+                  <lem><num>XXVII</num></lem>
+                  <rdg wit="#Sg1" type="minor" cause="numbering">XXI</rdg>
+                  <rdg wit="#P8" type="minor" cause="numbering">XXVI</rdg>
+               </app><title><app>
+                     <lem>Murmurauerunt</lem>
+                     <rdg wit="#Z" varSeq="1" type="lem" subtype="layer">Murmurauerunt</rdg>
+                     <rdg wit="#Z" varSeq="2" type="minor" subtype="layer" cause="orthograhic"
+                        rend="overstrike">Murmorauerunt</rdg>
+                     <rdg wit="#Sg1" varSeq="1" type="lem" subtype="layer">Murmurauerunt</rdg>
+                     <rdg wit="Sg1" varSeq="2" type="medium" subtype="layer" cause="grammatical"
+                        >murmurauit</rdg>
+                     <!-- medium perché è legittimo nella frase?? -->
+                  </app>et pro carnibus</title></item>
+
+            <item><app>
+                  <lem><num>XXVIII</num></lem>
+                  <rdg wit="#Sg1" type="minor" cause="numbering">XXII</rdg>
+                  <rdg wit="#P8" type="minor" cause="numbering">XXVII</rdg>
+               </app><title>Dedit dominus populo <app>
+                     <lem>coturnices</lem>
+                     <rdg wit="#Sg1" varSeq="1" type="minor" cause="mispelling">cotornices</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="minor" cause="correction">coturnices</rdg>
+                     <rdg wit="#Am1" type="minor" cause="orthographic">cotornices</rdg>
+                  </app> et <app>
+                     <lem>mannam</lem>
+                     <rdg wit="#Sg1" type="minor" cause="grammatical">manna</rdg>
+                  </app>
+               </title>
+            </item>
+
+            <item><app>
+                  <lem><num>XXVIIII</num></lem>
+                  <rdg wit="#Sg1">XXIII</rdg>
+                  <rdg wit="#P8" type="minor" cause="numbering">XXVIII</rdg>
+               </app>
+               <title>Manducauerunt <app>
+                     <lem>mannam</lem>
+                     <rdg wit="#Sg1 #B2" type="minor" cause="grammatical">manna</rdg>
+                  </app> annis <app>
+                     <lem>quadraginta</lem>
+                     <rdg wit="#Sg1 #Tr #P8 #L2 #Z #B2 #P2 #Bm #Am1 #Tu" type="minor"
+                        cause="orthographic">XL</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>XXX</num></lem>
+                  <rdg wit="#Sg1">XXIIII</rdg>
+                  <rdg wit="#P8" type="minor" cause="numbering">XXVIIII</rdg>
+                  <!-- minor?? -->
+               </app><title>Murmurauerunt pro aqua et eduxit <app>
+                     <lem>de petra aquam</lem>
+                     <rdg type="transposition" cause="u" wit="#L2 #Bm">aquam de petra</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>XXXI</num></lem>
+                  <rdg wit="#Sg1">XXV</rdg>
+                  <rdg wit="#P8">XXX</rdg>
+               </app><title>Venit Amalech ad pugnam et percussit eum<app>
+                     <lem>iosue</lem>
+                     <rdg wit="#L2" type="omission" cause="u"/>
+                     <rdg wit="#P8" type="minor" cause="mispelling">iosiae</rdg>
+                     <rdg wit="#Tu" type="substantive" subtype="error" cause="u">chis</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>XXXII</num></lem>
+                  <rdg wit="#Sg1">XXVI</rdg>
+                  <rdg wit="#P8" type="minor" cause="numbering">XXXI</rdg>
+               </app><title>Venit <app>
+                     <lem>iethro</lem>
+                     <rdg type="orthographical" wit="#Bm #Am1">ietro</rdg>
+                     <rdg wit="#Tu" type="substantive" subtype="error" cause="misspelling"
+                        >iotar</rdg>
+                  </app> ad moysen in desertum</title></item>
+
+            <item>
+               <app>
+                  <lem><num>XXXIII</num></lem>
+                  <rdg wit="#Sg1">XXVII</rdg>
+                  <rdg wit="#P8" type="minor" cause="numbering">XXXII</rdg>
+               </app>
+               <title>Consilium dedit <app>
+                     <lem>iethro</lem>
+                     <rdg type="minor" cause="orthographic" wit="#Z #Am1">ietro</rdg>
+                     <rdg wit="#Tu" type="substantive" subtype="error" cause="misspelling"
+                        >iotar</rdg>
+                  </app><app>
+                     <lem>moysi</lem>
+                     <rdg wit="#L2" type="minor" cause="orthographic">moysy</rdg>
+                  </app> ut <app>
+                     <lem>praeponeret</lem>
+                     <rdg wit="#Bm" type="substantive" cause="u">praeceperat</rdg>
+                  </app>
+                  <app>
+                     <lem>tribunos</lem>
+                     <rdg type="minor" cause="slip">tribunus</rdg>
+                  </app><app>
+                     <lem>et centuriones</lem>
+                     <rdg type="omission" cause="u" wit="#Sg1"/>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>XXXIIII</num></lem>
+                  <rdg wit="#Sg1">XXVIII</rdg>
+                  <rdg wit="#P8" type="minor" cause="numbering">XXXIII</rdg>
+               </app>
+               <title>Testatur dominus per moysen populo ut <app>
+                     <lem>audiant</lem>
+                     <rdg wit="#Am1" type="minor" cause="grammatical">audiat</rdg>
+                     <rdg wit="#Tu" type="minor" cause="grammatical">audiunt</rdg>
+                  </app>
+                  <app>
+                     <lem>eum</lem>
+                     <rdg wit="#Tu" type="minor" cause="grammatica">eam</rdg>
+                  </app></title></item>
+
+
+            <item><app>
+                  <lem><num>XXXV</num></lem>
+                  <rdg wit="#Sg1">XXVIIII</rdg>
+                  <rdg wit="#P8" type="minor" cause="numbering">XXXIIII</rdg>
+               </app>
+               <title>Descendit dominus in<app>
+                     <lem>montem</lem>
+                     <rdg wit="#Bm" type="minor" cause="grammatical">monte</rdg>
+                  </app>
+                  <app>
+                     <lem>syna</lem>
+                     <rdg type="minor" cause="orthographic" wit="#P1">sinai</rdg>
+                     <rdg wit="#Tr #P8 #L2 #L1 #Z #Mb2 #B2 #P2 #Am1 #Tu" type="minor"
+                        cause="orthographic" ana="hebrew">sina</rdg>
+                  </app> in<app>
+                     <lem>igne</lem>
+                     <rdg wit="#Z" type="minor" cause="grammatical">ignem</rdg>
+                     <rdg wit="#P8" varSeq="1" type="minor" cause="grammatical"
+                        rend="subpunctuation">ignem</rdg>
+                     <rdg wit="#P8" varSeq="2" type="lem" cause="correction" hand="u">igne</rdg>
+                     <rdg wit="#Tu" type="minor" cause="grammatical">igni</rdg>
+                  </app>
+               </title></item>
+
+            <item><app>
+                  <lem><num>XXXVI</num></lem>
+                  <rdg wit="#Sg1">XXX</rdg>
+                  <rdg wit="#P8" type="minor" cause="numbering">XXXV</rdg>
+               </app>
+               <title>Praecepit dominus <app>
+                     <lem>moysi</lem>
+                     <rdg wit="#L2" type="minor" cause="orthographic" ana="hebrew">moysy</rdg>
+                  </app> ut ascendat in montem <app>
+                     <lem>solus</lem>
+                     <rdg wit="#Sg1" varSeq="1" rend="strikethrough">solus</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="substantive" cause="u" hand="u">et aaron</rdg>
+                     <rdg wit="#Bm #Tu">solis</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>XXXVII</num></lem>
+                  <rdg wit="#Sg1" type="medium" cause="numbering">XXXI</rdg>
+                  <rdg wit="#P8" type="minor" cause="numbering">XXXVI</rdg>
+               </app>
+               <app>
+                  <lem/>
+                  <rdg wit="#Sg1" type="addition" cause="numbering" hand="l">XXXVII cp̄</rdg>
+                  <!-- cause numbering per qualunque variazione riguardi il numero? -->
+               </app>
+               <title><app>
+                     <lem>Decem</lem>
+                     <rdg type="minor" cause="orthographic" wit="#Tr #P8 #L2 #Mb2 #B2 #P2 #L1 #P1"
+                        >Decim</rdg>
+                     <rdg wit="#Z" varSeq="1" type="lem" subtype="layer">Decem</rdg>
+                     <rdg wit="#Z" varSeq="2" type="minor" subtype="layer" cause="orthographic"
+                        >Decim</rdg>
+                  </app> uerba legis <app>
+                     <lem>quae</lem>
+                     <rdg wit="#Sg1" type="minor" cause="grammatical">quam</rdg>
+                     <rdg wit="#Bm" type="minor" cause="grammatical">quem</rdg>
+                  </app><app>
+                     <lem>praecepit</lem>
+                     <rdg wit=" #Mb2 #P2 #P1" type="minor" cause="grammatical">praecipit</rdg>
+                  </app>dominus custodiri</title></item>
+            <item><app>
+                  <lem><num>i</num></lem>
+                  <rdg wit="#Sg1" type="substantive" cause="numbering">XXXII</rdg>
+                  <rdg wit="#P8" type="substantive" cause="numbering">XXXVII</rdg>
+                  <!-- DA QUI NON METTO PIU' TYPE PER NUMERI PER P8 PERCHE' NON SONO CONVINTA -->
+               </app>
+               <app>
+                  <lem/>
+                  <rdg wit="#Sg1" type="addition" cause="u">X uerba legis</rdg>
+                  <note> written in vertical (one letter per line) between marginal numbers and
+                     text</note>
+               </app>
+               <title>Non erunt tibi <app>
+                     <lem>dii alii</lem>
+                     <rdg wit="#Tu" varSeq="1" type="transposition">alii dii</rdg>
+                     <rdg wit="#Tu" varSeq="2" type="lem" rend="transpMarks">dii alii</rdg>
+                  </app> absque me</title></item>
+
+            <item><app>
+                  <lem><num>ii</num></lem>
+                  <rdg wit="#Sg1">XXXIII</rdg>
+                  <rdg wit="#P8">XXXVIII</rdg>
+               </app><title>Non <app>
+                     <lem>facias</lem>
+                     <rdg wit="#Tu" type="minor" cause="grammatical">facies</rdg>
+                  </app> tibi <app>
+                     <lem>idolum</lem>
+                     <rdg type="minor" cause="mispelling" wit="#Sg1">iodolum</rdg>
+                  </app> neque <app>
+                     <lem>ullam</lem>
+                     <rdg wit="#Bm" type="medium" cause="misspelling">aliam</rdg>
+                  </app> similitudinem</title></item>
+
+            <item><app>
+                  <lem><num>iii</num></lem>
+                  <rdg wit="#Sg1">XXXVIIII</rdg>
+                  <rdg wit="#P8">XXXVIIII</rdg>
+               </app><title>Non sumes nomen dei tui in <app>
+                     <lem>uanum</lem>
+                     <rdg wit="#L2" type="minor" cause="diplography">uanunum</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>iiii</num></lem>
+                  <rdg wit="#Sg1">XXXV</rdg>
+                  <rdg wit="#P8">XL</rdg>
+               </app><title>In mente habe diem sabbatorum</title></item>
+            <pb facs="data/images/single/Am1_73r.jpeg" n="Am1_73r"/>
+            <lb n="[Am1_73r]"/>
+            <item><app>
+                  <lem><num>v</num></lem>
+                  <rdg wit="#Sg1">XXXXVI</rdg>
+                  <rdg wit="#P8">XLI</rdg>
+               </app>
+               <title>Honora patrem tuum et matrem</title></item>
+
+            <item><app>
+                  <lem><num>vi</num></lem>
+                  <rdg wit="#Sg1">XXXVII</rdg>
+                  <rdg wit="#P8">XLII</rdg>
+               </app><title>Non occides</title></item>
+
+            <item><app>
+                  <lem><num>vii</num></lem>
+                  <rdg wit="#Sg1">XXXVIII</rdg>
+                  <rdg wit="#P8">XLIII</rdg>
+               </app>
+               <title>Non <app>
+                     <lem>moechaberis</lem>
+                     <rdg type="minor" cause="orthographic" wit="#Sg1">m&#553;chaberis</rdg>
+                     <rdg wit="#Tr #Mb2 #B2 #P2 #L1 #P1" type="minor" cause="mispelling"
+                        >moechabiris</rdg>
+
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>viii</num></lem>
+                  <rdg wit="#Sg1">XXXVIIII</rdg>
+                  <rdg wit="#P8">XLIIII</rdg>
+               </app><title>Non furtum facies</title></item>
+
+            <item><app>
+                  <lem><num>viiii</num></lem>
+                  <rdg wit="#Sg1">XL</rdg>
+                  <rdg wit="#P8">XLV</rdg>
+               </app><title>Non <app>
+                     <lem>dices</lem>
+                     <rdg wit="#Tr #P8 #L2 #Z #Mb2 #B2 #P1 #L1 #Bm" type="minor" cause="grammatical"
+                        >dicis</rdg>
+                     <rdg wit="#P2" varSeq="1" type="minor" subtype="layer" cause="orthographic"
+                        >dicis</rdg>
+                     <rdg wit="#P2" varSeq="2" type="lem" subtype="layer" cause="correction"
+                        rend="overstrike" hand="u">dices</rdg>
+                  </app>falsum testimonium</title></item>
+
+            <item><app>
+                  <lem><num>x</num></lem>
+                  <rdg wit="#Sg1">XLI</rdg>
+                  <rdg wit="#P8">XLVI</rdg>
+               </app><title>Non concupisces <app>
+                     <lem>uxorem</lem>
+                     <rdg wit="#Mb2" varSeq="1" type="medium" subtype="layer" cause="slip">rem</rdg>
+                     <rdg wit="#Mb2" varSeq="2" type="lem" subtype="layer" cause="correction"
+                        hand="m" rend="above">uxorem</rdg>
+                  </app> proximi tui neque <app>
+                     <lem>aliquid</lem>
+                     <rdg wit="#Sg1" type="minor" cause="orthographic">aliquit</rdg>
+                  </app>
+                  <app>
+                     <lem>eius</lem>
+                     <rdg wit="#Sg1" type="minor" cause="grammatical">ei</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>XXXVIII</num></lem>
+                  <rdg wit="#Sg1" type="medium" cause="numbering">XLII </rdg>
+                  <rdg wit="#P8">XLVII</rdg>
+               </app>
+               <app>
+                  <lem/>
+                  <rdg wit="#Sg1" type="minor" cause="numbering" hand="l">XXXVIII</rdg>
+                  <!-- SEMPRE NUMBERING PER LE CORREZIONI SUI NUMERI?-->
+               </app>
+               <title>Timuit populus et dixerunt ad Moysen: Tu loquere ad nos</title></item>
+
+            <item><app>
+                  <lem><num>XXXVIIII</num></lem>
+                  <rdg wit="#Sg1" type="medium" cause="numbering">XLIII</rdg>
+                  <rdg wit="#P8">XLVIII</rdg>
+               </app>
+               <title>Deos argenteos uel aureos non faciendos</title></item>
+
+            <item><app>
+                  <lem><num>XL</num></lem>
+                  <rdg wit="#Sg1" type="medium" cause="numbering">XLIIII</rdg>
+                  <rdg wit="#P8">XLVIIII</rdg>
+               </app>
+               <title>De <app>
+                     <lem>puero</lem>
+                     <rdg wit="#P8" type="minor" cause="slip">puer</rdg>
+                  </app><app>
+                     <lem>hebraeo</lem>
+                     <rdg wit="#Sg1" type="minor" cause="orthographic">ebraeo</rdg>
+                     <rdg wit="#Am1" type="minor" cause="orthographic">hebreo</rdg>
+                     <rdg wit="#Mb2" type="minor" cause="orthographic">hebr&#553;o</rdg>
+                  </app> empto</title></item>
+
+            <item><app>
+                  <lem><num>XLI</num></lem>
+                  <rdg wit="#Sg1">XLV</rdg>
+                  <rdg wit="#P8">L</rdg>
+               </app>
+               <title>De filia distracta</title></item>
+
+            <item><app>
+                  <lem><num>XLII</num></lem>
+                  <rdg wit="#Sg1">XLVI</rdg>
+                  <rdg wit="#P8">LI</rdg>
+               </app>
+               <title>De percusso et mortuo</title></item>
+
+            <item><app>
+                  <lem><num>XLIII</num></lem>
+                  <rdg wit="#Sg1">XLVII</rdg>
+                  <rdg wit="#P8">LII</rdg>
+                  <rdg wit="#B2" type="medium" cause="erasure" cert="low">X</rdg>
+               </app>
+               <title>Si quis occiderit aliquem dolo</title></item>
+
+            <item><app>
+                  <lem><num>XLIIII</num></lem>
+                  <rdg wit="#Sg1">XLVIII</rdg>
+                  <rdg wit="#P8">LIII</rdg>
+               </app>
+               <title>Qui percusserit patrem aut matrem</title></item>
+
+            <item><app>
+                  <lem><num>XLV</num></lem>
+                  <rdg wit="#Sg1">XLVIIII</rdg>
+                  <rdg wit="#P8">LIIII</rdg>
+               </app>
+               <app>
+                  <lem><title xml:id="XLV">Qui furtum ereptum uendiderit</title></lem>
+                  <rdg corresp="xml:id#XLVI" wit="#Sg1 #Tr #P8 #Z #Mb2 #B2 #P2 #P1 #L1 #Bm #Tu"
+                     type="transposition" cause="u">Qui maledixerit patri <app>
+                        <lem>aut</lem>
+                        <rdg wit="#P8" type="substantive" subtype="adiaphoric" cause="u">uel</rdg>
+                     </app> matri</rdg>
+
+                  <witDetail wit="#Sg1">prius add. s.l.</witDetail>
+               </app>
+            </item>
+
+            <item><app>
+                  <lem><num>XLVI</num></lem>
+                  <rdg wit="#Sg1">L</rdg>
+                  <rdg wit="#P8">LV</rdg>
+               </app><app>
+                  <lem><title xml:id="XLVI">Qui maledixerit patri aut matri</title></lem>
+                  <rdg corresp="xml:id#XLV" wit="#Sg1 #Tr #P8 #Mb2 #B2 #P2 #P1 #Bm" type="maior"
+                     cause="transposition">Qui<app>
+                        <lem>furtum</lem>
+                        <rdg wit="#Sg1 #Tr #P8 #Mb2 #B2 #Z #P2 #L1 #P1 #Bm #Tu" type="minor"
+                           cause="grammatical">furto</rdg>
+                     </app>
+                     <app>
+                        <lem>ereptum</lem>
+                        <rdg wit="#Bm" type="minor" cause="grammatical">erepto</rdg>
+
+                     </app>
+                     <app>
+                        <lem>uendiderit</lem>
+                        <rdg wit="#Tu" type="minor" cause="orthographical">uindiderit</rdg>
+                     </app></rdg>
+                  <witDetail wit="#Sg1">post add. s.l.</witDetail>
+               </app></item>
+            <pb facs="data/images/single/P2_21v.jpg" n="P2_21v"/>
+            <lb n="[P2_21v]"/>
+            <item><app>
+                  <lem><num>XLVII</num></lem>
+                  <rdg wit="#Sg1" type="medium" cause="numbering">LI</rdg>
+                  <rdg wit="#P8">LVI</rdg>
+               </app>. <title>Si <app>
+                     <lem>in</lem>
+                     <rdg wit="#Bm" type="omission"/>
+                  </app> rixa percusserit <app>
+                     <lem>aliquis</lem>
+                     <rdg wit="#Sg1" type="minor" cause="grammatical">aliquid</rdg>
+                  </app> lapide aut pugno</title></item>
+
+            <item><app>
+                  <lem><num>XLVIII</num></lem>
+                  <rdg wit="#Sg1">LII LIII</rdg>
+                  <note>LIII in Sg1 is aligned with 'et mortuus' written in the second line and
+                     consequently the chapter has two numbers.</note>
+                  <rdg wit="#P8">LVII</rdg>
+                  <rdg wit="#L2" varSeq="1" type="minor" cause="numbering">XLVIIII</rdg>
+                  <rdg wit="#L2" varSeq="2" type="lem" cause="correction"/>
+               </app>
+               <title>Si<app>
+                     <lem>seruum</lem>
+                     <rdg wit="#Sg1" varSeq="1" type="minor" cause="grammatical">seruo</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="minor" cause="correction" hand="m"
+                        >seruum</rdg>
+                  </app><app>
+                     <lem>aut</lem>
+                     <rdg wit="#Z" type="medium" cause="mispelling">et an</rdg>
+                  </app> ancillam percusserit aliquis et mortuus fuerit</title></item>
+
+            <item><app>
+                  <lem><num>XLVIIII</num></lem>
+                  <rdg wit="#Sg1">LIIII</rdg>
+                  <rdg wit="#P8">LVIII</rdg>
+               </app>
+               <title>Si mulierem percusserit et <app>
+                     <lem>abortauerit</lem>
+                     <rdg wit="#Sg1 #P8 #Mb2 #P2 #P1" type="medium" cause="mispelling"
+                        >aptauerit</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="substantive" cause="u" hand="l">abortiuum
+                        fecerit</rdg>
+                     <rdg wit="#Tr #L2 #Z #B2 #L1 #Bm #Tu" type="medium" cause="mispelling"
+                        >abtauerit</rdg>
+                     <!-- tecnicamente sarebbe minor, sono 2 lettere -->
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>L</num></lem>
+                  <rdg wit="#Sg1">LV</rdg>
+                  <rdg wit="#P8">LVIIII</rdg>
+               </app>
+               <title><app>
+                     <lem>Oculum</lem>
+                     <rdg wit="#Am1" type="minor" cause="grammatical">Oculus</rdg>
+                  </app> pro oculo</title></item>
+            <pb facs="data/images/single/Mb2_21r.jpg" n="Mb2_21r"/>
+
+            <lb n="[Mb2_21r]"/>
+
+            <item><app>
+                  <lem><num>LI</num></lem>
+                  <rdg wit="#Sg1">LVI</rdg>
+                  <rdg wit="#P8">LX</rdg>
+               </app>
+               <title>Oculum serui aut <app>
+                     <lem>ancillae</lem>
+                     <rdg wit="#Tr #Tu">ancill&#553;</rdg>
+                     <rdg wit="#Bm" type="minor" cause="grammatical">ancillam</rdg>
+                     <rdg wit="#Am1" type="minor" cause="orthographic">ancille</rdg>
+                  </app><app>
+                     <lem>qui eiecerit</lem>
+                     <rdg wit="#Sg1" varSeq="1" type="medium" cause="mispelling" cert="medium">quae
+                        ieserit</rdg>
+                     <!-- MEDIUM?? -->
+                     <rdg wit="#Sg1" varSeq="2" type="medium" cause="correction" hand="l"
+                        >eiecerit</rdg>
+                     <!-- e il pronome? -->
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>LII</num></lem>
+                  <rdg wit="#Sg1">LVII</rdg>
+                  <rdg wit="#P8">LXI</rdg>
+               </app>
+               <title><app>
+                     <lem>Si</lem>
+                     <rdg type="omission" cause="u"
+                        wit="#Sg1 #Tr #P8 #L2 #Z #Mb2 #B2 #P2 #Bm #P1 #L1 #Tu"/>
+                  </app><app>
+                     <lem>cornu</lem>
+                     <rdg wit="#Am1" type="minor" cause="grammatical">cornua</rdg>
+                  </app> aliquem percusserit taurus</title></item>
+
+            <item><app>
+                  <lem><num>LIII</num></lem>
+                  <rdg wit="#Sg1">LVIII</rdg>
+                  <rdg wit="#P8">LXII</rdg>
+               </app>
+               <title>Si <app>
+                     <lem>foueam</lem>
+                     <rdg wit="#Sg1" varSeq="1" type="minor" cause="mispelling" rend="strikethrough"
+                        >fodeam</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="substantive" cause="u" hand="l"
+                        >cisternam</rdg>
+                  </app>quis foderit</title></item>
+
+            <item><app>
+                  <lem><num>LIIII</num></lem>
+                  <rdg wit="#Sg1" varSeq="1">LVIIII</rdg>
+                  <rdg wit="#Sg1" varSeq="2" hand="u">LIIII</rdg>
+                  <rdg wit="#P8">LXIII</rdg>
+               </app>
+               <title>Si <app>
+                     <lem>taurus</lem>
+                     <rdg wit="#Sg1" varSeq="1" rend="subpunction">taurus</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="substantive" cause="u" hand="l">bos</rdg>
+                  </app><app>
+                     <lem>alium</lem>
+                     <rdg wit="#Sg1">aliquid</rdg>
+                     <rdg wit="#Tr #P8 #L2 #Z #Mb2 #B2 #P2 #L1 #P1 #Bm" type="minor"
+                        cause="grammatical">aliud</rdg>
+                  </app><app>
+                     <lem>cornu percusserit</lem>
+                     <rdg wit="#Am1" type="substantive" subtype="adiaphoric" cause="u">percusserit
+                        tauro</rdg>
+                  </app>
+               </title></item>
+
+            <item><app>
+                  <rdg type="addition" wit="#Sg1"><num>LV</num><title>quod sciuit dominus bouem
+                        corniperam</title><note>added by a nearly contemporary hand in the upper
+                        margin</note></rdg>
+               </app></item>
+
+            <item><app>
+                  <lem><num>LV</num></lem>
+                  <rdg wit="#Sg1" varSeq="1">LX</rdg>
+                  <rdg wit="#Sg1" varSeq="2" hand="l">LVI</rdg>
+                  <rdg wit="#P8">LXIIII</rdg>
+               </app>
+               <title>Si quis<app>
+                     <lem>uitulum</lem>
+                     <rdg wit="#Sg1" varSeq="1" rend="strikethrough">uitulum</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="substantive" cause="u" hand="l">bouem</rdg>
+                  </app>aut ouem inuolauerit</title></item>
+
+            <item><app>
+                  <lem><num>LVI</num></lem>
+                  <rdg wit="#Sg1" varSeq="1" cert="medium">LXI</rdg>
+                  <rdg wit="#Sg1" varSeq="2" hand="u">LVII</rdg>
+                  <rdg wit="#P8">LXV</rdg>
+               </app>
+               <title>De <app>
+                     <lem>fure</lem>
+                     <rdg wit="#Tr #P8 #L2 #Mb2 #B2 #P2 #L1 #P1 #Am1" type="minor"
+                        cause="grammatical">furo</rdg>
+                     <rdg wit="#Sg1" varSeq="1" type="minor" cause="grammatical" rend="overstrike"
+                        >furo</rdg>
+                     <rdg wit="#Sg1" type="minor" cause="correction" hand="u">fure</rdg>
+                     <rdg wit="#Z #Bm" varSeq="1" type="minor" cause="slip" subtype="layer"
+                        rend="erasure">furto</rdg>
+                     <rdg wit="#Z #Bm" varSeq="1" type="lem" cause="correction" subtype="layer"
+                        >furo</rdg>
+                  </app>percusso</title></item>
+
+            <item><app>
+                  <lem><num>LVII</num></lem>
+                  <rdg wit="#Sg1">LXII</rdg>
+                  <rdg wit="#P8">LXVI</rdg>
+               </app>
+               <title>De agro <app>
+                     <lem>alieno</lem>
+                     <rdg wit="#Z" type="minor" cause="slip">aliendo</rdg>
+
+                  </app> depasto</title></item>
+
+            <item><app>
+                  <lem><num>LVIII</num></lem>
+                  <rdg wit="#Sg1">LXIII</rdg>
+                  <rdg wit="#P8">LXVII</rdg>
+               </app>
+               <title>De area incensa uel<app>
+                     <lem>messe</lem>
+                     <rdg wit="#P8 #Tr #L2 #Z #Mb2 #B2 #P2 #L1 #P1 #Bm #Am1" type="minor"
+                        cause="grammatical">messis</rdg>
+                     <rdg wit="#Sg1" varSeq="1" type="minor" cause="grammatical" rend="overstrike"
+                        >messis</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="minor" cause="correction" hand="u">messe</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>LVIIII</num></lem>
+                  <rdg wit="#Sg1">LXIIII</rdg>
+                  <rdg wit="#P8">LXVIII</rdg>
+               </app>
+               <title>De commendato et <app>
+                     <lem>furtim</lem>
+                     <rdg wit="#Sg1 #Tr #P8 #L2 #Z #Mb2 #B2 #P2 #L1 #P1 #Bm" type="minor"
+                        cause="mispelling">furtum</rdg>
+                  </app>ab aliquo <app>
+                     <lem>erepto</lem>
+                     <rdg wit="#L1" type="minor" cause="grammatical">ereptum</rdg>
+                     <rdg wit="#Bm" type="medium" cause="misspelling">reperto</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>LX</num></lem>
+                  <rdg wit="#Sg1">LXV</rdg>
+                  <rdg wit="#P8">LXVIIII</rdg>
+               </app>
+               <title>De iumento uel aliquo pecude commendato et mortuo</title></item>
+
+            <item><app>
+                  <lem><num>LXI</num></lem>
+                  <rdg wit="#Sg1">LXVI</rdg>
+                  <rdg wit="#P8">LXX</rdg>
+               </app>
+               <title>Si <app>
+                     <lem>petierit</lem>
+                     <rdg wit="#Am1" type="substantive" subtype="adiaphoric" cause="u"
+                        >percusserit</rdg>
+                  </app> quis animal et mortuum fuerit</title></item>
+            <item><app>
+                  <lem><num>LXII</num></lem>
+                  <rdg wit="#Sg1">LXVII</rdg>
+                  <rdg wit="#P8">LXXI</rdg>
+               </app>
+               <title>De uirgine nondum sponsata</title>
+            </item>
+
+            <item><app>
+                  <lem><num>LXIII</num></lem>
+                  <rdg wit="#Sg1">LXVIII</rdg>
+                  <rdg wit="#P8">LXXII</rdg>
+               </app>
+               <title>Maleficum occidendum</title></item>
+
+            <item><app>
+                  <lem><num>LXIIII</num></lem>
+                  <rdg wit="#Sg1">LXVIIII</rdg>
+                  <rdg wit="#P8">LXXIII</rdg>
+               </app>
+               <title>Qui dormierit cum pecude occidendum</title></item>
+
+            <item><app>
+                  <lem><num>LXV</num></lem>
+                  <rdg wit="#Sg1">LXX</rdg>
+                  <rdg wit="#P8">LXIIII</rdg>
+               </app>
+               <title>Qui immolauerit diis eradicandum</title></item>
+
+            <item><app>
+                  <lem><num>LXVI</num></lem>
+                  <rdg wit="#Sg1">LXXI</rdg>
+                  <rdg wit="#P8">LXXV</rdg>
+               </app>
+               <title>Aduenam non nocendum</title></item>
+
+            <item><app>
+                  <lem><num>LXVII</num></lem>
+                  <rdg wit="#Sg1">LXXII</rdg>
+                  <rdg wit="#P8">LXVI</rdg>
+               </app>
+               <title>Viduam et <app>
+                     <lem>orphanum</lem>
+                     <rdg wit="#Sg1 #Tr #P8 #L2 #Mb2 #P2 #L1 #Bm #Am1 #Tu" type="minor"
+                        cause="orthographic">orfanum</rdg>
+                     <rdg wit="#Z #B2" type="medium" cause="grammatical_orthographic">orfanos</rdg>
+                     <rdg wit="#P2" varSeq="1" type="minor" subtype="layer" cause="grammatical"
+                        rend="erasure">orfanos</rdg>
+                     <rdg wit="#P2" varSeq="2" type="lem" subtype="layer" cause="correction"
+                        >orfanum</rdg>
+                  </app> non nocendos</title></item>
+
+            <item><app>
+                  <lem><num>LXVIII</num></lem>
+                  <rdg wit="#Sg1">LXXIII</rdg>
+                  <rdg wit="#P8">LXXVII</rdg>
+               </app>
+               <title>De <app>
+                     <lem>foenore</lem>
+                     <rdg wit="#Sg1 #Tr #P8 #L2 #Z #Mb2 #B2 #P2 #Bm #Am1 #Tu" type="minor"
+                        cause="orthographic">fenore</rdg>
+                  </app>
+                  <app>
+                     <lem>et</lem>
+                     <rdg wit="#Am1 #Tu" type="omission" cause="u"/>
+                  </app> de pignore</title></item>
+            <pb facs="data/images/single/Tu_74r.jpg" n="Tu_74r"/>
+            <lb n="[Tu_74r]"/>
+            <item><app>
+                  <lem><num>LXVIIII</num></lem>
+                  <rdg wit="#Sg1">LXXIIII</rdg>
+                  <rdg wit="#P8">LXXVIII</rdg>
+               </app>
+               <title>Non <app>
+                     <lem>blasphemandum</lem>
+                     <rdg wit="#P8" varSeq="1" type="minor" cause="slip">blaphemandum</rdg>
+                     <rdg wit="#P8" varSeq="2" type="lem" cause="correction" rend="above"/>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>LXX</num></lem>
+                  <rdg wit="#Sg1">LXXV</rdg>
+                  <rdg wit="#P8">LXXVIIII</rdg>
+               </app>
+               <title>Primitias offerendas</title></item>
+
+            <item><app>
+                  <lem><num>LXXI</num></lem>
+                  <rdg wit="#Sg1">LXXVI</rdg>
+                  <rdg wit="#P8">LXXX</rdg>
+               </app>
+               <title> Omne <app>
+                     <lem>primitiuum</lem>
+                     <rdg wit="#Sg1" type="minor" cause="slip">primitium</rdg>
+                  </app>domino offerendum</title></item>
+
+            <item><app>
+                  <lem><num>LXXII</num></lem>
+                  <rdg wit="#Sg1">LXXVII</rdg>
+                  <rdg wit="#P8">LXXXI</rdg>
+               </app>
+               <title>Carnem a bestia<app>
+                     <lem/>
+                     <rdg type="addition" cause="u" wit="#Sg1 #Mb2 #P8 #P2 #P1">laceratam</rdg>
+                     <witDetail wit="#P8">add. later in mg.</witDetail>
+                     <rdg type="addition" wit="#Bm">lacerata</rdg>
+                  </app>non <app>
+                     <lem>edendam</lem>
+                     <rdg wit="#P8 #P1 #Bm" type="minor" cause="grammatical">edendum</rdg>
+                     <rdg wit="#Tu" varSeq="1" type="minor" cause="grammatical">edendum</rdg>
+                     <rdg wit="#Tu" varSeq="2" type="lem" cause="correction">edendam</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>LXXIII</num></lem>
+                  <rdg wit="#Sg1">LXXVIII</rdg>
+                  <rdg wit="#P8">LXXXII</rdg>
+               </app>
+               <title>Non credendum facile <app>
+                     <lem>quod</lem>
+                     <rdg wit="#Sg1" type="minor" cause="grammatical">quo</rdg>
+                  </app>audieris</title></item>
+
+            <item><app>
+                  <lem><num>LXXIIII</num></lem>
+                  <rdg wit="#Sg1">LXXVIIII</rdg>
+                  <rdg wit="#P8">LXXXIII</rdg>
+               </app>
+               <title>Non consentiendum fieri <app>
+                     <lem>testis</lem>
+                     <rdg wit="#Z" type="minor" cause="grammatical">testes</rdg>
+                  </app><app>
+                     <lem>iniquus</lem>
+                     <rdg wit="#Sg1 #Tr #P8 #L2 #Mb2 #B2 #P1 #L1 #Bm #Tu" type="minor"
+                        cause="grammatical">iniquis</rdg>
+                     <rdg wit="#Z" type="minor" cause="grammatical">iniqui</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>LXXV</num></lem>
+                  <rdg wit="#Sg1">LXXX</rdg>
+                  <rdg wit="#P8">LXXXIIII</rdg>
+               </app>
+               <title>Non esse cum<app>
+                     <lem>multis</lem>
+                     <rdg wit="#Mb2" varSeq="1" type="minor" subtype="layer" cause="grammatical"
+                        >multos</rdg>
+                     <rdg wit="#Mb2" varSeq="2" type="lem" subtype="layer" cause="correction"
+                        hand="u" rend="overstrike">multis</rdg>
+                  </app>
+                  <app>
+                     <lem>ad</lem>
+                     <rdg type="omission" wit="#Tr #P8 #L2 #Z #Mb2 #B2 #P2 #P1 #L1 #Bm #Tu"/>
+                     <rdg wit="#Sg1" varSeq="1" type="omission"/>
+                     <rdg wit="#Sg1" varSeq="1" type="medium" cause="correction" hand="l"><add
+                           place="above"/>ad</rdg>
+                     <!-- così place?? medium?? controllare che abbia ad -->
+                     <rdg wit="#Am1" type="minor" cause="u">in</rdg>
+                  </app><app>
+                     <lem>malum</lem>
+                     <rdg wit="#Sg1 #Tr #Z #Mb2 #P2 #P1 #L1" type="minor" cause="grammatical"
+                        >malam</rdg>
+                     <rdg wit="#P8" varSeq="1" type="lem">malum</rdg>
+                     <rdg wit="#P8" varSeq="2" type="minor" cause="grammatical" hand="u">malam</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>LXXVI</num></lem>
+                  <rdg wit="#Sg1">LXXXI</rdg>
+                  <rdg wit="#P8">LXXXV</rdg>
+               </app>
+               <title>Non declinare cum multis iudicium</title></item>
+
+            <item><app>
+                  <lem><num>LXXVII</num></lem>
+                  <rdg wit="#Sg1">LXXXII</rdg>
+                  <rdg wit="#P8">LXXXVI</rdg>
+               </app>
+               <title>Non spernendum pauperem in iudicio nec pro illo faciendum</title></item>
+
+            <item><app>
+                  <lem><num>LXXVIII</num></lem>
+                  <rdg wit="#Sg1">LXXXIII</rdg>
+                  <rdg wit="#P8">LXXXVII</rdg>
+               </app>
+               <title><app>
+                     <lem>Errantem</lem>
+                     <rdg wit="#P1">errandum</rdg>
+                  </app> inimici iumentum reuocandum</title></item>
+
+            <item><app>
+                  <lem><num>LXXVIIII</num></lem>
+                  <rdg wit="#Sg1">LXXXIIII</rdg>
+                  <rdg wit="#P8">LXXXVIII</rdg>
+               </app>
+               <title>Inimici iumentum <app>
+                     <lem>pressum</lem>
+                     <rdg type="minor" cause="orthographical" wit="#P8 #L2 #Mb2 #B2 #L1 #Bm #Tu"
+                        >praessum</rdg>
+                     <rdg wit="#Am1" type="minor" cause="orthographic">presum</rdg>
+
+                  </app>pondere erigendum</title></item>
+
+            <item><app>
+                  <lem><num>LXXX</num></lem>
+                  <rdg wit="#Sg1">LXXXV</rdg>
+                  <rdg wit="#P8">LXXXVIIII</rdg>
+               </app>
+               <title>Iudicium <app>
+                     <lem>pauperis</lem>
+                     <rdg wit="#Sg1" varSeq="1" type="minor" cause="grammatical" rend="overstrike"
+                        >pauperes</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="minor" cause="correction" hand="u"/>
+                  </app>non <app>
+                     <lem>subuertendum</lem>
+                     <rdg wit="#Am1" varSeq="1" type="maior" cause="u" rend="erasure">sub?????</rdg>
+                     <rdg wit="#Am1" varSeq="2" type="lem" cause="correction">subuertendum</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>LXXXI</num></lem>
+                  <rdg wit="#Sg1">LXXXVI</rdg>
+                  <rdg wit="#P8">XC</rdg>
+               </app>
+               <title>Ab omni <app>
+                     <lem>uerbo iniquo</lem>
+                     <rdg wit="#Am1" varSeq="1" type="transposition" cause="mispelling">in quo
+                        uerbo</rdg>
+                     <rdg wit="#Am1" varSeq="2" type="transposition" cause="correction" rend="above"
+                        >iniquo uerbo</rdg>
+                  </app>
+                  <app>
+                     <lem>recedendum</lem>
+                     <rdg wit="#Bm" varSeq="1" type="minor" cause="slip">recendum</rdg>
+                     <rdg wit="#Bm" varSeq="2" type="lem" cause="correction" rend="above"
+                        >recedendum</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>LXXXII</num></lem>
+                  <rdg wit="#Sg1">LXXXVII</rdg>
+                  <rdg wit="#P8">XCI</rdg>
+               </app>
+               <title>Innocentem et iustum non occidendum</title></item>
+
+            <item><app>
+                  <lem><num>LXXXIII</num></lem>
+                  <rdg wit="#Sg1">LXXXVIII</rdg>
+                  <rdg wit="#P8">XCII</rdg>
+               </app>
+               <title>Impium non iustificandum et munera non accipienda</title></item>
+            <pb facs="data/images/single/Am1_73v.jpeg" n="Am1_73v"/>
+            <lb n="[Am1_73v]"/>
+            <item><app>
+                  <lem><num>LXXXIIII</num></lem>
+                  <rdg wit="#Sg1">LXXXVIIII</rdg>
+                  <rdg wit="#P8">XCIII</rdg>
+               </app><title>De <app>
+                     <lem>anno</lem>
+                     <rdg wit="#Sg1" varSeq="1" type="minor" cause="grammatical" rend="subpunction"
+                        >annos</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="minor" cause="correction" hand="u">anno</rdg>
+                  </app><app>
+                     <lem>remissionis</lem>
+                     <rdg wit="#Sg1" varSeq="1" type="minor" cause="grammatical" rend="overstrike"
+                        >remissiones</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="minor" cause="correction" hand="u"
+                        >remissionis</rdg>
+                  </app><app>
+                     <lem>septimo</lem>
+                     <rdg wit="#Tu" cause="orthographic">VIImus</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>LXXXV</num></lem>
+                  <rdg wit="#Sg1">XC</rdg>
+                  <rdg wit="#P8">XCIIII</rdg>
+               </app>
+               <title><app>
+                     <lem>Sabbato</lem>
+                     <rdg wit="#Bm" type="minor" cause="grammatical">sabbatum</rdg>
+                  </app> non operandum</title></item>
+
+            <item><app>
+                  <lem><num>LXXXVI</num></lem>
+                  <rdg wit="#Sg1">XCI</rdg>
+                  <rdg wit="#P8" varSeq="1" rend="subpunctuated">XCIIII</rdg>
+                  <rdg wit="#P8" varSeq="2" rend="above">XCV</rdg>
+               </app>
+               <title>Omnia quae praecepit deus <app>
+                     <lem>obseruanda</lem>
+                     <rdg wit="#Am1" type="minor" cause="grammatical">obseruandum</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>LXXXVII</num></lem>
+                  <rdg wit="#Sg1">XCII</rdg>
+                  <rdg wit="#P8">XCVI</rdg>
+               </app>
+               <title>Tribus temporibus anni diem <app>
+                     <lem>sollemnem</lem>
+                     <rdg wit="#Sg1 #Tu" type="minor" cause="orthographic">solemnem</rdg>
+                     <rdg wit="#L2" varSeq="1" type="minor" cause="orthographic">solemnem</rdg>
+                     <rdg wit="#L2" varSeq="2" type="lem" cause="correction" hand="l" rend="above"
+                        >sollemnem</rdg>
+                  </app>
+                  <app>
+                     <lem>agendam</lem>
+                     <rdg wit="#P1 #Bm #Am1 #Tu" type="minor" cause="grammatical">agendum</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>LXXXVIII</num></lem>
+                  <rdg wit="#Sg1">XCVII</rdg>
+                  <rdg wit="#P8">XCVII</rdg>
+               </app>
+               <title> Diem festum <app>
+                     <lem>azymorum</lem>
+                     <rdg wit="#Sg1 #Tr #P8 #L2 #L1" type="minor" cause="orthographic" ana="hebrew"
+                        >azimorum</rdg>
+                  </app> obseruandum</title></item>
+
+            <item><app>
+                  <lem><num>LXXXVIIII</num></lem>
+                  <rdg wit="#Sg1">XCIII</rdg>
+                  <rdg wit="#P8">XCVIII</rdg>
+               </app>
+               <title>Vacuum in conspectu <app>
+                     <lem>domini</lem>
+                     <rdg wit="#Bm" type="substantive" cause="u">meo</rdg>
+                  </app> minime apparendum</title></item>
+
+            <item><app>
+                  <lem><num>XC</num></lem>
+                  <rdg wit="#Sg1">XCIIII</rdg>
+                  <rdg wit="#P8">XCVIIII</rdg>
+               </app>
+               <title>Tribus temporibus anni <app>
+                     <lem>omne</lem>
+                     <rdg wit="#Sg1 #Tr #P8 #L2 #Mb2 #B2 #P2 #L1 #Tu" type="minor"
+                        cause="grammatical">omnem</rdg>
+                  </app> masculinum <app>
+                     <lem>parere</lem>
+                     <rdg wit="#L2" type="minor" cause="mispelling"/>
+                     <rdg wit="#Sg1" varSeq="1" type="minor" cause="u" rend="overstrike"
+                        >par?ere</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="minor" cause="correction" hand="u"
+                        cert="medium">parare</rdg>
+                  </app>domino</title></item>
+
+            <item><app>
+                  <lem><num>XCI</num></lem>
+                  <rdg wit="#Sg1">XCV</rdg>
+                  <rdg wit="#P8" varSeq="1" rend="underlined">XCVIIII</rdg>
+                  <rdg wit="#P8" varSeq="2" hand="u" rend="above">C</rdg>
+               </app>
+               <title>Primitias <app>
+                     <lem>terrae</lem>
+                     <rdg wit="#Am1" type="minor" cause="orthographic">terr&#553;</rdg>
+                  </app> offerendas</title></item>
+
+            <item><app>
+                  <lem><num>XCII</num></lem>
+                  <rdg wit="#Sg1">XCVI</rdg>
+                  <rdg wit="#P8">CI</rdg>
+               </app>
+               <title>Non coquendum <app>
+                     <lem>agnum</lem>
+                     <rdg wit="#L2" varSeq="1" type="omission" cause="u"/>
+                     <rdg wit="#L2" varSeq="1" type="lem" cause="correction" hand="m" rend="above"
+                        >agnum</rdg>
+                  </app> in <app>
+                     <lem>lacte</lem>
+                     <rdg wit="#L2" varSeq="1" type="minor" cause="mispelling" rend="subpunctuation"
+                        >lactae</rdg>
+                     <rdg wit="#L2" varSeq="2" type="lem" cause="correction" hand="u">lacte</rdg>
+                  </app> matris suae</title></item>
+
+            <item><app>
+                  <lem><num>XCIII</num></lem>
+                  <rdg wit="#Sg1">XCVII</rdg>
+                  <rdg wit="#P8">CI</rdg>
+               </app>
+               <title>Angelum promittit <app>
+                     <lem>dominus</lem>
+                     <rdg wit="#L2" varSeq="1" type="omission"/>
+                     <rdg wit="#L2" varSeq="2" type="lem" cause="correction" hand="l" rend="above"
+                        >dominus</rdg>
+                  </app> qui praecedat</title></item>
+
+            <item><app>
+                  <lem><num>XCIIII</num></lem>
+                  <rdg wit="#Sg1">XCVIII</rdg>
+                  <rdg wit="#P8">CII</rdg>
+               </app>
+               <title><app>
+                     <lem>Qui deum</lem>
+                     <rdg wit="#Sg1" varSeq="1" type="minor" cause="mispelling" rend="strikethrough"
+                        >quidem</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="substantive" cause="correction" hand="u">quod
+                        si</rdg>
+                  </app> audierit <app>
+                     <lem><app>
+                           <lem>liberari</lem>
+                           <rdg wit="#P8" varSeq="1" type="minor" cause="slip">libera</rdg>
+                           <rdg wit="#P8" varSeq="2" type="lem" cause="correction" hand="u"
+                              rend="above">liberari</rdg>
+                        </app>ab inimicis</lem>
+                     <rdg wit="#Mb2" varSeq="1" type="transposition" subtype="layer" cause="u">ab
+                        inimicis liberari</rdg>
+                     <rdg wit="#Mb2" varSeq="2" type="lem" subtype="layer" cause="correction"
+                        hand="m" rend="transpMarks">liberari ab inimicis</rdg>
+                  </app>
+                  <app>
+                     <rdg type="addition" wit="#Sg1">possit</rdg>
+
+                  </app></title></item>
+            <pb facs="data/images/single/B2_21r.jpg" n="B2_21r"/>
+            <lb n="[B2_21r]"/>
+            <item><app>
+                  <lem><num>XCV</num></lem>
+                  <rdg wit="#Sg1">XCVIIII</rdg>
+                  <rdg wit="#P8">CIII</rdg>
+               </app>
+               <title>Deos <app>
+                     <lem>alienigenarum</lem>
+                     <rdg wit="#Am1" type="substantive" subtype="mispelling">alienarum</rdg>
+                  </app> non <app>
+                     <lem>adorandos</lem>
+                     <rdg wit="#Am1" varSeq="1" type="minor" cause="grammatical" rend="subpuctuated"
+                        >adorandas</rdg>
+                     <rdg wit="#Am1" varSeq="2" type="lem" cause="correction" rend="above" hand="l"
+                        >adorandos</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>XCVI</num></lem>
+                  <rdg wit="#Sg1">C</rdg>
+                  <rdg wit="#P8" cert="low">CIIII</rdg>
+               </app>
+               <title>Timorem et<app>
+                     <lem>uespas</lem>
+                     <rdg wit="#Sg1" varSeq="1" type="minor" cause="grammatical" rend="subpunction"
+                        >uespes</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="minor" cause="correction" hand="l"
+                        >uespas</rdg>
+                  </app>missurum <app>
+                     <lem>dominum</lem>
+                     <rdg wit="#Sg1 #Tr #L2 #Z #Mb2 #B2 #P2 #L1 #P1 #Bm" type="minor"
+                        cause="grammatical">domini</rdg>
+                     <rdg wit="#P8" varSeq="1" type="minor" cause="grammatical" rend="expunctuated"
+                        >domini</rdg>
+                     <rdg wit="#P8" varSeq="2" type="lem" cause="correction" hand="u" rend="above"
+                        >dominum</rdg>
+                  </app>qui<app>
+                     <lem>eiciat</lem>
+                     <rdg wit="#Sg1" varSeq="1" type="minor" cause="grammatical" rend="erasure"
+                        >eieceret</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="minor" cause="correction" hand="u"
+                        >eiceret</rdg>
+                     <rdg wit="#Tr" type="minor" cause="grammatical">eieceret</rdg>
+                     <rdg wit="#L2 #Mb2 #B2 #P8 #P2 #L1 #P1 #Am1" type="minor" cause="grammatical"
+                        >eiceret</rdg>
+                     <rdg wit="#Z" type="minor" cause="grammatical">eicerit</rdg>
+                     <rdg wit="#Bm" type="minor" cause="grammatical">eicerat</rdg>
+                     <rdg wit="#Tu" type="substantive" subtype="error" cause="u">eierit</rdg>
+                  </app>
+                  <app>
+                     <lem>alienigenas</lem>
+                     <rdg wit="#Sg1" varSeq="1" type="minor" cause="mispelling"
+                        rend="subpunctuation">alienigines</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="minor" cause="correction" hand="m"
+                        >alieniginas</rdg>
+                     <rdg wit="#Am1" type="substantive" subtype="error">alienas</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>XCVII</num></lem>
+                  <rdg wit="#Sg1">CI</rdg>
+                  <rdg wit="#P8" cert="low">CVI</rdg>
+               </app>
+               <title>Dixit dominus <app>
+                     <lem>moysi</lem>
+                     <rdg wit="#Tu" type="minor" cause="grammatical">moysen</rdg>
+                  </app> ascendere ad se in montem cum maioribus natu</title></item>
+
+            <item><app>
+                  <lem><num>XCVIII</num></lem>
+                  <rdg wit="#Sg1">CII</rdg>
+                  <rdg wit="#P8">CVII</rdg>
+               </app>
+               <title><app>
+                     <lem>Aedificauit</lem>
+                     <rdg wit="#Sg1" type="minor" cause="orthographic">Edificauit</rdg>
+                  </app>
+                  <app>
+                     <lem>Moyses</lem>
+                     <rdg wit="#P8" cert="medium">mosises</rdg>
+                  </app> altare ex <app>
+                     <lem>duodecim</lem>
+                     <rdg wit="#Tu" type="minor" cause="orthographic">duodecem</rdg>
+                  </app><app>
+                     <lem>lapidibus</lem>
+                     <rdg wit="#Sg1" varSeq="1" rend="strikethrough">lapidibus</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="substantive" cause="u" hand="l">titulos</rdg>
+                     <rdg wit="#L1" type="minor" cause="mispelling">lapidimus</rdg>
+                  </app></title></item>
+
+            <app>
+               <lem/>
+               <rdg wit="#L2">
+                  <lacunaStart/></rdg>
+               <!-- BUG: visualizza la lacuna ma continua a mettere il testimone nell'apparato positivo, e idem con L2_bis nell'apparato precedente -->
+               <rdg/>
+               <rdg wit="#L2_bis">
+                  <witStart/>
+               </rdg>
+            </app>
+            <item><app>
+
+                  <lem><num>XCVIIII</num></lem>
+                  <rdg wit="#Sg1">CIII</rdg>
+                  <rdg wit="#P8">CVIII</rdg>
+               </app>
+               <title>Ascendit Moyses cum maioribus natu</title></item>
+
+            <item><app>
+                  <lem><num>C</num></lem>
+                  <rdg wit="#Sg1">CIIII</rdg>
+                  <rdg wit="#P8">CVIIII</rdg>
+               </app>
+               <title>Omnes electi uenerunt in <app>
+                     <lem>loco</lem>
+                     <rdg wit="#Sg1" varSeq="1">loco</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="minor" cause="grammatical" hand="l"
+                        >locum</rdg>
+                  </app>dei</title></item>
+
+            <item><app>
+                  <lem><num>CI</num></lem>
+                  <rdg wit="#Sg1">CV</rdg>
+                  <rdg wit="#P8">CX</rdg>
+                  <rdg wit="#L2_bis" type="omission" cause="u"/>
+
+               </app>
+               <title>Dicit <app>
+                     <lem>dominus</lem>
+                     <rdg wit="#Bm" varSeq="1" type="omission" cause="slip"/>
+                     <rdg wit="#Bm" varSeq="2" type="lem" cause="correction" rend="above" hand="l"
+                        >dominus</rdg>
+                  </app> Moysi ut ascendat in montem<app>
+                     <lem><app>
+                           <lem>accipere</lem>
+                           <rdg wit="#Tu" varSeq="1" type="minor" cause="slip">accire</rdg>
+                           <rdg wit="#Tu" varSeq="2" type="lem" cause="correction" rend="above"
+                              hand="u">accipere</rdg>
+                        </app> tabulas testamenti</lem>
+                     <rdg type="omission" wit="#Sg1" cause="u"/>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>CII</num></lem>
+                  <rdg wit="#Sg1">CVI</rdg>
+                  <rdg wit="#P8">CXI</rdg>
+                  <rdg wit="#L2_bis" type="omission" cause="u"/>
+               </app>
+               <title><app>
+                     <lem>Ascendit</lem>
+                     <rdg wit="#Bm" varSeq="1" type="minor" cause="grammatical" rend="subpunctuated"
+                        >ascendat</rdg>
+                     <rdg wit="#Bm" varSeq="2" type="lem" cause="correction" rend="above" hand="u"
+                        >ascendit</rdg>
+                  </app> Moyses et <app>
+                     <lem>descendit</lem>
+                     <rdg wit="#Tu" type="minor" cause="orthographic">discendit</rdg>
+                  </app> ad eum maiestas domini</title></item>
+
+            <item><app>
+                  <lem><num>CIII</num></lem>
+                  <rdg wit="#Sg1">CVII</rdg>
+                  <rdg wit="#P8">CXII</rdg>
+                  <rdg wit="#L1" type="omission" cause="choice"/>
+               </app>
+               <title>Dicit dominus <app>
+                     <lem>offerri initia</lem>
+                     <rdg wit="#Sg1" varSeq="1" type="maior" cause="mispelling">offerrenitia</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="maior" cause="correction" hand="l">offerre
+                        primitia</rdg>
+                     <rdg wit="#Mb2" varSeq="1" type="minor" subtype="layer" cause="grammatical"
+                        >offerre initia</rdg>
+                     <rdg wit="#Mb2" varSeq="2" type="lem" subtype="layer" cause="correction"
+                        hand="u" rend="above">offerri initia</rdg>
+                  </app><app>
+                     <lem>ad</lem>
+                     <rdg type="omission" cause="slip" wit="#Z"/>
+                  </app> tabernaculum faciendum</title></item>
+            <pb facs="data/images/single/Sg1_41.jpg" n="Sg1_41"/>
+            <lb n="[Sg1_41]"/>
+            <item><app>
+                  <lem><num>CIIII</num></lem>
+                  <rdg wit="#Sg1">CVIII</rdg>
+                  <rdg wit="#P8">CXIII</rdg>
+                  <rdg wit="#L1" type="omission" cause="u"/>
+               </app>
+               <title>
+                  <app>
+                     <lem>De fabrica <app>
+                           <lem>arcae</lem>
+                           <rdg type="orthographic" wit="#P8">archae</rdg>
+                           <rdg wit="#Am1 #L2_bis" type="minor" cause="orthographic">arc&#553;</rdg>
+                        </app> et <app>
+                           <lem>mensae</lem>
+                           <rdg wit="#Tr #P8 #L1 #Z #Bm #Am1 #L2_bis">mense</rdg>
+                        </app>
+                        <app>
+                           <lem>et</lem>
+                           <rdg wit="#P8" varSeq="1" type="lem" rend="subpunctuated_erasure"
+                              >et</rdg>
+                           <rdg wit="#P8" varSeq="2" type="omission" hand="u"/>
+                        </app> tabernaculi</lem>
+                     <rdg wit="#Sg1" varSeq="1" rend="strikethrough">De fabrica arcae et mensae et
+                        tabernaculi</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="substantive" cause="u" hand="l">De uariis
+                        instrumentis tabernaculi</rdg>
+                  </app>
+               </title></item>
+
+            <item><app>
+                  <lem><num>CV</num></lem>
+                  <rdg wit="#Sg1">CVIIII</rdg>
+                  <rdg wit="#P8">CXIIII</rdg>
+               </app>
+               <title> De fabrica <app>
+                     <lem>altaris</lem>
+                     <rdg wit="#Sg1" varSeq="1" rend="strikethrough">altaris</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="substantive" cause="u" hand="l">arce et
+                        altaris</rdg>
+                  </app>
+               </title></item>
+
+            <item><app>
+                  <lem><num>CVI</num></lem>
+                  <rdg wit="#Sg1">CX</rdg>
+                  <rdg wit="#P8">CXV</rdg>
+                  <rdg wit="#L1" type="omission" cause="choice"/>
+               </app>
+               <title>De oleo <app>
+                     <lem>lucernae</lem>
+                     <rdg wit="#Am1 #L2_bis" type="minor" cause="orthographic">lucern&#553;</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>CVII</num></lem>
+                  <rdg wit="#Sg1">CXI</rdg>
+                  <rdg wit="#P8">CXVI</rdg>
+                  <rdg wit="#L2_bis" type="omission" cause="u"/>
+               </app>
+               <title>De aaron et <app>
+                     <lem>filiis</lem>
+                     <rdg wit="#Tu" type="minor" cause="grammatical">filios</rdg>
+                  </app> eius ut sacerdotio <app>
+                     <lem>fungantur</lem>
+                     <rdg wit="#P2" type="minor" cause="misspelling">fugantur</rdg>
+                  </app></title></item>
+
+
+
+            <item>
+               <app>
+                  <lem><num>CVIII</num></lem>
+                  <rdg wit="#Sg1">CXII</rdg>
+                  <rdg wit="#P8">CXVII</rdg>
+                  <rdg wit="#L2_bis" type="medium" cause="numbering">CX</rdg>
+               </app>
+               <title><app>
+                     <lem>De</lem>
+                     <rdg wit="#L2_bis" type="minor" cause="omission">e</rdg>
+                  </app> stola sancta</title></item>
+
+            <item><app>
+                  <lem><num>CVIIII</num></lem>
+                  <rdg wit="#Sg1">CXIII</rdg>
+                  <rdg wit="#P8">CXVIII</rdg>
+                  <rdg wit="#L2_bis" type="omission" cause="u"/>
+               </app>
+               <title>De ueste sacerdotali</title></item>
+            <pb facs="data/images/single/Z_21r.jpeg" n="Z_21r"/>
+            <lb n="[Z_21r]"/>
+            <item><app>
+                  <lem><num>CX</num></lem>
+                  <rdg wit="#Sg1">CXIIII</rdg>
+                  <rdg wit="#P8">CXVIIII</rdg>
+                  <rdg wit="#L2_bis" type="omission" cause="u"/>
+               </app>
+               <title>De <app>
+                     <lem>ordinandis</lem>
+                     <rdg wit="#P8" type="minor" cause="slip">ordinantis</rdg>
+                     <rdg wit="#Bm" varSeq="1" type="minor" cause="slip" rend="subpunctuated"
+                        >ordinantis</rdg>
+                     <rdg wit="#Bm" varSeq="2" type="lem" cause="correction" rend="above" hand="l"
+                        >ordinantis</rdg>
+                  </app> sacerdotibus et <app>
+                     <lem>de</lem>
+                     <rdg wit="#B2" type="omission"/>
+                  </app>
+                  <app>
+                     <lem>hostia</lem>
+                     <rdg type="minor" cause="orthographic" wit="#Sg1 #Tr #Z #Mb2 #P2">ostia</rdg>
+                  </app>immolanda</title></item>
+            <pb facs="data/images/single/Tu_74v.jpg" n="Tu_74v"/>
+            <lb n="[Tu_74v]"/>
+            <!-- da qui Bm -->
+            <item><app>
+                  <lem><num>CXI</num></lem>
+                  <rdg wit="#Sg1">CXV</rdg>
+                  <rdg wit="#P8">CXX</rdg>
+                  <rdg wit="#L2_bis" type="omission" cause="u"/>
+               </app>
+               <title><app>
+                     <lem>De <app>
+                           <lem>altare</lem>
+                           <rdg wit="#Am1" type="minor" cause="grammatical">altari</rdg>
+                        </app> incensi</lem>
+                     <rdg wit="#Sg1" varSeq="1" rend="strikethrough">De altare incensi</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="substantive" cause="u" hand="l">De
+                        consecratione manuum eorum</rdg>
+                  </app></title></item>
+
+
+            <item><app>
+                  <lem><num>CXII</num></lem>
+                  <rdg wit="#Sg1">CXVI</rdg>
+                  <rdg wit="#P8">CXXI</rdg>
+                  <rdg wit="#L2_bis" type="omission" cause="u"/>
+               </app>
+               <title>De oblatione <app>
+                     <lem>odorationis</lem>
+                     <rdg wit="#Sg1" varSeq="1" type="medium" cause="mispelling"
+                        rend="strikethrough">orationis</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="substantive" cause="correction" hand="?"
+                        >suauissimi odoris</rdg>
+                     <rdg wit="#Z" type="minor" cause="u">adorationis</rdg>
+                     <rdg wit="#Am1" type="medium" cause="u">exortationis</rdg>
+                     <rdg wit="#Tu" type="medium" cause="u">exorationis</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>CXIII</num></lem>
+                  <rdg wit="#Sg1">CXVII</rdg>
+                  <rdg wit="#P8">CXXII</rdg>
+                  <rdg wit="#L2_bis" type="omission" cause="u"/>
+               </app>
+               <title>Sacerdotes lauare manus et pedes cum <app>
+                     <lem>accedunt</lem>
+                     <rdg wit="#L2_bis" type="minor" cause="mispelling">accendunt</rdg>
+                  </app>
+                  <app>
+                     <lem>sacrificare</lem>
+                     <rdg wit="#Sg1" varSeq="1" type="maior" cause="u" rend="erasure">sr̄</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="substantive" cause="correction" hand="u"
+                        >sanctuarium</rdg>
+                  </app><app>
+                     <lem>de oleo <app>
+                           <lem>linitionis</lem>
+                           <rdg wit="#P8" type="minor" cause="orthographic">linicionis</rdg>
+                        </app> sancto</lem>
+                     <rdg type="omission" cause="u" wit="#Sg1"/>
+                  </app>
+               </title></item>
+
+            <item><app>
+                  <lem><num>CXIIII</num></lem>
+                  <rdg wit="#Sg1">CXVIII</rdg>
+                  <rdg wit="#P8">CXXIII</rdg>
+                  <rdg wit="#L2_bis" type="omission" cause="u"/>
+               </app>
+               <title>De <app>
+                     <lem>unguento</lem>
+                     <rdg wit="#Sg1" varSeq="1" type="minor" cause="orthographic">ungento</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="minor" cause="correction" hand="u"
+                        >unguento</rdg>
+                     <rdg wit="#Am1" type="minor" cause="orthographic">ungento</rdg>
+                     <rdg wit="#Tu" type="minor" cause="grammatical">unguenti</rdg>
+                  </app>incensi</title></item>
+
+            <item><app>
+                  <lem><num>CXV</num></lem>
+                  <rdg wit="#Sg1">CXVIIII</rdg>
+                  <rdg wit="#P8">CXXIIII</rdg>
+                  <rdg wit="#L2_bis" type="omission" cause="u"/>
+               </app>
+               <title>De <app>
+                     <lem>beseleel</lem>
+                     <rdg wit="#Tu" type="minor" cause="orthographic">beselehel</rdg>
+                  </app> quem repleuit dominus <app>
+                     <lem>spiritu</lem>
+                     <rdg wit="#Tu" type="minor" cause="grammatical">spiritum</rdg>
+                  </app>
+                  <app>
+                     <lem>sapientiae</lem>
+                     <rdg wit="#Tr" type="minor" cause="orthographic">sapienti&#553;</rdg>
+                     <rdg wit="#Tu" type="addition" subtype="adiaphoric">omnis sapientiae</rdg>
+                  </app>
+                  <app>
+                     <lem>ad omne opus</lem>
+                     <rdg wit="#Sg1" varSeq="1" type="medium" cause="mispelling" cert="low"
+                        rend="erasure">adonem</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="substantive" cause="correction" hand="u">ad
+                        dei opus</rdg>
+                     <rdg wit="#Tu" type="minor" cause="grammatical">ad omnem opus</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>CXVI</num></lem>
+                  <rdg wit="#Sg1">CXX</rdg>
+                  <rdg wit="#P8">CXXV</rdg>
+                  <rdg wit="#L2_bis" type="omission" cause="u"/>
+               </app>
+               <title>De sabbato obseruando</title></item>
+
+            <item><app>
+                  <lem><num>CXVII</num></lem>
+                  <rdg wit="#Sg1">CXXI</rdg>
+                  <rdg wit="#P8">CXXVI</rdg>
+                  <rdg wit="#L2_bis" type="omission" cause="u"/>
+               </app>
+               <title><app>
+                     <lem>Vbi</lem>
+                     <rdg wit="#Tu" varSeq="1" type="minor" cause="rubrication">Ibi</rdg>
+                     <rdg wit="#Tu" varSeq="2" type="lem" cause="correction" hand="l">Vbi</rdg>
+                  </app> dat dominus Moysi tabulas testamenti</title></item>
+
+            <item><app>
+                  <lem><num>CXVIII</num></lem>
+                  <rdg wit="#Sg1">CXXII</rdg>
+                  <rdg wit="#P8">CXXVII</rdg>
+                  <rdg wit="#L2_bis" type="medium" cause="numbering">CXX</rdg>
+               </app>
+               <title>Fecit Aaron uitulum <app>
+                     <lem>conflatile</lem>
+                     <rdg wit="#P8 #Tu" type="minor" cause="grammatical">conflatilem</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>CXVIIII</num></lem>
+                  <rdg wit="#Sg1">CXXIII</rdg>
+                  <rdg wit="#P8">CXXVIII</rdg>
+                  <rdg wit="#L2_bis" type="omission" cause="u"/>
+               </app>
+               <title>Dicit dominus Moysi<app>
+                     <lem>descende</lem>
+                     <rdg wit="#Sg1" varSeq="1" type="minor" cause="diplography" rend="erasure">si
+                        descende</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="minor" cause="correction" hand="u"
+                        >descende</rdg>
+                  </app> uelociter</title></item>
+
+            <item><app>
+                  <lem><num>CXX</num></lem>
+                  <rdg wit="#Sg1">CXXIIII</rdg>
+                  <rdg wit="#P8">CXXVIIII</rdg>
+                  <rdg wit="#L2_bis" type="omission" cause="u"/>
+               </app>
+               <title>Orauit moyses pro <app>
+                     <lem>populo</lem>
+                     <rdg wit="#Sg1" varSeq="1" type="minor" cause="slip" rend="overstrike"
+                        >pupulo</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="minor" cause="correction" hand="u"
+                        >populo</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>CXXI</num></lem>
+                  <rdg wit="#Sg1">CXXV</rdg>
+                  <rdg wit="#P8">CXXX</rdg>
+                  <rdg wit="#L2_bis" type="omission" cause="u"/>
+               </app>
+               <title>Vidit Moyses uitulum et confregit tabulas</title></item>
+
+            <item><app>
+                  <lem><num>CXXII</num></lem>
+                  <rdg wit="#Sg1">CXXVI</rdg>
+                  <rdg wit="#P8">CXXXI</rdg>
+                  <rdg wit="#L2_bis" type="omission" cause="u"/>
+               </app>
+               <title><app>
+                     <lem>Dicit</lem>
+                     <rdg wit="#Am1" type="minor" cause="grammatical">Dixit</rdg>
+                  </app> Moyses ad Aaron: Quare hoc fecisti</title></item>
+
+            <item><app>
+                  <lem><num>CXXIII</num></lem>
+                  <rdg wit="#Sg1">CXXVII</rdg>
+                  <rdg wit="#P8">CXXXII</rdg>
+                  <rdg wit="#L2_bis" type="omission" cause="u"/>
+               </app>
+               <title>Iussit Moyses populo ut occiderent inuicem</title></item>
+
+            <item><app>
+                  <lem><num>CXXIIII</num></lem>
+                  <rdg wit="#Sg1">CXXXVIII</rdg>
+                  <rdg wit="#P8">CXXXIII</rdg>
+                  <rdg wit="#L2_bis" type="omission" cause="u"/>
+               </app>
+               <title><app>
+                     <lem>Rogat</lem>
+                     <rdg wit="#Sg1" type="medium" cause="grammatical">rogabat</rdg>
+                  </app>Moyses pro populo ut dimittat illis<app>
+                     <lem>dominus </lem>
+                     <rdg wit="#Sg1" type="minor" cause="u">deus</rdg>
+                  </app>
+                  <app>
+                     <lem/>
+                     <rdg wit="#Sg1 #Mb2 #P2 #B2 #L2_bis #L1" type="addition" subtype="substantive"
+                        cause="u">peccatum eorum</rdg>
+                     <!-- controllare tutti chi ce l'ha! -->
+                     <rdg wit="#Am1" type="addition" subtype="substantive" cause="u">peccata</rdg>
+                  </app>
+               </title></item>
+
+            <item><app>
+                  <lem><num>CXXV</num></lem>
+                  <rdg wit="#Sg1">CXXVIIII</rdg>
+                  <rdg wit="#P8">CXXXIIII</rdg>
+                  <rdg wit="#L2_bis" type="omission" cause="u"/>
+               </app>
+               <title>Dicit dominus <app>
+                     <lem>Moysi</lem>
+                     <rdg wit="#Sg1" type="minor" cause="orthographic" ana="hebrew">moyse</rdg>
+                  </app><app>
+                     <lem>ascendite</lem>
+                     <rdg wit="#Bm">ascende</rdg>
+                     <rdg wit="#Z" varSeq="1" type="medium" subtype="layer" cause="grammatical"
+                        >ascende</rdg>
+                     <rdg wit="#Z" varSeq="2" type="lem" subtype="layer" cause="correction" hand="m"
+                        rend="overstrike">ascendite</rdg>
+                  </app> in terram quam <app>
+                     <lem>iuraui</lem>
+                     <rdg wit="#Sg1" varSeq="1" type="minor" cause="slip">iurau</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="minor" cause="correction" hand="u"
+                        rend="above">iuraui</rdg>
+                  </app> patribus <app>
+                     <lem>uestris</lem>
+                     <rdg type="omission" wit="#Sg1"/>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>CXXVI</num></lem>
+                  <rdg wit="#Sg1">CXXX</rdg>
+                  <rdg wit="#P8">CXXXV</rdg>
+                  <rdg wit="#L2_bis" type="omission" cause="u"/>
+               </app>
+               <title>Increpat dominus <app>
+                     <lem>populum</lem>
+                     <rdg wit="#Tr #P8 #Z #Mb2 #B2 #P2 #L1 #P1 #Bm #L2_bis" type="minor"
+                        cause="grammatical">populo</rdg>
+                     <rdg wit="#Sg1" varSeq="1" type="minor" cause="grammatical"
+                        rend="subpunctuation">populo</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="minor" cause="correction" rend="above"
+                        >populum</rdg>
+                  </app>et loquitur ad Moysen<app>
+                     <lem>in columna nubis</lem>
+                     <rdg type="omission" wit="#Sg1"/>
+                     <note>in Sg1 numbers are prepared before and when reaching the end of the line
+                        the rubrics are interrupted</note>
+                  </app>
+               </title></item>
+
+            <item><app>
+                  <lem><num>CXXVII</num></lem>
+                  <rdg wit="#Sg1">CXXXI</rdg>
+                  <rdg wit="#P8">CXXXVI</rdg>
+                  <rdg wit="#L2_bis" type="medium" cause="numbering">CXXX</rdg>
+               </app>
+               <title><app>
+                     <lem>Locutus</lem>
+                     <rdg wit="#Tu" type="minor" cause="orthographic">Loquutus</rdg>
+                  </app> est dominus ad moysen quomodo loquitur <app>
+                     <lem>quis</lem>
+                     <rdg wit="#Z" varSeq="1" type="minor" subtype="layer" cause="grammatical"
+                        rend="subpunctuated" hand="u">quas</rdg>
+                  </app>
+                  <app>
+                     <lem>ad amicum suum</lem>
+                     <rdg wit="#Sg1" varSeq="1" type="omission"/>
+                     <rdg wit="#Sg1" varSeq="2" type="addition" cause="correction" hand="l">ad
+                        amicum suum</rdg>
+                  </app></title></item>
+            <pb facs="data/images/single/Am1_74r.jpeg" n="Am1_74r"/>
+            <lb n="[Am1_74r]"/>
+            <item><app>
+                  <lem><num>CXXVIII</num></lem>
+                  <rdg wit="#Sg1">CXXXII</rdg>
+                  <rdg wit="#P8">CXXXVII</rdg>
+                  <rdg wit="#L2_bis" type="omission" cause="u"/>
+               </app>
+               <title><app>
+                     <lem>Petit</lem>
+                     <rdg wit="#L2_bis" type="minor" cause="mispelling">fecit</rdg>
+                  </app> Moyses uidere dominum <app>
+                     <lem>et ait illi dominus: Non</lem>
+                     <rdg wit="#Sg1" varSeq="1" rend="strikethrough">et ait illi dominus non</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="omission"/>
+                  </app>
+                  <app>
+                     <lem>potes</lem>
+                     <rdg wit="#P8" varSeq="1" type="minor" cause="slip" rend="erasure">potest</rdg>
+                     <rdg wit="#P8" varSeq="2" type="lem" cause="correction" hand="u">potes</rdg>
+                     <rdg wit="#Z" type="minor" cause="grammatical">potest</rdg>
+
+                     <rdg wit="#Sg1" type="omission" cause="space"/>
+                     <!-- attenzione: apparato positivo di default, non annida bene 
+                              e se non si raddoppia per Sg1 (staccando le due parti della frase) dice che Sg1 ha potes -->
+                  </app><app>
+                     <lem> uidere faciem meam</lem>
+                     <rdg wit="#Sg1" type="omission" cause="space"/>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>CXXVIIII</num></lem>
+                  <rdg wit="#Sg1">CXXXIII</rdg>
+                  <rdg wit="#P8">CXXXVIII</rdg>
+                  <rdg wit="#L2_bis" type="omission" cause="u"/>
+               </app>
+               <title>Ascendit <app>
+                     <lem>Moyses</lem>
+                     <rdg wit="#DBsomm">dominus</rdg>
+                  </app> in montem et dominus <app>
+                     <lem>descendit</lem>
+                     <rdg wit="#Tu" type="minor" cause="orthographic">discendit</rdg>
+                  </app> ibi</title></item>
+
+            <item><app>
+                  <lem><num>CXXX</num></lem>
+                  <rdg wit="#Sg1">CXXXIIII</rdg>
+                  <rdg wit="#P8">CXXXVIIII</rdg>
+               </app>
+               <title>Omne primitiuum iubet sibi <app>
+                     <lem>offeri</lem>
+                     <rdg wit="#Sg1 #Tr #P8 #L2_bis #Z #Mb2 #B2 #P2 #L1 #P1 #Am1" type="minor"
+                        cause="orthographic">offerri</rdg>
+                     <rdg wit="#Tu" type="minor" cause="grammatical">offerre</rdg>
+                  </app><app>
+                     <lem>dominus</lem>
+                     <rdg wit="#P8" varSeq="1" type="minor" cause="grammatical">domino</rdg>
+                     <rdg wit="#P8" varSeq="2" type="lem" cause="correction" hand="m"
+                        rend="overstrike">dominus</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>CXXXI</num></lem>
+                  <rdg wit="#Sg1">CXXXV</rdg>
+                  <rdg wit="#P8">CXL</rdg>
+                  <rdg wit="#L2_bis" type="omission" cause="u"/>
+               </app>
+               <title>Non <app>
+                     <lem>manducauit</lem>
+                     <rdg wit="#Tu" type="minor" cause="grammatical">manducabit</rdg>
+                  </app> Moyses diebus <app>
+                     <lem>quadraginta</lem>
+                     <rdg wit="#Sg1 #P8 #Z #Mb2 #P2 #B2 #Am1" type="medium" cause="orthographic"
+                        >XL</rdg>
+                  </app> cum <app>
+                     <lem>scripsit</lem>
+                     <rdg wit="#Tr #P8 #Z #Mb2 #B2 #P2 #L1 #P1 #Bm #L2_bis #Tu" type="minor"
+                        cause="grammatical">scribit</rdg>
+                  </app> uerba testamenti</title></item>
+
+            <item><app>
+                  <lem><num>CXXXII</num></lem>
+                  <rdg wit="#Sg1">CXXXVI</rdg>
+                  <rdg wit="#P8">CXLI</rdg>
+                  <rdg wit="#L2_bis" type="omission" cause="u"/>
+               </app>
+               <title>Gloriosa facta est facies Moysi <app>
+                     <lem>et <app>
+                           <lem>uelabat</lem>
+                           <rdg wit="#Am1" type="minor" cause="grammatical">uelabit</rdg>
+                        </app> faciem suam</lem>
+                     <rdg wit="#B2" type="omission"/>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>CXXXIII</num></lem>
+                  <rdg wit="#Sg1">CXXXVII</rdg>
+                  <rdg wit="#P8">CXLII</rdg>
+                  <rdg wit="#L2_bis" type="omission" cause="u"/>
+               </app>
+               <title><app>
+                     <lem>De</lem>
+                     <rdg wit="#L2_bis" type="minor" cause="rubrication">e</rdg>
+                  </app>
+                  <app>
+                     <lem>die</lem>
+                     <rdg type="omission" cause="u" wit="#Sg1"/>
+                  </app>
+                  <app>
+                     <lem>sabbatorum</lem>
+                     <rdg wit="#Sg1" type="addition" cause="correction" hand="l">obseruatione</rdg>
+                  </app>
+               </title></item>
+
+            <item><app>
+                  <lem><num>CXXXIIII</num></lem>
+                  <rdg wit="#Sg1">CXXXVIII</rdg>
+                  <rdg wit="#P8">CXLIII</rdg>
+                  <rdg wit="#L2_bis" type="medium" cause="numbering">CXL</rdg>
+               </app>
+               <title><app>
+                     <lem>Initia</lem>
+                     <rdg wit="#L2_bis" type="minor" subtype="adiaphoric" cause="u">Primitia</rdg>
+                  </app>
+                  <app>
+                     <lem>iubet</lem>
+                     <rdg wit="#Bm">iubent</rdg>
+                  </app> offerri domino quaecumque <app>
+                     <lem>disposuissent</lem>
+                     <rdg wit="#P8" varSeq="1" type="minor" cause="slip">disposuitsent</rdg>
+                     <rdg wit="#P8" varSeq="2" type="lem" cause="correction">disposuissent</rdg>
+                  </app> in corde <app>
+                     <lem>suo ad opus tabernaculi</lem>
+                     <rdg wit="#Sg1" type="omission" cause="space"/>
+                  </app><app>
+                     <lem>et</lem>
+                     <rdg type="omission" wit="#P8 #L2_bis"/>
+                     <rdg wit="#Sg1" type="omission" cause="space"/>
+                  </app>
+                  <app>
+                     <lem>altaris et</lem>
+                     <rdg wit="#Sg1" type="omission" cause="space"/>
+                  </app>
+                  <app>
+                     <lem>stolam rerum</lem>
+                     <rdg wit="#P8" varSeq="1" cause="mispelling" rend="subpunctuated">solam
+                        rem</rdg>
+                     <rdg wit="#P8" varSeq="2" cause="correction" hand="l" rend="above">stolam
+                        rerum</rdg>
+                     <rdg wit="#Bmac #Tu" type="medium" cause="misspelling">stolarem</rdg>
+                     <rdg wit="#Tr #B2 #Bmpc #L2_bis" type="omission" cause="u">stolam</rdg>
+                     <rdg wit="#Sg1" type="omission" cause="space"/>
+                     <rdg wit="#Am1" type="minor" cause="u">stolam rem</rdg>
+                  </app>
+                  <app>
+                     <lem>sacerdotalium</lem>
+                     <rdg type="omission" subtype="substantive" cause="u" wit="#Sg1 #Tr"/>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>CXXXV</num></lem>
+                  <rdg wit="#Sg1">CXXXVIIII</rdg>
+                  <rdg wit="#P8">CXLIIII</rdg>
+                  <rdg wit="#L2_bis" type="omission" cause="u"/>
+               </app>
+               <title>Fecerunt<app>
+                     <lem>beseleel</lem>
+                     <rdg wit="#Sg1" varSeq="1" type="minor" cause="mispelling">belesehel</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="minor" cause="correction" hand="m"
+                        rend="transp_marks">belesehel</rdg>
+                     <rdg wit="#Am1" type="minor" cause="orthographic">beseel</rdg>
+                  </app> et <app>
+                     <lem>eliab</lem>
+                     <rdg wit="#Mb2 #P2 #P1 #Bm" type="minor" cause="orthographic">ooliab</rdg>
+                     <rdg wit="#P8" varSeq="1" type="lem" rend="subpunctuated">eliab</rdg>
+                     <rdg wit="#P8" varSeq="2" type="minor" cause="orthographic" hand="l"
+                        rend="above">ooliab</rdg>
+                     <rdg wit="#Tu" varSeq="1" type="minor" cause="orthographic" ana="hebrew"
+                        >eleeb</rdg>
+                     <rdg wit="#Tu" varSeq="2" type="minor" cause="correction" ana="hebrew" hand="l"
+                        rend="overstrike">eleab</rdg>
+                  </app>
+                  <app>
+                     <lem>et</lem>
+                     <rdg wit="#Sg1" type="omission" cause="u"/>
+                  </app>
+                  <app>
+                     <lem>omnis sapiens</lem>
+                     <rdg wit="#Tu" type="medium" cause="grammatical">omnes sapientes</rdg>
+                  </app> stolas sanctas</title></item>
+
+            <item><app>
+                  <lem><num>CXXXVI</num></lem>
+                  <rdg wit="#Sg1">CL</rdg>
+                  <rdg wit="#P8">CXLV</rdg>
+                  <rdg wit="#L2_bis" type="omission" cause="u"/>
+               </app>
+               <title>Fecit <app>
+                     <lem>beseleel</lem>
+                     <rdg wit="#Am1" type="minor" cause="orthographic">beseel</rdg>
+                  </app> arcam testimonii <app>
+                     <lem>et mensam</lem>
+                     <rdg wit="#L1" type="omission" cause="homoeoteleuton"/>
+                  </app> et candelabrum <app>
+                     <lem>et <app>
+                           <lem>septem</lem>
+                           <rdg wit="#Tr #P8 #P2 #Tu" type="minor" subtype="adiaphoric"
+                              cause="orthographic">VII</rdg>
+                           <!-- type per numeri?? -->
+                        </app> lucernas et altare aereum et oleum <app>
+                           <lem>liniamenti</lem>
+                           <rdg wit="#Tu" varSeq="1" type="lem" cert="low" rend="erasure"
+                              >lini????</rdg>
+                           <rdg wit="#Tu" varSeq="2" type="substantive" cause="falseEmendation"
+                              hand="l">timiama</rdg>
+                        </app></lem>
+                     <rdg type="omission" cause="space" wit="#Sg1"/>
+                  </app>
+                  <app>
+                     <lem/>
+                     <rdg type="addition" wit="#P1">feram comestam non manducandum</rdg>
+                     <rdg wit="#Mb2" varSeq="1" type="addition" subtype="layer" cause="u">feram
+                        co?mestam non manducandum</rdg>
+                     <rdg wit="#Mb2" varSeq="2" type="addition" subtype="layer" cause="correction"
+                        hand="u">feram comestam non manducandam</rdg>
+                     <rdg wit="#Am1" type="addition" subtype="substantive" cause="u">fera comestam
+                        non manducandum</rdg>
+                     <rdg wit="#Tr #P8 #L1 #Z #P2 #B2" type="addition" subtype="substantive"
+                        cause="u">feram comestam non manducandam</rdg>
+                     <rdg wit="#Bm #L2_bis" type="addition" cause="u">feram comesta non
+                        manducandam</rdg>
+                     <rdg wit="#Tu" type="addition" cause="u">commixtum non manducandum</rdg>
+
+                  </app>
+               </title></item>
+
+            <item><app>
+                  <lem><num>CXXXVII</num></lem>
+                  <rdg wit="#Sg1">CLI</rdg>
+                  <rdg wit="#P8">CXLVI</rdg>
+                  <rdg wit="#L2_bis" type="omission" cause="u"/>
+
+               </app>
+               <title>In die primo <app>
+                     <lem>mensis</lem>
+                     <rdg wit="#Sg1" varSeq="1" type="minor" cause="u">mens?</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="minor" cause="u" rend="erasure">mens//</rdg>
+                     <rdg wit="#Sg1" varSeq="3" type="minor" cause="correction" hand="u"
+                        >mensis</rdg>
+                     <rdg wit="#Tu" varSeq="1" type="minor" cause="grammatical">mensi</rdg>
+                     <rdg wit="#Tu" varSeq="2" type="lem" cause="correction" hand="l">mensis</rdg>
+                  </app> primi <app>
+                     <lem>praecepit</lem>
+                     <rdg wit="#P1 #L1 #P2" type="minor" cause="grammatical">praecipit</rdg>
+                     <rdg wit="#P8" varSeq="1" type="minor" cause="grammatical" cert="medium"
+                        >praecipit</rdg>
+                     <rdg wit="#P8" varSeq="2" type="lem" cause="correction" hand="u"
+                        rend="overstrike">praecepit</rdg>
+                     <rdg wit="#Mb2" varSeq="1" type="minor" subtype="layer" cause="grammatical"
+                        >praecepit</rdg>
+                     <rdg wit="#Mb2" varSeq="2" type="lem" subtype="layer" cause="correction"
+                        hand="u" rend="erasure">praecipit</rdg>
+                  </app> dominus Moysi <app>
+                     <lem>sanctificare omnia et <app>
+                           <lem>induere</lem>
+                           <rdg wit="#Tu" type="minor" cause="misspelling">inducere</rdg>
+                        </app> Aaron <app>
+                           <lem>stola</lem>
+                           <rdg wit="#Tu" type="minor" cause="grammatical">stolam</rdg>
+                        </app>
+                        <app>
+                           <lem>sancta</lem>
+                           <rdg wit="#Tr #Tu" type="minor" cause="grammatical">sanctam</rdg>
+                        </app> eius</lem>
+                     <rdg wit="#Sg1" type="omission" cause="space"/>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>CXXXVIII</num></lem>
+                  <rdg wit="#Sg1">CLII</rdg>
+                  <rdg wit="#P8">CXLVII</rdg>
+                  <rdg wit="#L2_bis" type="medium" cause="numbering">CL</rdg>
+               </app>
+               <title>In primo mense <app>
+                     <lem>secundo</lem>
+                     <rdg wit="#P2" varSeq="1" type="lem">secundo</rdg>
+                     <rdg wit="#P2" varSeq="2" type="minor" cause="FalseEmendation"
+                        rend="overstrike" hand="l">secundi</rdg>
+                  </app>
+                  <app>
+                     <lem>anno</lem>
+                     <rdg wit="#Sg1" varSeq="1" type="minor" cause="grammatical"
+                        rend="subpunctuation">annos</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="minor" cause="correction" hand="l">anno</rdg>
+                     <rdg wit="#P2" varSeq="1" type="lem">anno</rdg>
+                     <rdg wit="#P2" varSeq="2" type="minor" cause="FalseEmendation" hand="l"
+                        >anni</rdg>
+                  </app> profectionis<app>
+                     <lem>de</lem>
+                     <rdg wit="#Sg1" varSeq="1" type="omission" cause="u"/>
+                     <rdg wit="#Sg1" varSeq="2" type="addition" rend="above" hand="u">ex</rdg>
+                  </app>
+                  <app>
+                     <lem>Aegypto</lem>
+                     <rdg wit="#Am1" type="minor" cause="orthographic">&#553;gypto</rdg>
+                  </app><app>
+                     <lem><app>
+                           <lem>statuit</lem>
+                           <rdg wit="#Am1" varSeq="1" type="minor" cause="slip">stauit</rdg>
+                           <rdg wit="#Am1" varSeq="2" type="lem" cause="correction" rend="above"
+                              hand="l">statuit</rdg>
+                        </app> Moyses tabernaculum testimonii</lem>
+                     <rdg wit="#Sg1" type="omission" cause="space"/>
+                  </app>
+               </title></item>
+
+            <item><app>
+                  <lem><num>CXXXVIIII</num></lem>
+                  <rdg wit="#Sg1">CLIII</rdg>
+                  <rdg wit="#P8">CXLVIII</rdg>
+                  <rdg wit="#L2_bis" type="omission" cause="u"/>
+               </app>
+               <title><app>
+                     <lem>Consummato</lem>
+                     <rdg wit="#Z" type="minor" cause="rubrication">nonsummato</rdg>
+
+                  </app> tabernaculo texit <app>
+                     <lem>nubs</lem>
+                     <rdg wit="#P8 #Mb2 #P2 #P1" type="minor" subtype="grammatical">nubes</rdg>
+                     <rdg wit="#Tu" type="minor" cause="grammatical">nubis</rdg>
+                  </app>tabernaculum et maiestas <app>
+                     <lem>domini</lem>
+                     <rdg wit="#Tu" type="minor" cause="abbreviation">dei</rdg>
+                     <!-- ripensare, è minor sull'abbreviazione -->
+                  </app> impleuit illud</title></item>
+
+         </list>
+         <trailer>
+            <app>
+               <lem wit="#B2">EXPLICIVUNT CAPITVLA</lem>
+               <rdgGrp>
+                  <rdg wit="#P8 #Sg1 #P1 #L1 #Bm">EXPLICIUNT CAPITVLA</rdg>
+                  <rdg wit="#P2">EXPLICVERUNT CAPITVLA</rdg>
+                  <rdg wit="#Am1">EXPLiciuNT CAPITULA EXODI</rdg>
+               </rdgGrp>
+               <rdgGrp>
+                  <rdg wit="#Mb2">EXPLICIVNT CAPiTuLa IN LIBRO EXODI</rdg>
+                  <rdg wit="#Z">EXPLICIVNT CAPituLa LIBRI EXODI</rdg>
+                  <rdg wit="#Tr">explicuerunt capitula in libro exodi</rdg>
+
+               </rdgGrp>
+               <rdg wit="#L2_bis #Tu" type="omission" cause="u"/>
+            </app>
+            <app>
+               <lem/>
+               <rdg wit="#L2">
+                  <lacunaEnd/></rdg>
+            </app>
+         </trailer>
+      </body>
+
+   </text>
+</TEI>

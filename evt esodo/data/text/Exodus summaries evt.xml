@@ -1,0 +1,1715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Exodus summaries in Tours' Bibles</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>digital editions of summaries in Tours' Bibles</p>
+         </publicationStmt>
+         <sourceDesc>
+            <listBibl>
+               <head>bibliographical abbreviations</head>
+               <bibl xml:id="DBsomm">
+                  <author>D. de Bruyne</author>
+                  <title>Sommaires, divisions et rubriques de la Bible latine</title>
+                  <pubPlace>Namur</pubPlace>
+                  <date>1914</date>
+               </bibl>
+            </listBibl>
+            <listWit>
+               <witness xml:id="Sg1">Sankt Gallen, Stiftsbibliothek, 75</witness>
+               <witness xml:id="P8">Paris, Bibliothèque nationale de France, lat. 11514</witness>
+               <witness xml:id="Br">Bern, Burgerbibliothek, 3-4 [Esodo mutilo inizio]</witness>
+               <witness xml:id="Mb2">München, Bayerische Staatsbibliothek, Clm 12741</witness>
+               <witness xml:id="Z">Zürich, Zentralbibliothek, Car C 1</witness>
+               <witness xml:id="P2">Paris, Bibliothèque nationale de France, lat. 3</witness>
+               <witness xml:id="P1">Paris, Bibliothèque nationale de France, lat. 1</witness>
+               <witness xml:id="Bm">Bamberg, Staatsbibliothek, Msc.Bibl. 1</witness>
+            </listWit>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <tagsDecl>
+            <rendition xml:id="CU">mixed capital and uncial letters</rendition>
+            <rendition xml:id="Ca">capital letters</rendition>
+            <rendition xml:id="red">red color letter(s)</rendition>
+            <rendition xml:id="textink"/>
+            <rendition xml:id="bw">the digital reproduction is b/w, impossible to determine
+               color</rendition>
+         </tagsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head type="main">
+            <app>
+               <rdgGrp>
+                  <rdg wit="#Sg1">incipiunt capitula</rdg>
+                  <rdg wit="#P8">incipiunt capitula libri exodi (22v)</rdg>
+                  <rdg wit="#Mb2">incipiunt capitula in libro exodi (20v)</rdg>
+                  <rdg wit="#Z">incipiunt capitula (20r)</rdg>
+                  <rdg wit="#P2">incipiunt capitula in libro exodi (21r)</rdg>
+                  <rdg wit="#P1">incipiunt capitula in libro exodi (26r)</rdg>
+                  <rdg wit="#Bm">incipiunt capitula libri exodi (24v)</rdg>
+
+
+               </rdgGrp>
+            </app>
+         </head>
+         <list>
+            <item n="1">
+               <num>I</num>
+               <title>De infantibus hebraeorum quos praecepit pharao<app>
+                     <lem>in flumen proici</lem>
+                     <rdg wit="#P8 #Mb2 #Z #P2 #P1 #Bm">in flumine proici</rdg>
+                     <rdg wit="#Sg1">proici in flumine</rdg>
+                  </app>
+               </title>
+            </item>
+            <item>
+               <num>II</num>
+               <title>De puero quem inuenit filia pharaonis <app>
+                     <lem>et cognominauit eum moysen</lem>
+                     <rdg type="omission" wit="#Sg1"/>
+                  </app></title></item>
+
+            <item>
+               <num>III</num>
+               <title>De <app>
+                     <lem>aegyptio</lem>
+                     <rdg wit="#Z">aegypto</rdg>
+                  </app> quem <app>
+                     <lem>occidit</lem>
+                     <rdg wit="#Z">ocidit</rdg>
+                  </app> moyses<app>
+                     <lem>et fugit <app>
+                           <lem>madian</lem>
+                           <rdg type="orthographical" wit="#Mb2 #P2">madiam</rdg>
+                        </app></lem>
+                     <rdg type="omission" wit="#Sg1"/>
+                  </app>
+               </title>
+            </item>
+
+            <item>
+               <num>IIII</num>
+               <title>mortuo pharaone exaudiuit dominus filios israhel</title>
+            </item>
+
+            <item><num>V</num>
+               <title> Apparuit angelus moysi in rubo</title>
+            </item>
+
+            <item><num>VI</num>
+               <title>De signo<app>
+                     <lem>quod</lem>
+                     <rdg wit="#P8 #Mb2 #Z #P2 #P1 #Bm">quem</rdg>
+                  </app> dedit dominus in manu moysi in uirga</title>
+            </item>
+
+            <item><num>VII</num>
+               <title>De signo secundo</title>
+            </item>
+
+            <item><num>VIII</num>
+               <title>De signo tertio</title></item>
+
+            <item><num>VIIII</num>
+               <title>Vbi uenit ad socerum Moyses et dixit ei:<app>
+                     <lem>uado</lem>
+                     <rdg wit="#Sg1 #P1">uadam</rdg>
+                     <rdg wit="#P8 #Mb2 #Z #P2 #Bm">uade</rdg>
+                  </app> ad fratres meos</title></item>
+
+            <item><num>X</num>
+               <title>Mortuo pharaone dixit dominus ad moysen: uade in <app>
+                     <lem>aegyptum</lem>
+                     <rdg wit="#Z">aegypto</rdg>
+                  </app></title></item>
+
+            <item><num>XI</num>
+               <title><app>
+                     <lem>Dixit</lem>
+                     <rdg wit="#Sg1 #P8 #Mb2 #Z #P2 #P1 #Bm">dicit</rdg>
+                  </app> dominus ad aaron: uade <app>
+                     <lem>in</lem>
+                     <rdg wit="#P8"><add place="above"/></rdg>
+                  </app>obuiam moysi</title></item>
+
+            <item><num>XII</num>
+               <title>Dicunt pharaoni ut dimittat israhel</title></item>
+
+            <item><num>XIII</num>
+               <title>Moysi dicit dominus ut loquatur ad populum</title></item>
+
+            <item><num>XIIII</num>
+               <title>De principibus israhel</title></item>
+
+            <item><num>XV</num><title>Dedi te dicit dominus deum <app>
+                     <lem>pharaoni</lem>
+                     <rdg wit="#Bm">pharaonis</rdg>
+                  </app></title></item>
+
+            <item><num>XVI</num><title>Proiecit aaron uirgam coram <app>
+                     <lem>pharaone</lem>
+                     <rdg wit="#Mb2 #Z #P2 #P1">pharaonem</rdg>
+                  </app>
+                  <app>
+                     <lem>et facta</lem>
+                     <rdg wit="#Sg1">factaque</rdg>
+                  </app> est draco, fecerunt<app>
+                     <lem>et magi similiter</lem>
+                     <rdg wit="#P8 #Mb2 #Z #P2 #P1">magi similiter</rdg>
+                     <rdg wit="#Bm">magi</rdg>
+                     <rdg wit="#Sg1">et malifici similiter per incantationes</rdg>
+                  </app>
+               </title></item>
+
+            <item>INCIPIUNT PLAGAE AEGYPTI</item>
+            <note>add. mg. sup. P8 (Sg1 om? CTRL)</note>
+
+            <item><num>i</num>
+               <title>Ubi aqua fluminis facta est sanguis<app>
+                     <lem>fecerunt</lem>
+                     <rdg type="omission" wit="#Sg1"/>
+                  </app>
+                  <app>
+                     <lem>et</lem>
+                     <rdg type="omission" wit="#Mb2ac"/>
+                  </app> magi similiter</title></item>
+
+            <item><num>ii</num>
+               <title>Percussit<app>
+                     <lem>iterum aaron</lem>
+                     <rdg wit="#Sg1">aaron</rdg>
+                     <rdg wit="#Mb2">aaron iterum</rdg>
+                  </app>aquas<app>
+                     <lem>aegypti</lem>
+                     <rdg type="omission" wit="#Sg1"/>
+                  </app> et eduxit ranas<app>
+                     <lem>fecerunt</lem>
+                     <rdg type="omission" wit="#Sg1"/>
+                  </app>et magi<app>
+                     <rdg type="addition" wit="#Sg1 #P8 #Mb2 #Z #P2 #Bm">similiter</rdg>
+                  </app></title></item>
+
+            <item>
+               <num>iii</num>
+               <title>Percussit aaron in limo terrae et facti sunt <app>
+                     <lem>scyniphes</lem>
+                     <rdg type="orthographic" wit="#Sg1">scinifes</rdg>
+                     <rdg type="orthographical" wit="#Mb2">schinefes</rdg>
+                     <rdg type="orthographical" wit="#Z #P2 #P1 #Bm">schinifes</rdg>
+                  </app>in <app>
+                     <lem>hominibus</lem>
+                     <rdg wit="#Bmac">omnibus</rdg>
+                     <rdg wit="#Bmpc">homnibus</rdg>
+                  </app> et <app>
+                     <lem>cesserunt</lem>
+                     <rdg wit="#Sg1 #Mb2 #P2 #P1 #Bm">cessauerunt</rdg>
+                  </app>magi</title></item>
+
+            <item>
+               <num>iiii</num>
+               <title>Inmittit dominus <app>
+                     <lem>cynomiam</lem>
+                     <rdg wit="#P8 #Mb2 #P2 #P1 #Bm">cynomia</rdg>
+                  </app> in totam terram aegypti</title></item>
+
+            <item><num>v</num>
+               <title>Mortem mittit dominus in omnia pecora aegyptiorum</title></item>
+
+            <item><num>vi</num>
+               <title>De fauilla quam sparsit moyses in caelum et facta sunt<app>
+                     <lem><app>
+                           <lem>ulcera</lem>
+                           <rdg wit="#Bm">uulnera</rdg>
+                        </app> in homines</lem>
+                     <rdg type="omission" wit="#Sg1"/>
+                  </app>
+               </title></item>
+
+            <item><num>vii</num>
+               <title>Extendit moyses manum in caelum et pluit dominus ignem et
+               grandinem</title></item>
+
+            <item><num>viii</num><app>
+                  <rdg type="addition" wit="#Sg1">pl</rdg>
+               </app><note>pl con l barrata = plaga</note>
+               <title>Venit<app>
+                     <lem>locusta</lem>
+                     <rdg wit="#P8ac">lucusta</rdg>
+                  </app>super omnes fines aegypti</title></item>
+
+            <item><num>viiii</num>
+               <app>
+                  <rdg type="addition" wit="#Sg1">pl</rdg>
+               </app>
+               <title>factae sunt tenebrae in <app>
+                     <lem>totam terram</lem>
+                     <rdg wit="#P8 #Mb2 #Z #P2 #P1 #Bm">tota terra</rdg>
+                  </app> aegypti triduo</title></item>
+
+            <item>
+               <num><app>
+                     <lem>XVII</lem>
+                     <rdg wit="#Sg1ac #Bm">X</rdg>
+                  </app></num><app>
+                  <rdg type="addition" wit="#Sg1">cap</rdg>
+               </app>
+               <title>Dicit dominus<app>
+                     <lem>ad moysen</lem>
+                     <rdg wit="#Sg1 #P8 #Mb2 #Z #P2 #P1 #Bm">moysi</rdg>
+                  </app> adhuc unam plagam ego <app>
+                     <lem>induco</lem>
+                     <rdg wit="#P8" varSeq="2">inducam</rdg>
+                     <rdg wit="#P8" varSeq="1">induo</rdg>
+                  </app>
+                  <app>
+                     <lem>in</lem>
+                     <rdg wit="#P8"/>
+                  </app><app>
+                     <lem>pharaonem</lem>
+                     <rdg wit="#Z #Bm">pharaone</rdg>
+                  </app></title></item>
+
+            <item><num>XVIII</num>
+               <app>
+                  <rdg wit="#Sg1ac">XI</rdg>
+                  <rdg wit="#Sg1" type="addition">cap</rdg>
+                  <rdg wit="#Bm">XVII</rdg>
+               </app><title>Loquitur dominus<app>
+                     <lem>ad moysen</lem>
+                     <rdg wit="#P8 #Mb2 #Z #P2 #P1 #Bm">moysi</rdg>
+                     <rdg wit="#Sg1">ad moysi</rdg>
+                  </app>et aaron de sacramento <app>
+                     <lem>paschae</lem>
+                     <rdg type="ortographic" wit="#P8">phaschae</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>x</num></lem>
+                  <rdg wit="#Sg1ac">XII</rdg>
+                  <rdg wit="#P8">XVIIII</rdg>
+                  <rdg wit="#Bm">XVIII</rdg>
+                  <rdg type="addition" wit="#Sg1">pla</rdg>
+               </app>
+               <title>De <app>
+                     <lem>decima</lem>
+                     <rdg wit="#Zac">decim</rdg>
+                  </app> plaga in qua percussit dominus omne primogenitum aegyptiorum</title></item>
+
+            <item><app>
+                  <lem><num>XVIIII</num></lem>
+                  <rdg wit="#Sg1ac">xiii</rdg>
+                  <rdg wit="#Sg1" type="addition">cap </rdg>
+                  <rdg wit="#P8">X</rdg>
+               </app>
+               <title>Habitauerunt filii israhel in aegypto <app>
+                     <lem>annos</lem>
+                     <rdg wit="#Sg1 #P8 #Mb2 #Z #P2 #P1">annis</rdg>
+                     <rdg wit="#Bm" type="omission"/>
+                  </app><app>
+                     <lem>quadringentos triginta</lem>
+                     <rdg type="transposition" wit="#Bm">annis</rdg>
+                  </app></title></item>
+
+
+            <item><app>
+                  <lem><num>XX</num></lem>
+                  <rdg wit="#Sg1ac" cert="high">xiiii</rdg>
+               </app><title>Legem <app>
+                     <lem>paschae</lem>
+                     <rdg wit="#P8pc">phascae</rdg>
+                     <rdg wit="#P8ac">phaschae</rdg>
+                  </app>dat dominus</title></item>
+
+            <item><app>
+                  <lem><num>XXI</num></lem>
+                  <rdg wit="#Sg1ac" cert="high">xv</rdg>
+               </app>
+               <title>Dicit dominus ut sanctificent omne primitiuum</title></item>
+
+            <item><app>
+                  <lem><num>XXII</num></lem>
+                  <rdg wit="#Sg1ac">XVI</rdg>
+               </app>
+               <title><app>
+                     <lem>Quinta <app>
+                           <lem>progenie</lem>
+                           <rdg type="orthographical" wit="#Mb2 #Z #P1 #Bm">progeniae</rdg>
+                        </app> ascenderunt filii Israhel de <app>
+                           <lem>Aegypto</lem>
+                           <rdg wit="#Z">terra aegypti</rdg>
+                        </app></lem>
+                     <rdg wit="Sg1">
+                        <subst>
+                           <del type="overstrike">Quinta progenie ascenderunt filii Israhel de
+                              Aegypto</del>
+                           <add>de egressione filiorum Israhel ex Egypto et translatione ossium
+                              ioseph</add>
+                        </subst>
+                     </rdg>
+                  </app></title>
+            </item>
+
+            <item><app>
+                  <lem><num>XXIII</num></lem>
+                  <rdg wit="#Sg1">XVII</rdg>
+               </app>
+               <note>smettono le correzioni dei numeri in Sg1</note>
+               <title>Consecutus est pharao <app>
+                     <lem>filios</lem>
+                     <rdg wit="#Sg1ac">filio</rdg>
+                  </app> israhel et <app>
+                     <lem>cooperuit</lem>
+                     <rdg wit="#Bm">cooperit</rdg>
+                  </app> aegyptios mare<app>
+                     <rdg type="addition" wit="#P8">canticum</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><app>
+                        <lem><num>XXIIII</num></lem>
+                        <rdg wit="#Sg1">XVIII</rdg>
+                     </app><app>
+                        <lem>Canticum</lem>
+                        <rdg type="addition" wit="#Sg1">moysi</rdg>
+                     </app>
+                  </lem>
+                  <rdg type="omission" wit="#P8"/>
+               </app></item>
+
+            <item><app>
+                  <lem><num>XXV</num></lem>
+                  <rdg wit="#Sg1">XVIIII</rdg>
+                  <rdg wit="#P8">XXIIII</rdg>
+               </app>Cantauit et maria cum mulieribus in <app>
+                  <lem>tympanis</lem>
+                  <rdg type="orthographical" wit="#Mb2">tymphanis</rdg>
+               </app> et choris</item>
+
+            <item><app>
+                  <lem><num>XXVI</num></lem>
+                  <rdg wit="#Sg1">XX</rdg>
+                  <rdg wit="#P8">XXV</rdg>
+               </app>Murmurauit populus in deserto pro aqua</item>
+
+            <item><app>
+                  <lem><num>XXVII</num></lem>
+                  <rdg wit="#Sg1">XXI</rdg>
+                  <rdg wit="#P8">XXVI</rdg>
+               </app><title><app>
+                     <lem>Murmurauerunt</lem>
+                     <rdg wit="Sg1pc">murmurauit</rdg>
+                  </app>et pro carnibus</title></item>
+
+            <item><app>
+                  <lem><num>XXVIII</num></lem>
+                  <rdg wit="#Sg1">XXII</rdg>
+                  <rdg wit="#P8">XXVII</rdg>
+               </app><title>Dedit dominus populo coturnices et <app>
+                     <lem>mannam</lem>
+                     <rdg wit="#Sg1">manna</rdg>
+                  </app>
+               </title>
+            </item>
+
+            <item><app>
+                  <lem><num>XXVIIII</num></lem>
+                  <rdg wit="#Sg1">XXIII</rdg>
+                  <rdg wit="#P8">XXVIII</rdg>
+               </app>
+               <title>Manducauerunt mannam annis quadraginta</title></item>
+
+            <item><app>
+                  <lem><num>XXX</num></lem>
+                  <rdg wit="#Sg1">XXIIII</rdg>
+                  <rdg wit="#P8">XXVIIII</rdg>
+               </app><title>Murmurauerunt pro aqua et eduxit <app>
+                     <lem>de petra aquam</lem>
+                     <rdg type="transposition" wit="#Bm">aquam de petra</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>XXXI</num></lem>
+                  <rdg wit="#Sg1">XXV</rdg>
+                  <rdg wit="#P8">XXX</rdg>
+               </app><title>Uenit amalech ad pugnam et percussit eum<app>
+                     <lem>iosue</lem>
+                     <rdg wit="#P8">iosiae</rdg>
+                  </app>.</title></item>
+
+            <item><app>
+                  <lem><num>XXXII</num></lem>
+                  <rdg wit="#Sg1">XXVI</rdg>
+                  <rdg wit="#P8">XXXI</rdg>
+               </app><title>Uenit <app>
+                     <lem>iethro</lem>
+                     <rdg type="orthographical" wit="#Bm">ietro</rdg>
+                  </app> ad moysen in desertum</title></item>
+
+            <item>
+               <app>
+                  <lem><num>XXXIII</num></lem>
+                  <rdg wit="#Sg1">XXVII</rdg>
+                  <rdg wit="#P8">XXXII</rdg>
+               </app>
+               <title>Consilium dedit <app>
+                     <lem>iethro</lem>
+                     <rdg type="orthographical" wit="#Z #Bm">ietro</rdg>
+                  </app>moysi ut <app>
+                     <lem>praeponeret</lem>
+                     <rdg wit="#Bm">praeceperat</rdg>
+                  </app> tribunos<app>
+                     <lem>et centuriones</lem>
+                     <rdg type="omission" wit="#Sg1"/>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>XXXIIII</num></lem>
+                  <rdg wit="#Sg1">XXVIII</rdg>
+                  <rdg wit="#P8">XXXIII</rdg>
+               </app>
+               <title>Testatur dominus per moysen populo ut audiant eum</title></item>
+
+            <item><app>
+                  <lem><num>XXXV</num></lem>
+                  <rdg wit="#Sg1">XXVIIII</rdg>
+                  <rdg wit="#P8">XXXIIII</rdg>
+               </app>
+               <title>Descendit dominus in <app>
+                     <lem>montem</lem>
+                     <rdg wit="#Bm">monte</rdg>
+                  </app>
+                  <app>
+                     <lem>syna</lem>
+                     <rdg type="orthographical" wit="#P1">sinai</rdg>
+                  </app> in<app>
+                     <lem>igne</lem>
+                     <rdg wit="#P8ac #Z">ignem</rdg>
+                  </app>
+               </title></item>
+
+            <item><app>
+                  <lem><num>XXXVI</num></lem>
+                  <rdg wit="#Sg1">XXX</rdg>
+                  <rdg wit="#P8">XXXV</rdg>
+               </app>
+               <title>Praecepit dominus moysi ut ascendat in montem <app>
+                     <lem>solus</lem>
+                     <rdg wit="#Sg1">
+                        <subst>
+                           <del type="overstriking">solus</del>
+                           <add type="above">et aaron</add>
+                        </subst>
+                     </rdg>
+                     <rdg wit="#Bm">solis</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>XXXVII</num></lem>
+                  <rdg wit="#Sg1">XXXI XXXVII cp</rdg>
+                  <rdg wit="#P8">XXXVI</rdg>
+               </app>. <title><app>
+                     <lem>Decem</lem>
+                     <rdg type="orthographical" wit="#Mb2 #Zpc #P2 #P1">decim</rdg>
+                  </app> uerba legis <app>
+                     <lem>quae</lem>
+                     <rdg wit="#Sg1">quam</rdg>
+                     <rdg wit="#Bm">quem</rdg>
+                  </app><app>
+                     <lem>praecepit</lem>
+                     <rdg wit="#P2 #P1">praecipit</rdg>
+                     <note>ce ne sono altri con questa variante che non ho segnato, ricontrollare
+                        prima di P2</note>
+                  </app>dominus custodiri</title></item>
+
+            <item><app>
+                  <lem><num>i</num></lem>
+                  <rdg wit="#Sg1">XXXII X uerba legis <note>la scritta è a fianco in verticale (una
+                        lettera a riga)</note></rdg>
+                  <rdg wit="#P8">XXXVII</rdg>
+               </app>
+               <title>non erunt tibi dii alii absque me</title></item>
+
+            <item><app>
+                  <lem><num>ii</num></lem>
+                  <rdg wit="#Sg1">XXXIII</rdg>
+                  <rdg wit="#P8">XXXVIII</rdg>
+               </app><title>Non facias tibi <app>
+                     <lem>idolum</lem>
+                     <rdg type="minor" wit="#Sg1">iodolum</rdg>
+                  </app> neque <app>
+                     <lem>ullam</lem>
+                     <rdg wit="#Bm">aliam</rdg>
+                  </app> similitudinem</title></item>
+
+            <item><app>
+                  <lem><num>iii</num></lem>
+                  <rdg wit="#Sg1">XXXVIIII</rdg>
+                  <rdg wit="#P8">XL</rdg>
+               </app><title>Non sumes nomen dei tui in uanum</title></item>
+
+            <item><app>
+                  <lem><num>iiii</num></lem>
+                  <rdg wit="#Sg1">XXXV</rdg>
+                  <rdg wit="#P8">XL</rdg>
+               </app><title>In mente habe diem sabbatorum</title></item>
+
+            <item><app>
+                  <lem><num>v</num></lem>
+                  <rdg wit="#Sg1">XXXXVI</rdg>
+                  <rdg wit="#P8">XLI</rdg>
+               </app>
+               <title>Honora patrem tuum et matrem</title></item>
+
+            <item><app>
+                  <lem><num>vi</num></lem>
+                  <rdg wit="#Sg1">XXXVII</rdg>
+                  <rdg wit="#P8">XLII</rdg>
+               </app><title>Non occides</title></item>
+
+            <item><app>
+                  <lem><num>vii</num></lem>
+                  <rdg wit="#Sg1">XXXVIII</rdg>
+                  <rdg wit="#P8">XLIII</rdg>
+               </app>
+               <title>Non <app>
+                     <lem>moechaberis</lem>
+                     <rdg wit="#Sg1">moethaberis</rdg>
+                     <rdg wit="#Mb2 #P2 #P1">moechabiris</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>viii</num></lem>
+                  <rdg wit="#Sg1">XXXVIIII</rdg>
+                  <rdg wit="#P8">XLIIII</rdg>
+               </app><title>Non furtum facies</title></item>
+
+            <item><app>
+                  <lem><num>viiii</num></lem>
+                  <rdg wit="#Sg1">XL</rdg>
+                  <rdg wit="#P8">XLV</rdg>
+               </app><title>Non <app>
+                     <lem>dices</lem>
+                     <rdg wit="#P8 #Mb2 #Z #P2ac #P1 #Bm">dicis</rdg>
+                  </app>falsum testimonium</title></item>
+
+            <item><app>
+                  <lem><num>x</num></lem>
+                  <rdg wit="#Sg1">XLI</rdg>
+                  <rdg wit="#P8">XLVI</rdg>
+               </app><title>Non concupisces <app>
+                     <lem>uxorem</lem>
+                     <rdg wit="#Mb2ac">rem</rdg>
+                  </app> proximi tui neque <app>
+                     <lem>aliquid</lem>
+                     <rdg wit="#Sg1">aliquit</rdg>
+                  </app>
+                  <app>
+                     <lem>eius</lem>
+                     <rdg wit="#Sg1">ei</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>XXXVIII</num></lem>
+                  <rdg wit="#Sg1">XLII XXXVIII</rdg>
+                  <rdg wit="#P8">XLVII</rdg>
+               </app>
+               <title>Timuit populus et dixerunt ad moysen: tu loquere ad nos</title></item>
+
+            <item><app>
+                  <lem><num>XXXVIIII</num></lem>
+                  <rdg wit="#Sg1">XLIII</rdg>
+                  <rdg wit="#P8">XLVIII</rdg>
+               </app>
+               <title>Deos argenteos uel aureos non faciendos</title></item>
+
+            <item><app>
+                  <lem><num>XL</num></lem>
+                  <rdg wit="#Sg1">XLIIII</rdg>
+                  <rdg wit="#P8">XLVIIII</rdg>
+               </app>
+               <title>De <app>
+                     <lem>puero</lem>
+                     <rdg wit="#P8">puer</rdg>
+                  </app>hebraeo empto</title></item>
+
+            <item><app>
+                  <lem><num>XLI</num></lem>
+                  <rdg wit="#Sg1">XLV</rdg>
+                  <rdg wit="#P8">L</rdg>
+               </app>
+               <title>De filia distracta</title></item>
+
+            <item><app>
+                  <lem><num>XLII</num></lem>
+                  <rdg wit="#Sg1">XLVI</rdg>
+                  <rdg wit="#P8">LI</rdg>
+               </app>
+               <title>De percusso et mortuo</title></item>
+
+            <item><app>
+                  <lem><num>XLIII</num></lem>
+                  <rdg wit="#Sg1">XLVII</rdg>
+                  <rdg wit="#P8">LII</rdg>
+               </app>
+               <title>Si quis occiderit aliquem dolo</title></item>
+
+            <item><app>
+                  <lem><num>XLIIII</num></lem>
+                  <rdg wit="#Sg1">XLVIII</rdg>
+                  <rdg wit="#P8">LIII</rdg>
+               </app>
+               <title>Qui percusserit patrem aut matrem</title></item>
+
+            <item><app>
+                  <lem><num>XLV</num></lem>
+                  <rdg wit="#Sg1">L </rdg>
+                  <rdg wit="#P8">LV</rdg>
+               </app>
+               <app>
+                  <lem><title>Qui <app>
+                           <lem>furtum</lem>
+                           <rdg wit="#Sg1 #P8 #Mb2 #Z #P2 #P1 #Bm">furto</rdg>
+                        </app><app>
+                           <lem>ereptum</lem>
+                           <rdg wit="#Bm">erepto</rdg>
+                        </app>uendiderit</title></lem>
+                  <rdg corresp="xml:id#XLVI" wit="#Sg1ac #P8 #Mb2 #Z #P2 #P1 #Bm"/>
+               </app></item>
+
+            <item><app>
+                  <lem><num>XLVI</num></lem>
+                  <rdg wit="#Sg1">XLVIIII</rdg>
+                  <rdg wit="#P8">LIIII</rdg>
+               </app><app>
+                  <lem><title>Qui maledixerit patri <app>
+                           <lem>aut</lem>
+                           <rdg wit="#P8">uel</rdg>
+                        </app> matri</title></lem>
+                  <rdg corresp="xml:id#XLV" wit="#Sg1 #P8 #Mb2 #P2 #P1 #Bm"/>
+               </app></item>
+
+            <item><app>
+                  <lem><num>XLVII</num></lem>
+                  <rdg wit="#Sg1">LI</rdg>
+                  <rdg wit="#P8">LVI</rdg>
+               </app>. <title>Si in rixa percusserit <app>
+                     <lem>aliquis</lem>
+                     <rdg wit="#Sg1">aliquid</rdg>
+                  </app> lapide aut pugno</title></item>
+
+            <item><app>
+                  <lem><num>XLVIII</num></lem>
+                  <rdg wit="#Sg1">LII LIII</rdg>
+                  <note>LIII in Sg1 è all'altezza di 'et mortuus' e per questo il cap. ha due
+                     numeri</note>
+                  <rdg wit="#P8">LVII</rdg>
+               </app>
+               <title>Si <app>
+                     <lem>seruum</lem>
+                     <rdg wit="#Sg1ac">seruo</rdg>
+                  </app><app>
+                     <lem>aut</lem>
+                     <rdg wit="#Z">et an</rdg>
+                  </app> ancillam percusserit aliquis et mortuus fuerit</title></item>
+
+            <item><app>
+                  <lem><num>XLVIIII</num></lem>
+                  <rdg wit="#Sg1">LIIII</rdg>
+                  <rdg wit="#P8">LVIII</rdg>
+               </app>
+               <title>Si mulierem percusserit et <app>
+                     <lem>abortauerit</lem>
+                     <rdg wit="#Sg1ac #P8 #Mb2 #P2 #P1">aptauerit</rdg>
+                     <rdg wit="#Z #Bm">abtauerit</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>L</num></lem>
+                  <rdg wit="#Sg1">LV</rdg>
+                  <rdg wit="#P8">LVIIII</rdg>
+               </app>
+               <title>Oculum pro oculo</title></item>
+
+            <item><app>
+                  <lem><num>LI</num></lem>
+                  <rdg wit="#Sg1">LVI</rdg>
+                  <rdg wit="#P8">LX</rdg>
+               </app>
+               <title>Oculum serui aut <app>
+                     <lem>ancillae</lem>
+                     <rdg wit="#Bm">ancillam</rdg>
+                  </app><app>
+                     <lem>qui eiecerit</lem>
+                     <rdg wit="#Sg1ac" cert="medium">quae ieserit</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>LII</num></lem>
+                  <rdg wit="#Sg1">LVII</rdg>
+                  <rdg wit="#P8">LXI</rdg>
+               </app>
+               <title><app>
+                     <lem>Si</lem>
+                     <rdg type="omission" wit="#Sg1 #P8 #Mb2 #P1"/>
+                  </app>cornu aliquem percusserit taurus</title></item>
+
+            <item><app>
+                  <lem><num>LIII</num></lem>
+                  <rdg wit="#Sg1">LVIII</rdg>
+                  <rdg wit="#P8">LXII</rdg>
+               </app>
+               <title>Si <app>
+                     <lem>foueam</lem>
+                     <rdg wit="#Sg1ac">fodeam</rdg>
+                     <rdg wit="#Sg1pc">cisternam</rdg>
+                  </app> quis foderit</title></item>
+
+            <item><app>
+                  <lem><num>LIIII</num></lem>
+                  <rdg wit="#Sg1ac">LVIIII</rdg>
+                  <rdg wit="#Sg1pc">LIIII</rdg>
+                  <rdg wit="#P8">LXIII</rdg>
+               </app>
+               <title>Si <app>
+                     <lem>taurus</lem>
+                     <rdg wit="#Sg1pc">bos</rdg>
+                  </app><app>
+                     <lem>alium</lem>
+                     <rdg wit="#Sg1">aliquid</rdg>
+                     <rdg wit="#P8 #Mb2 #Z #P2 #P1 #Bm">aliud</rdg>
+                  </app>cornu percusserit</title></item>
+
+            <item><app>
+                  <rdg type="interpolation" wit="#Sg1"><num>LV</num><title>quod sciunt dominus bouem
+                        corniperam</title><note>titolo supplementare aggiunto supra
+                     lineam</note></rdg>
+               </app></item>
+
+            <item><app>
+                  <lem><num>LV</num></lem>
+                  <rdg wit="#Sg1pc">LVI</rdg>
+                  <rdg wit="#Sg1ac" cert="medium">LX</rdg>
+                  <rdg wit="#P8">LXIIII</rdg>
+               </app>
+               <title>Si quis<app>
+                     <lem>uitulum</lem>
+                     <rdg wit="#Sg1pc">bouem</rdg>
+                  </app>aut ouem inuolauerit</title></item>
+
+            <item><app>
+                  <lem><num>LVI</num></lem>
+                  <rdg wit="#Sg1pc">LVII</rdg>
+                  <rdg wit="#Sg1ac" cert="medium">LXI</rdg>
+                  <rdg wit="#P8">LXV</rdg>
+               </app>
+               <title>De <app>
+                     <lem>fure</lem>
+                     <rdg wit="#P8 #Mb2 #Zpc #P2 #P1 #Bmpc">furo</rdg>
+                     <rdg wit="#Bmac">furto</rdg>
+                  </app>percusso</title></item>
+
+            <item><app>
+                  <lem><num>LVII</num></lem>
+                  <rdg wit="#Sg1">LXII</rdg>
+                  <rdg wit="#P8">LXVI</rdg>
+               </app>
+               <title>De agro <app>
+                     <lem>alieno</lem>
+                     <rdg>aliendo</rdg>
+                  </app> depasto</title></item>
+
+            <item><app>
+                  <lem><num>LVIII</num></lem>
+                  <rdg wit="#Sg1">LXIII</rdg>
+                  <rdg wit="#P8">LXVII</rdg>
+               </app>
+               <title>De area incensa uel<app>
+                     <lem>messe</lem>
+                     <rdg wit="#Sg1ac #P8 #Mb2 #Z #P2 #P1 #Bm">messis</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>LVIIII</num></lem>
+                  <rdg wit="#Sg1">LXIIII</rdg>
+                  <rdg wit="#P8">LXVIII</rdg>
+               </app>
+               <title>De commendato et <app>
+                     <lem>furtim</lem>
+                     <rdg wit="#Sg1 #P8 #Mb2 #Z #P2 #P1 #Bm">furtum</rdg>
+                  </app>ab aliquo <app>
+                     <lem>erepto</lem>
+                     <rdg wit="#Bm">reperto</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>LX</num></lem>
+                  <rdg wit="#Sg1">LXV</rdg>
+                  <rdg wit="#P8">LXVIIII</rdg>
+               </app>
+               <title>De iumento uel aliquo pecude commendato et mortuo</title></item>
+
+            <item><app>
+                  <lem><num>LXI</num></lem>
+                  <rdg wit="#Sg1">LXVI</rdg>
+                  <rdg wit="#P8">LXX</rdg>
+               </app>
+               <title>Si petierit quis animal et mortuum fuerit</title></item>
+
+            <item><app>
+                  <lem><num>LXII</num></lem>
+                  <rdg wit="#Sg1">LXVII</rdg>
+                  <rdg wit="#P8">LXXI</rdg>
+               </app>
+               <title>De uirgine nondum sponsata</title>
+            </item>
+
+            <item><app>
+                  <lem><num>LXIII</num></lem>
+                  <rdg wit="#Sg1">LXVIII</rdg>
+                  <rdg wit="#P8">LXXII</rdg>
+               </app>
+               <title>Maleficum occidendum</title></item>
+
+            <item><app>
+                  <lem><num>LXIIII</num></lem>
+                  <rdg wit="#Sg1">LXVIIII</rdg>
+                  <rdg wit="#P8">LXXIII</rdg>
+               </app>
+               <title>Qui dormierit cum pecude occidendum</title></item>
+
+            <item><app>
+                  <lem><num>LXV</num></lem>
+                  <rdg wit="#Sg1">LXX</rdg>
+                  <rdg wit="#P8">LXIIII</rdg>
+               </app>
+               <title>Qui immolauerit diis eradicandum</title></item>
+
+            <item><app>
+                  <lem><num>LXVI</num></lem>
+                  <rdg wit="#Sg1">LXXI</rdg>
+                  <rdg wit="#P8">LXXV</rdg>
+               </app>
+               <title>Aduenam non nocendum</title></item>
+
+            <item><app>
+                  <lem><num>LXVII</num></lem>
+                  <rdg wit="#Sg1">LXXII</rdg>
+                  <rdg wit="#P8">LXVI</rdg>
+               </app>
+               <title>Uiduam et <app>
+                     <lem>orphanum</lem>
+                     <rdg wit="#Z">orfanos</rdg>
+                  </app> non nocendos</title></item>
+
+            <item><app>
+                  <lem><num>LXVIII</num></lem>
+                  <rdg wit="#Sg1">LXXIII</rdg>
+                  <rdg wit="#P8">LXXVII</rdg>
+               </app>
+               <title>De foenore et de pignore</title></item>
+
+            <item><app>
+                  <lem><num>LXVIIII</num></lem>
+                  <rdg wit="#Sg1">LXXIIII</rdg>
+                  <rdg wit="#P8">LXXVIII</rdg>
+               </app>
+               <title>Non blasphemandum</title></item>
+
+            <item><app>
+                  <lem><num>LXX</num></lem>
+                  <rdg wit="#Sg1">LXXV</rdg>
+                  <rdg wit="#P8">LXXVIIII</rdg>
+               </app>
+               <title>Primitias offerendas</title></item>
+
+            <item><app>
+                  <lem><num>LXXI</num></lem>
+                  <rdg wit="#Sg1">LXXVI</rdg>
+                  <rdg wit="#P8">LXXX</rdg>
+               </app>
+               <title> Omne <app>
+                     <lem>primitiuum</lem>
+                     <rdg wit="#Sg1">primitium</rdg>
+                  </app>domino offerendum</title></item>
+
+            <item><app>
+                  <lem><num>LXXII</num></lem>
+                  <rdg wit="#Sg1">LXXVII</rdg>
+                  <rdg wit="#P8">LXXXI</rdg>
+               </app>
+               <title>Carnem a bestia<app>
+                     <rdg type="addition" wit="#Sg1 #Mb2 #P8pc #P2 #P1">laceratam</rdg>
+                     <rdg type="addition" wit="#Bm">lacerata</rdg>
+                  </app>non <app>
+                     <lem>edendam</lem>
+                     <rdg wit="#P8 #P1 #Bm">edendum</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>LXXIII</num></lem>
+                  <rdg wit="#Sg1">LXXVIII</rdg>
+                  <rdg wit="#P8">LXXXII</rdg>
+               </app>
+               <title>Non credendum facile <app>
+                     <lem>quod</lem>
+                     <rdg wit="#Sg1">quo</rdg>
+                  </app>audieris</title></item>
+
+            <item><app>
+                  <lem><num>LXXIIII</num></lem>
+                  <rdg wit="#Sg1">LXXVIIII</rdg>
+                  <rdg wit="#P8">LXXXIII</rdg>
+               </app>
+               <title>Non consentiendum fieri <app>
+                     <lem>testis</lem>
+                     <rdg wit="#Z">testes</rdg>
+                  </app><app>
+                     <lem>iniquus</lem>
+                     <rdg wit="#Sg1 #Mb2 #P8 #P1 #Bm">iniquis</rdg>
+                     <rdg wit="#Z">iniqui</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>LXXV</num></lem>
+                  <rdg wit="#Sg1">LXXX</rdg>
+                  <rdg wit="#P8">LXXXIIII</rdg>
+               </app>
+               <title>Non esse cum<app>
+                     <lem>multis</lem>
+                     <rdg wit="#Mb2ac">multos</rdg>
+                  </app>
+                  <app>
+                     <lem>ad</lem>
+                     <rdg type="omission" wit="#Sg1ac #Mb2 #Z #P8 #P2 #P1 #Bm"/>
+                     <rdg wit="#Sg1pc"><add place="above"/></rdg>
+                  </app><app>
+                     <lem>malum</lem>
+                     <rdg wit="#Sg1 #Mb2 #Z #P8 #P2 #P1">malam</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>LXXVI</num></lem>
+                  <rdg wit="#Sg1">LXXXI</rdg>
+                  <rdg wit="#P8">LXXXV</rdg>
+               </app>
+               <title>Non declinare cum multis iudicium</title></item>
+
+            <item><app>
+                  <lem><num>LXXVII</num></lem>
+                  <rdg wit="#Sg1">LXXXII</rdg>
+                  <rdg wit="#P8">LXXXVI</rdg>
+               </app>
+               <title>Non spernendum pauperem in iudicio nec pro illo faciendum</title></item>
+
+            <item><app>
+                  <lem><num>LXXVIII</num></lem>
+                  <rdg wit="#Sg1">LXXXIII</rdg>
+                  <rdg wit="#P8">LXXXVII</rdg>
+               </app>
+               <title><app>
+                     <lem>Errantem</lem>
+                     <rdg wit="#P1">errandum</rdg>
+                  </app> inimici iumentum reuocandum</title></item>
+
+            <item><app>
+                  <lem><num>LXXVIIII</num></lem>
+                  <rdg wit="#Sg1">LXXXIIII</rdg>
+                  <rdg wit="#P8">LXVIII</rdg>
+               </app>
+               <title>Inimici iumentum <app>
+                     <lem>pressum</lem>
+                     <rdg type="orthographical" wit="#Mb2 #P8 #Bm">praessum</rdg>
+                  </app>pondere erigendum</title></item>
+
+            <item><app>
+                  <lem><num>LXXX</num></lem>
+                  <rdg wit="#Sg1">LXXXV</rdg>
+                  <rdg wit="#P8">LXXXVIIII</rdg>
+               </app>
+               <title>Iudicium <app>
+                     <lem>pauperis</lem>
+                     <rdg wit="#Sg1ac">pauperes</rdg>
+                  </app>non subuertendum</title></item>
+
+            <item><app>
+                  <lem><num>LXXXI</num></lem>
+                  <rdg wit="#Sg1">LXXXVI</rdg>
+                  <rdg wit="#P8">XC</rdg>
+               </app>
+               <title>Ab omni uerbo iniquo <app>
+                     <lem>recedendum</lem>
+                     <rdg wit="#Bmac">recendum</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>LXXXII</num></lem>
+                  <rdg wit="#Sg1">LXXXVII</rdg>
+                  <rdg wit="#P8">XCI</rdg>
+               </app>
+               <title>Innocentem et iustum non occidendum</title></item>
+
+            <item><app>
+                  <lem><num>LXXXIII</num></lem>
+                  <rdg wit="#Sg1">LXXXVIII</rdg>
+                  <rdg wit="#P8">XCII</rdg>
+               </app>
+               <title>Impium non iustificandum et munera non accipienda</title></item>
+
+            <item><app>
+                  <lem><num>LXXXIIII</num></lem>
+                  <rdg wit="#Sg1">LXXXVIIII</rdg>
+                  <rdg wit="#P8">XCIII</rdg>
+               </app><title>De <app>
+                     <lem>anno</lem>
+                     <rdg wit="#Sg1ac">annos</rdg>
+                  </app><app>
+                     <lem>remissionis</lem>
+                     <rdg type="minor" wit="#Sg1ac">remissiones</rdg>
+                  </app>septimo</title></item>
+
+            <item><app>
+                  <lem><num>LXXXV</num></lem>
+                  <rdg wit="#Sg1">XC</rdg>
+                  <rdg wit="#P8">XCIIII</rdg>
+               </app>
+               <title><app>
+                     <lem>Sabbato</lem>
+                     <rdg wit="#Bm">sabbatum</rdg>
+                  </app> non operandum</title></item>
+
+            <item><app>
+                  <lem><num>LXXXVI</num></lem>
+                  <rdg wit="#Sg1">XCI</rdg>
+                  <rdg wit="#P8ac">XCIIII</rdg>
+                  <rdg wit="#P8pc">XCV</rdg>
+               </app>
+               <title>Omnia quae praecepit deus obseruanda</title></item>
+
+            <item><app>
+                  <lem><num>LXXXVII</num></lem>
+                  <rdg wit="#Sg1">XCII</rdg>
+                  <rdg wit="#P8">XCVI</rdg>
+               </app>
+               <title>Tribus temporibus anni diem sollemnem <app>
+                     <lem>agendam</lem>
+                     <rdg wit="#P1 #Bm">agendum</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>LXXXVIII</num></lem>
+                  <rdg wit="#Sg1">XCVII</rdg>
+                  <rdg wit="#P8">XCVII</rdg>
+               </app>
+               <title> Diem festum azymorum obseruandum</title></item>
+
+            <item><app>
+                  <lem><num>LXXXVIIII</num></lem>
+                  <rdg wit="#Sg1">XCIII</rdg>
+                  <rdg wit="#P8">XCVIII</rdg>
+               </app>
+               <title>Vacuum in conspectu <app>
+                     <lem>domini</lem>
+                     <rdg wit="#Bm">meo</rdg>
+                  </app> minime apparendum</title></item>
+
+            <item><app>
+                  <lem><num>XC</num></lem>
+                  <rdg wit="#Sg1">XCIIII</rdg>
+                  <rdg wit="#P8">XCVIIII</rdg>
+               </app>
+               <title>Tribus temporibus anni <app>
+                     <lem>omne</lem>
+                     <rdg wit="#P2">omnem</rdg>
+                  </app> masculinum <app>
+                     <lem>parere</lem>
+                     <rdg wit="#Sg1pc">parare</rdg>
+                  </app>domino</title></item>
+
+            <item><app>
+                  <lem><num>XCI</num></lem>
+                  <rdg wit="#Sg1">XCV</rdg>
+                  <rdg wit="#P8ac">XCVIIII</rdg>
+                  <rdg wit="#P8pc">C</rdg>
+               </app>
+               <title>Primitias terrae offerendas</title></item>
+
+            <item><app>
+                  <lem><num>XCII</num></lem>
+                  <rdg wit="#Sg1">XCVI</rdg>
+                  <rdg wit="#P8">CI</rdg>
+               </app>
+               <title>Non coquendum agnum in lacte matris suae</title></item>
+
+            <item><app>
+                  <lem><num>XCIII</num></lem>
+                  <rdg wit="#Sg1">XCVII</rdg>
+                  <rdg wit="#P8">CI</rdg>
+               </app>
+               <title>Angelum promittit dominus qui praecedat</title></item>
+
+            <item><app>
+                  <lem><num>XCIIII</num></lem>
+                  <rdg wit="#Sg1">XCVII</rdg>
+                  <rdg wit="#P8">CII</rdg>
+               </app>
+               <title><app>
+                     <lem>Qui deum</lem>
+                     <rdg wit="#Sg1 ac">quidm</rdg>
+                     <rdg wit="#Sg1pc" cert="medium">quod si</rdg>
+                  </app> audierit <app>
+                     <lem><app>
+                           <lem>liberari</lem>
+                           <rdg wit="#P8ac">libera</rdg>
+                        </app> ab inimicis</lem>
+                  </app>
+                  <app>
+                     <rdg type="addition" wit="#Sg1">liberari ab inimicis possit</rdg>
+                     <rdg wit="#Mb2ac">ab inimicis liberari</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>XCV</num></lem>
+                  <rdg wit="#Sg1">XCVIIII</rdg>
+                  <rdg wit="#P8">CIII</rdg>
+               </app>
+               <title>Deos alienigenarum non adorandos</title></item>
+
+            <item><app>
+                  <lem><num>XCVI</num></lem>
+                  <rdg wit="#Sg1">C</rdg>
+                  <rdg wit="#P8" cert="low">CIIII</rdg>
+               </app>
+               <title>Timorem et<app>
+                     <lem>uespas</lem>
+                     <rdg wit="#Sg1ac">uespes</rdg>
+                  </app>missurum <app>
+                     <lem>dominum</lem>
+                     <rdg wit="#Sg1 #Mb2 #Z #P8ac #P2 #P1 #Bm">dni</rdg>
+                  </app>qui<app>
+                     <lem>eiciat</lem>
+                     <rdg wit="#Sg1 #Mb2 #P8 #P2 #P1">eiceret</rdg>
+                     <rdg wit="#Z">eicerit</rdg>
+                     <rdg wit="#Bm">eiecerat</rdg>
+                  </app>
+                  <app>
+                     <lem>alienigenas</lem>
+                     <rdg wit="#Sg1ac">alienigines</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>XCVII</num></lem>
+                  <rdg wit="#Sg1">CI</rdg>
+                  <rdg wit="#P8" cert="low">CVI</rdg>
+               </app>
+               <title>Dixit dominus moysi ascendere ad se in montem cum maioribus
+               natu</title></item>
+
+            <item><app>
+                  <lem><num>XCVIII</num></lem>
+                  <rdg wit="#Sg1">CII</rdg>
+                  <rdg wit="#P8">CVII</rdg>
+               </app>
+               <title>Aedificauit moyses altare ex duodecim<app>
+                     <lem>lapidibus</lem>
+                     <rdg wit="#Sg1">
+                        <del rend="overstrike">lapidibus</del>
+                        <add>titulos</add>
+                     </rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>XCVIIII</num></lem>
+                  <rdg wit="#Sg1">CIII</rdg>
+                  <rdg wit="#P8">CVIII</rdg>
+               </app>
+               <title>Ascendit moyes cum maioribus natu</title></item>
+
+            <item><app>
+                  <lem><num>C</num></lem>
+                  <rdg wit="#Sg1">CIIII</rdg>
+                  <rdg wit="#P8">CVIIII</rdg>
+               </app>
+               <title>Omnes electi uenerunt in <app>
+                     <lem>loco</lem>
+                     <rdg wit="#Sg1pc">locum</rdg>
+                  </app>dei</title></item>
+
+            <item><app>
+                  <lem><num>CI</num></lem>
+                  <rdg wit="#Sg1">CV</rdg>
+                  <rdg wit="#P8">CX</rdg>
+               </app>
+               <title>Dicit <app>
+                     <lem>dominus</lem>
+                     <rdg type="omission" wit="#Bmac"/>
+                  </app> moysi ut ascendat in montem<app>
+                     <lem>accipere tabulas testamenti</lem>
+                     <rdg type="omission" wit="#Sg1"/>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>CII</num></lem>
+                  <rdg wit="#Sg1">CVI</rdg>
+                  <rdg wit="#P8">CXI</rdg>
+               </app>
+               <title><app>
+                     <lem>Ascendit</lem>
+                     <rdg wit="#Bmac">ascendat</rdg>
+                  </app> moyses et descendit ad eum maiestas domini</title></item>
+
+            <item><app>
+                  <lem><num>CIII</num></lem>
+                  <rdg wit="#Sg1">CVII</rdg>
+                  <rdg wit="#P8">CXII</rdg>
+               </app>
+               <title>Dicit dominus <app>
+                     <lem>offerri initia</lem>
+                     <rdg wit="#Sg1ac">offerrenitia</rdg>
+                     <rdg wit="#Sg1pc">offerre primitia</rdg>
+                     <rdg wit="#Mb2ac">offerre initia</rdg>
+                  </app><app>
+                     <lem>ad</lem>
+                     <rdg type="omission" wit="#Z"/>
+                  </app> tabernaculum faciendum</title></item>
+
+            <item><app>
+                  <lem><num>CIIII</num></lem>
+                  <rdg wit="#Sg1">CVIII</rdg>
+                  <rdg wit="#P8">CXIII</rdg>
+               </app>
+               <title><app>
+                     <lem>De fabrica <app>
+                           <lem>arcae</lem>
+                           <rdg type="orthographical" wit="#P8">archae</rdg>
+                        </app> et <app>
+                           <lem>mensae</lem>
+                           <rdg wit="#Z #P8 #Bm">mense</rdg>
+                        </app>
+                        <app>
+                           <lem>et</lem>
+                           <rdg type="omission" wit="#P8pc"/>
+                        </app> tabernaculi</lem>
+                     <rdg wit="#Sg1">
+                        <del rend="overstrike">De fabrica arcae et mensae et tabernaculi</del>
+                        <add>de uariis instrumentis tabernaculi</add>
+                     </rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>CV</num></lem>
+                  <rdg wit="#Sg1">CVIIII</rdg>
+                  <rdg wit="#P8">CXIII</rdg>
+               </app>
+               <title><app>
+                     <lem>De fabrica altaris</lem>
+                     <rdg wit="#Sg1">
+                        <del rend="overstrike">De fabrica altari</del>
+                        <add>sarce et altaris</add></rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>CVI</num></lem>
+                  <rdg wit="#Sg1">CX</rdg>
+                  <rdg wit="#P8">CXV</rdg>
+               </app>
+               <title>De oleo lucernae</title></item>
+
+            <item><app>
+                  <lem><num>CVII</num></lem>
+                  <rdg wit="#Sg1">CXI</rdg>
+                  <rdg wit="#P8">CXVI</rdg>
+               </app>
+               <title>De aaron et filiis eius ut sacerdotio <app>
+                     <lem>fungantur</lem>
+                     <rdg wit="#P2">fugantur</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>CVIII</num></lem>
+                  <rdg wit="#Sg1">CXII</rdg>
+                  <rdg wit="#P8">CXVII</rdg>
+               </app>
+               <title>De stola sancta</title></item>
+
+            <item><app>
+                  <lem><num>CVIIII</num></lem>
+                  <rdg wit="#Sg1">CXIII</rdg>
+                  <rdg wit="#P8">CXVIII</rdg>
+               </app>
+               <title>De ueste sacerdotali</title></item>
+
+            <item><app>
+                  <lem><num>CX</num></lem>
+                  <rdg wit="#Sg1">CXIIII</rdg>
+                  <rdg wit="#P8">CXVIIII</rdg>
+               </app>
+               <title>De <app><lem>ordinandis</lem><rdg wit="#Bmac">ordinantis</rdg></app> sacerdotibus
+                  et de <app>
+                     <lem>hostia</lem>
+                     <rdg type="orthographical" wit="#Sg1 #Mb2 #Z #P2">ostia</rdg>
+                  </app>immolanda</title></item>
+
+            <item><app>
+                  <lem><num>CXI</num></lem>
+                  <rdg wit="#Sg1">CXV</rdg>
+                  <rdg wit="#P8">CXX</rdg>
+               </app>
+               <title><app>
+                     <lem>De altare incensi</lem>
+                     <rdg wit="#Sg1">
+                        <del type="overstrike">De altare incensi</del>
+                        <add>de consecratione manuum eorum</add></rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>CXII</num></lem>
+                  <rdg wit="#Sg1">CXVI</rdg>
+                  <rdg wit="#P8">CXXI</rdg>
+               </app>
+               <title>De oblatione <app>
+                     <lem>odorationis</lem>
+                     <rdg wit="#Sg1ac">orationis</rdg>
+                     <rdg wit="#Sg1pc">suauissimi odoris</rdg>
+                     <rdg wit="#Z">adorationis</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>CXIII</num></lem>
+                  <rdg wit="#Sg1">CXVII</rdg>
+                  <rdg wit="#P8">CXXII</rdg>
+               </app>
+               <title>Sacerdotes lauare manus et pedes cum accedunt <app>
+                     <lem>sacrificare</lem>
+                     <rdg wit="#Sg1">in sanctuarium</rdg>
+                  </app><app>
+                     <lem>de oleo linitionis sancto</lem>
+                     <rdg type="omission" wit="#Sg1"/>
+                  </app>
+               </title></item>
+
+            <item><app>
+                  <lem><num>CXIIII</num></lem>
+                  <rdg wit="#Sg1">CXVIII</rdg>
+                  <rdg wit="#P8">CXXIII</rdg>
+               </app>
+               <title>De <app>
+                     <lem>unguento</lem>
+                     <rdg wit="#Sg1ac">ungento</rdg>
+                  </app>incensi</title></item>
+
+            <item><app>
+                  <lem><num>CXV</num></lem>
+                  <rdg wit="#Sg1">CXVIIII</rdg>
+                  <rdg wit="#P8">CXXIIII</rdg>
+               </app>
+               <title>De beseleel quem repleuit dominus spiritu sapientiae ad <app>
+                     <lem>omne</lem>
+                     <rdg type="addition" wit="#Sg1pc">dei</rdg>
+                  </app>opus</title></item>
+
+            <item><app>
+                  <lem><num>CXVI</num></lem>
+                  <rdg wit="#Sg1">CXX</rdg>
+                  <rdg wit="#P8">CXXV</rdg>
+               </app>
+               <title>De sabbato obseruando</title></item>
+
+            <item><app>
+                  <lem><num>CXVII</num></lem>
+                  <rdg wit="#Sg1">CXXI</rdg>
+                  <rdg wit="#P8">CXXVI</rdg>
+               </app>
+               <title>Vbi dat dominus moysi tabulas testamenti</title></item>
+
+            <item><app>
+                  <lem><num>CXVIII</num></lem>
+                  <rdg wit="#Sg1">CXXII</rdg>
+                  <rdg wit="#P8">CXVII</rdg>
+               </app>
+               <title>Fecit aaron uitulum <app>
+                     <lem>conflatile</lem>
+                     <rdg wit="#P8">conflatilem</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>CXVIIII</num></lem>
+                  <rdg wit="#Sg1">CXXIII</rdg>
+                  <rdg wit="#P8">CXXVIII</rdg>
+               </app>
+               <title>Dicit dominus <app>
+                     <lem>moysi</lem>
+                     <rdg type="addition" wit="#Sg1ac">si</rdg>
+                  </app>descende uelociter</title></item>
+
+            <item><app>
+                  <lem><num>CXX</num></lem>
+                  <rdg wit="#Sg1">CXXIIII</rdg>
+                  <rdg wit="#P8">CXXVIIII</rdg>
+               </app>
+               <title>Orauit moyses pro populo</title></item>
+
+            <item><app>
+                  <lem><num>CXXI</num></lem>
+                  <rdg wit="#Sg1">CXXV</rdg>
+                  <rdg wit="#P8">CXXX</rdg>
+               </app>
+               <title>Vidit moyses uitulum et confregit tabulas</title></item>
+
+            <item><app>
+                  <lem><num>CXXII</num></lem>
+                  <rdg wit="#Sg1">CXXVI</rdg>
+                  <rdg wit="#P8">CXXXI</rdg>
+               </app>
+               <title>Dicit moyses ad aaron: quare hoc fecisti</title></item>
+
+            <item><app>
+                  <lem><num>CXXIII</num></lem>
+                  <rdg wit="#Sg1">CXXVII</rdg>
+                  <rdg wit="#P8">CXXXII</rdg>
+               </app>
+               <title>Iussit moyses populo ut occiderent inuicem</title></item>
+
+            <item><app>
+                  <lem><num>CXXIIII</num></lem>
+                  <rdg wit="#Sg1">CXXXVIII</rdg>
+                  <rdg wit="#P8">CXXXIII</rdg>
+               </app>
+               <title><app>
+                     <lem>Rogat</lem>
+                     <rdg wit="#Sg1">rogabat</rdg>
+                  </app>moyses pro populo ut dimittat illis<app>
+                     <lem>dominus peccatum eorum</lem>
+                     <rdg wit="#Sg1">deus</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>CXXV</num></lem>
+                  <rdg wit="#Sg1">CXXVIIII</rdg>
+                  <rdg wit="#P8">CXXXIIII</rdg>
+               </app>
+               <title>Dicit dominus <app>
+                     <lem>moysi</lem>
+                     <rdg wit="#Sg1">moyse</rdg>
+                  </app><app>
+                     <lem>ascendite</lem>
+                     <rdg wit="#Zac #Bm">ascende</rdg>
+                  </app> in terram quam iuraui patribus <app>
+                     <lem>uestris</lem>
+                     <rdg type="omission" wit="#Sg1"/>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>CXXVI</num></lem>
+                  <rdg wit="#Sg1">CXXX</rdg>
+                  <rdg wit="#P8">CXXXV</rdg>
+               </app>
+               <title>Increpat dominus <app>
+                     <lem>populum</lem>
+                     <rdg wit="#Sg1ac #Mb2 #Z #P8 #P2 #P1 #Bm">populo</rdg>
+                  </app>et loquitur ad moysen<app>
+                     <lem>in columna nubis</lem>
+                     <rdg type="omission" wit="#Sg1"/>
+                  </app><note>evidentemente ha i numeri già preparati e quando arriva alla fine
+                     della linea interrompe</note></title></item>
+
+            <item><app>
+                  <lem><num>CXXVII</num></lem>
+                  <rdg wit="#Sg1">CXXXI</rdg>
+                  <rdg wit="#P8">CXXXVI</rdg>
+               </app>
+               <title>Locutus est dominus ad moysen quomodo loquitur <app>
+                     <lem>quis</lem>
+                     <rdg wit="#Zac">quas</rdg>
+                  </app> ad amicum suum</title></item>
+
+            <item><app>
+                  <lem><num>CXXVIII</num></lem>
+                  <rdg wit="#Sg1">CXXXII</rdg>
+                  <rdg wit="#P8">CXXXVII</rdg>
+               </app>
+               <title>Petit moyses uidere dominum <app>
+                     <lem>et ait illi dominus: non <app>
+                           <lem>potes</lem>
+                           <rdg wit="#Z #P8ac">potest</rdg>
+                        </app> uidere faciem meam</lem>
+                     <rdg wit="#Sg1" varSeq="1">et ait illi dominus non</rdg>
+                     <rdg wit="#Sg1" varSeq="2" type="omission"/>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>CXXVIIII</num></lem>
+                  <rdg wit="#Sg1">CXXXIII</rdg>
+                  <rdg wit="#P8">CXXXVIII</rdg>
+               </app>
+               <title>Ascendit <app>
+                     <lem>moyses</lem>
+                     <rdg xml:id="DB">dominus</rdg>
+                  </app> in montem et dominus descendit ibi</title></item>
+
+            <item><app>
+                  <lem><num>CXXX</num></lem>
+                  <rdg wit="#Sg1">CXXXIIII</rdg>
+                  <rdg wit="#P8">CXXXVIIII</rdg>
+               </app>
+               <title>Omne primitiuum iubet sibi <app>
+                     <lem>offeri</lem>
+                     <rdg wit="#Sg1 #Mb2 #Z #P8 #P2 #P1">offerri</rdg>
+                  </app><app>
+                     <lem>dominus</lem>
+                     <rdg wit="#P8ac">domino</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>CXXXI</num></lem>
+                  <rdg wit="#Sg1">CXXXV</rdg>
+                  <rdg wit="#P8">CXL</rdg>
+               </app>
+               <title>Non manducauit moyses diebus quadraginta cum <app>
+                     <lem>scripsit</lem>
+                     <rdg wit="#Mb2 #Z #P8 #P2 #P1 #Bm">scribit</rdg>
+                  </app> uerba testamenti</title></item>
+
+            <item><app>
+                  <lem><num>CXXXII</num></lem>
+                  <rdg wit="#Sg1">CXXXVI</rdg>
+                  <rdg wit="#P8">CXLI</rdg>
+               </app>
+               <title>Gloriosa facta est facies moysi et uelabat faciem suam</title></item>
+
+            <item><app>
+                  <lem><num>CXXXIII</num></lem>
+                  <rdg wit="#Sg1">CXXXVII</rdg>
+                  <rdg wit="#P8">CXLII</rdg>
+               </app>
+               <title>De <app>
+                     <lem>die</lem>
+                     <rdg type="omission" wit="#Sg1"/>
+                  </app>
+                  <app>
+                     <lem>sabbatorum</lem>
+                     <rdg type="addition" wit="#Sg1">obseruatione</rdg>
+                  </app>
+                  <note>la mano di Sg1 responsabile delle correzioni probabilmente non è la
+                     principale</note></title></item>
+
+            <item><app>
+                  <lem><num>CXXXIIII</num></lem>
+                  <rdg wit="#Sg1">CXXXVIII</rdg>
+                  <rdg wit="#P8">CXLIII</rdg>
+               </app>. <title>Initia <app>
+                     <lem>iubet</lem>
+                     <rdg wit="#Bm">iubent</rdg>
+                  </app> offerri domino quaecumque disposuissent in corde <app>
+                     <lem>suo ad opus tabernaculi <app>
+                           <lem>et</lem>
+                           <rdg type="omission" wit="#P8"/>
+                        </app> altaris et <app>
+                           <lem>stolam rerum</lem>
+                           <rdg wit="#P8ac">solam rem</rdg>
+                           <rdg wit="#Bmac">stolarem</rdg>
+                           <rdg wit="#Bmpc">stolam</rdg>
+                        </app> sacerdotalium</lem>
+                     <rdg type="omission" wit="#Sg1"/>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>CXXXV</num></lem>
+                  <rdg wit="#Sg1">CXXXVIIII</rdg>
+                  <rdg wit="#P8">CXLIIII</rdg>
+               </app>
+               <title>Fecerunt <app>
+                     <lem>beseleel</lem>
+                     <rdg type="orthographical" wit="#Sg1ac">belesehel</rdg>
+                  </app> et <app>
+                     <lem>eliab</lem>
+                     <rdg wit="#Mb2 #P8pc #P2 #P1 #Bm">ooliab</rdg>
+                  </app> et omnis sapiens stolas sanctas</title></item>
+
+            <item><app>
+                  <lem><num>CXXXVI</num></lem>
+                  <rdg wit="#Sg1">CL</rdg>
+                  <rdg wit="#P8">CXLV</rdg>
+               </app>
+               <title>Fecit beseleel arcam testimonii et mensam et candelabrum <app>
+                     <lem>et septem lucernas et altare aereum et oleum liniamenti</lem>
+                     <rdg type="omission" wit="#Sg1"/>
+                     <rdg type="addition" wit="#Mb2 #Z #P8 #P2 #P1">feram comestam non
+                        manducandum</rdg>
+                     <rdg type="addition" wit="#Bm">feram comesta non manducandam</rdg>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>CXXXVII</num></lem>
+                  <rdg wit="#Sg1">CLI</rdg>
+                  <rdg wit="#P8">CXLVI</rdg>
+               </app>
+               <title>In die primo mensis primi <app>
+                     <lem>praecepit</lem>
+                     <rdg wit="#P1">praecipit</rdg>
+                  </app> dominus moysi <app>
+                     <lem>sanctificare omnia et induere aaron stola sancta eius</lem>
+                     <rdg type="omission" wit="#Sg1"/>
+                  </app></title></item>
+
+            <item><app>
+                  <lem><num>CXXXVIII</num></lem>
+                  <rdg wit="#Sg1">CLII</rdg>
+                  <rdg wit="#P8">CXLVII</rdg>
+               </app>
+               <title>In primo mense <app>
+                     <lem>secundo</lem>
+                     <rdg wit="#P2pc">secundi</rdg>
+                  </app>
+                  <app>
+                     <lem>anno</lem>
+                     <rdg wit="#Sg1ac">annis</rdg>
+                     <rdg wit="#P2pc">anni</rdg>
+                  </app> profectionis <app>
+                     <lem>de</lem>
+                     <rdg type="omission" wit="#Sg1ac"/>
+                     <rdg rend="above" wit="#Sg1pc">ex</rdg>
+                  </app> aegypto<app>
+                     <lem>statuit moyses tabernaculum testimonii</lem>
+                     <rdg type="omission" wit="#Sg1"/>
+                  </app>
+               </title></item>
+
+            <item><app>
+                  <lem><num>CXXXVIIII</num></lem>
+                  <rdg wit="#Sg1">CLIII</rdg>
+                  <rdg wit="#P8">CXLVIII</rdg>
+               </app>
+               <title><app>
+                     <lem>Consummato</lem>
+                     <rdg wit="#Z">nonsummato</rdg>
+                  </app> tabernaculo texit <app>
+                     <lem>nubs</lem>
+                     <rdg wit="#Mb2 #P8 #P2 #P1">nubes</rdg>
+                  </app>tabernaculum et maiestas domini impleuit illud</title></item>
+         </list>
+         <trailer>
+            <app>
+               <rdgGrp>
+                  <rdg wit="#Sg1">expliciunt capitula</rdg>
+                  <rdg wit="#Mb2">expliciunt capitula in libro exodi (21r)</rdg>
+                  <rdg wit="#Z">expliciunt capitula libri exodi</rdg>
+                  <rdg wit="#P8">expliciunt capitula (23v)</rdg>
+                  <rdg wit="#P2">explicuerunt capitula (21v)</rdg>
+                  <rdg wit="#P1">expliciunt capitula (26v)</rdg>
+                  <rdg wit="#Bm">expliciunt capitula (25r)</rdg>
+               </rdgGrp>
+            </app>
+         </trailer>
+      </body>
+
+   </text>
+</TEI>

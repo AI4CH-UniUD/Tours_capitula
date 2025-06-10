@@ -1,0 +1,260 @@
+{
+    "indexTitle": "Exodus Summaries in Tours Bibles",
+    "webSite": "",
+    "logoUrl": "data/icons/LOGO_PRIN.jpg",
+    
+    "dataUrl": "data/text/exodus.xml",
+    "sourcesUrl": "",
+    "analoguesUrl": "",
+    "sourcesTextsUrl": "",
+    "singleImagesUrl": "data/images/single/",
+    "enableXMLdownload": true,
+    
+    "visCollTextUrl": "",
+    "visCollStyleUrl": "",
+    "visCollSvg": "",
+    "visCollImageList": "",
+    "visCollDataModel": "",
+
+    "defaultViewMode": "readingTxt",
+    "availableViewModes": [
+        {
+            "label": "READING_TEXT",
+            "icon": "reading-txt",
+            "viewMode": "readingTxt",
+            "visible": true
+        },
+        {
+            "label": "MULTIPLE_RECENSIONS",
+            "icon": "mode-versions",
+            "viewMode": "versions",
+            "visible": true
+        },
+        {
+            "label": "IMAGE_TEXT",
+            "icon": "mode-imgTxt",
+            "viewMode": "imgTxt",
+            "visible": true
+        },
+        {
+            "label": "TEXT_TEXT",
+            "icon": "mode-txtTxt",
+            "viewMode": "txtTxt",
+            "visible": false
+        },
+        {
+            "label": "COLLATION",
+            "icon": "mode-collation",
+            "viewMode": "collation",
+            "visible": true
+        },
+        {
+            "label": "SOURCE_TEXT",
+            "icon": "mode-srcTxt",
+            "viewMode": "srcTxt",
+            "visible": false
+        },
+        {
+            "label"    : "3DHOP",
+            "icon"     : "mode-tdhop",
+            "viewMode" : "tdhop",
+            "visible"  : false
+        }
+    ],
+
+    "defaultEdition": "critical",
+    "showEditionLevelSelector": false,
+    "availableEditionLevel": [
+        {
+            "value": "critical",
+            "label": "Critical",
+            "title": "Critical edition",
+            "visible": true
+        },
+        {
+            "value": "diplomatic",
+            "label": "Diplomatic",
+            "title": "Diplomatic edition",
+            "visible": false
+        },
+        {
+            "value": "interpretative",
+            "label": "Interpretative",
+            "title": "Interpretative edition",
+            "visible": false
+        }
+    ],
+    
+    "showDocumentSelector": false,
+    "enableNavBar": true,
+    "initNavBarOpened": true,
+    "thumbnailsButton": true,
+    "viscollButton": false,
+
+    "toolPinAppEntries": true,
+    "toolImageTextLinking": false,
+
+    "namedEntitiesSelector": false,
+    "namedEntitiesToHandle": [
+        {
+            "tagName": "persName",
+            "label": "Persons",
+            "available": true
+        },
+        {
+            "tagName": "placeName",
+            "label": "Places",
+            "available": true
+        },
+        {
+            "tagName": "orgName",
+            "label": "Organizations",
+            "available": false
+        }
+    ],
+    "otherEntitiesToHandle": [
+        {
+            "tagName": "rolename",
+            "label": "Role Name",
+            "available": false,
+            "color": "#cfc"
+        },
+        {
+            "tagName": "measure",
+            "label": "Measure",
+            "available": false,
+            "color": "#ffecb3"
+        }
+    ],
+
+    "preferredWitness": "",
+    "skipWitnesses": "",
+    "maxWitsLoadTogether": 5,
+
+    "witnessesGroups": [],
+
+    "showInlineCriticalApparatus": false,
+    "showInlineSources": false,
+    "showInlineAnalogues": false,
+    "showReadingExponent": true,
+
+    "toolHeatMap": true,
+
+    "versions": [],
+
+    "listDef": "<listWit>, <listChange>",
+    "versionDef": "<witness>, <change>, <subst>, <del>, <add>, [varSeq]",
+    "fragmentMilestone": "<witStart>, <witEnd>",
+    "lacunaMilestone": "<lacunaStart>, <lacunaEnd>",
+    "notSignificantVariant": "<orig>, <sic>, [type=orthographic]",
+    "quoteDef": "<quote>",
+    "analogueDef": "<seg>,<ref[type=parallelPassage]>",
+
+    "possibleVariantFilters": "type, varSeq",
+    "possibleLemmaFilters": "type, varSeq",
+
+    "variantColorLight": "rgb(224, 224, 224)",
+    "variantColorDark": "rgb(192, 192, 192)",
+    "heatmapColor": "rgb(255, 51, 53)",
+    "variantColors": {
+        "type": {
+            "omission": "rgb(51, 51, 255)",
+            "addition": "rgb(255, 102, 255)",
+            "transposition": "rgb(178, 255, 102)",
+            "minor": "rgb(255, 178, 102)",
+            "medium": "rgb(255, 178, 102)",
+            "substantive": "rgb(255, 128, 0)"            
+        },
+        "varSeq": {
+            "1": "rgb(255, 0, 0)"
+            
+                        
+        }
+    },
+
+    "defaultBibliographicStyle": "Chicago",
+    "allowedBibliographicStyles": {
+        "Chicago": {
+            "label": "Chicago",
+            "enabled": true
+        },
+        "APA": {
+            "label": "APA",
+            "enabled": false
+        },
+        "MLA": {
+            "label": "MLA",
+            "enabled": true
+        }
+    },
+
+    "virtualKeyboardKeys": [],
+
+    "imageViewerOptions": {
+        "prefixUrl": "images/osd-images/",
+        "showRotationControl": true,
+        "showNavigator": true,
+        "visibilityRatio": 1,
+        "defaultZoomLevel": 0.7,
+        "panHorizontal": true,
+        "constrainDuringPan": true,
+        "minZoomLevel": 0.7,
+        "maxZoomLevel": 3.0,
+        "wrapVertical": false
+    },
+    "imageNormalizationCoefficient": 1265,
+
+    "languages": [
+        "en",
+        "it"
+    ],
+    
+    "showObjectSelector": false,
+
+    "tdhopViewerOptions": {
+
+      "toolHome": false,
+      "toolZoomin": false,
+      "toolZoomout": false,
+      "toolLighting": false,
+      "toolLightControl": false,
+      "toolMeasure": false,
+      "toolPickPoint": false,
+      "toolPlaneSections": false,
+      "toolSolidColor": false,
+      "toolCamera": false,
+      "toolHotspot": false,
+      "toolFullScreen": false,
+      "toolSwitchModel": false,
+      "toolArrows": false,
+      "toolLightController": false,
+
+      "Model_1": {
+         "name": "",
+         "path": "data/models/multires/",
+         "mesh": ""
+      },
+
+      "Model_2": {
+         "name": "",
+         "path": "data/models/singleres/",
+         "mesh": ""
+      },
+
+      "Hotspots": {
+         "type": "",
+         "path": "data/models/singleres/",
+         "model": "",
+         "hotspotsdata": [
+            {
+               "name": "",
+               "type": "",
+               "position": [],
+               "radius": "",
+               "view": []
+            }
+         ],
+         "nextID": ""
+      }
+   }
+}
