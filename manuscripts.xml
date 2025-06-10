@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+           
+            <listBibl>
+               <head>bibliographical abbreviations</head>
+               <bibl xml:id="DBsomm">
+                  <author>Donatien de Bruyne</author>
+                  <title>Sommaires, divisions et rubriques de la Bible latine</title>
+                  <pubPlace>Namur</pubPlace>
+                  <date>1914</date>
+                  <bibl xml:id="Fischer"><author>Bonifatius Fischer</author><title>Lateinische
+                        Bibelhandschriften im frühen Mittelalter</title><pubPlace>Freiburg ; Basel ;
+                        Wien</pubPlace><date>1985</date>
+                  </bibl>
+               </bibl>
+            </listBibl>
+            <listWit>
+               <witness xml:id="Am1">
+                  <msDesc>
+                     <msIdentifier>
+                        <settlement>Amiens</settlement>
+                        <repository>Bibliothèques d'Amiens Métropole [formerly Bibliothèque
+                           municipale]</repository>
+                        <idno>MS 6</idno>
+                        <altIdentifier type="external">
+                           <idno type="Biblissima">https://data.biblissima.fr/entity/Q121769</idno>
+                        </altIdentifier>
+                        <altIdentifier type="external">
+                           <idno type="TM">https://www.trismegistos.org/text/66875</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                     <head>Biblia latina, Pentateuchus. 1st volume of Mordramnus' Bible</head>
+                     <!-- alternativa summary in mscontents ma la visualizzazione è più brutta -->
+                     <msContents>
+                        <msItem>
+                           <locus>f. 72ra-74rb</locus>
+                           <title>capitula Exodi</title>
+                           <!-- così è corretto ma la visualizzazione va a capo e non è bellissimo -->
+                        </msItem>
+                     </msContents>
+                     <physDesc>
+                        <objectDesc form="codex">
+                           <supportDesc material="parch">
+                              <extent>250 pages <dimensions type="leaf" unit="mm">
+                                    <height quantity="378">378</height>
+                                    <width quantity="255">255</width>
+                                 </dimensions></extent>
+                           </supportDesc>
+                           <layoutDesc>
+                              <layout columns="2">2 cols.</layout>
+                           </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                           <handNote script="minusculeCaroline">Maurdramnus minuscule</handNote>
+                        </handDesc>
+                     </physDesc>
+                     <history>
+                        <origin>
+                           <origDate from-custom="796" to-custom="804">772-781</origDate>
+                           <origPlace>Corbie</origPlace>
+                        </origin>
+                     </history>
+                     <additional>
+                        <!-- rispetto a Sg1 non ho messo nulla come record history e source -->
+                        <surrogates>
+                           <listBibl>
+                              <bibl subtype="full" type="digital_facsimile"><hi rend="bold">digital
+                                    reproduction</hi>
+                                    https://gallica.bnf.fr/ark:/12148/btv1b8452188r<ref
+                                    target="https://gallica.bnf.fr/ark:/12148/btv1b8452188r"
+                                 /></bibl><lb/>
+                              <bibl type="description"><hi rend="bold">description</hi>https://ccfr.bnf.fr/portailccfr/servlet/ViewManager?menu=public_menu_view&amp;record=eadcgm:EADI:FRCGMBPF-800216101-01a&amp;setCache=allead.PUBLIC_MANUSCRITS_EXPERT_MULTI&amp;fromList=true&amp;source=allead&amp;action=public_search_federated&amp;query=PUBLIC_MANUSCRITS_EXPERT</bibl>
+                              <bibl type="IIIF_Manifest_URL"><hi rend="bold">IIIF Manifest</hi>
+                                    https://api.irht.cnrs.fr/ark:/63955/fl3mc5w96sgt/manifest.json<ref
+                                    target="https://api.irht.cnrs.fr/ark:/63955/fl3mc5w96sgt/manifest.json"
+                                 /></bibl>
+                              <bibl type="CLA"><hi rend="bold">CLA 6.707</hi>
+                                    https://elmss.nuigalway.ie/catalogue/1102<ref
+                                    target="https://elmss.nuigalway.ie/catalogue/1102"/></bibl>
+                           </listBibl>
+                        </surrogates>
+                     </additional>
+                  </msDesc>
+               </witness>
+
+               <witness xml:id="Sg1">
+                  <msDesc>
+                     <msIdentifier>
+                        <settlement>Sankt Gallen</settlement>
+                        <repository>Stiftsbibliothek</repository>
+                        <idno>Cod. Sang. 75</idno>
+                        <altIdentifier type="external">
+                           <idno type="Biblissima">https://data.biblissima.fr/entity/Q188328</idno>
+                        </altIdentifier>
+                        <altIdentifier type="external">
+                           <idno type="TM">https://www.trismegistos.org/text/67048</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                     <head>Biblia latina Veteris et Novi Testamenti</head>
+                     <!-- alternativa summary in mscontents ma la visualizzazione è più brutta -->
+                     <msContents>
+                        <msItem>
+                           <locus>p. 39b-41a</locus>
+                           <title>capitula Exodi</title>
+                           <!-- così è corretto ma la visualizzazione va a capo e non è bellissimo -->
+                        </msItem>
+                     </msContents>
+                     <physDesc>
+                        <objectDesc form="codex">
+                           <supportDesc material="parch">
+                              <extent>840 pages <dimensions type="leaf" unit="mm">
+                                    <height quantity="500">550</height>
+                                    <width quantity="400">400</width>
+                                 </dimensions></extent>
+                           </supportDesc>
+                           <layoutDesc>
+                              <layout columns="2">2 cols.</layout>
+                           </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                           <handNote script="minusculeCaroline">Carolingian minuscule by different
+                              hands</handNote>
+                        </handDesc>
+                     </physDesc>
+                     <history>
+                        <origin>
+                           <origDate from-custom="796" to-custom="804">796-804</origDate>
+                           <origPlace>Tours, Abbey St. Martin</origPlace>
+                        </origin>
+                     </history>
+                     <additional>
+                        <adminInfo>
+                           <recordHist>
+                              <source>
+                                 <p>First period of the Turonian production according to Fischer's
+                                    classification (<bibl><ref target="#Fischer"/>p. 257</bibl>).
+                                 </p>
+                              </source>
+                           </recordHist>
+                        </adminInfo>
+                        <surrogates>
+                           <listBibl>
+                              <bibl subtype="full" type="digital_facsimile"><hi rend="bold"
+                                    >permalink</hi>
+                                    https://www.e-codices.unifr.ch/it/list/one/csg/0075<ref
+                                    target="https://www.e-codices.unifr.ch/it/list/one/csg/0075"
+                                 /></bibl>
+                              <bibl type="IIIF_Manifest_URL"><hi rend="bold">IIIF Manifest</hi>
+                                    https://www.e-codices.unifr.ch/metadata/iiif/csg-0075/manifest.json<ref
+                                    target="https://www.e-codices.unifr.ch/metadata/iiif/csg-0075/manifest.json"
+                                 /></bibl>
+                           </listBibl>
+                        </surrogates>
+                     </additional>
+                  </msDesc>
+               </witness>
+               <witness xml:id="Tr">Troyes, Bibliothèque municipale, 29 <note>f.
+                  22ra-22vb</note></witness>
+               <witness xml:id="P8">Paris, Bibliothèque nationale de France, lat. 11514 <note>f.
+                     22vb-23va</note></witness>
+               <witness xml:id="L2">London, British Library, Harley 2805 <note>f.
+                  20rb-21ra</note></witness>
+               <witness xml:id="L2_bis">London, British Library, Harley 2805, f. 21r
+                     <note>Integration by a later hand (12th century), beginning with title
+                     94</note>
+               </witness>
+
+               <witness xml:id="Z">
+                  <msDesc>
+                     <msIdentifier>
+                        <settlement>Zürich</settlement>
+                        <repository>Zentralbibliothek Zürich</repository>
+                        <idno>Ms Car C 1</idno>
+                     </msIdentifier>
+                     <head>Biblia latina Veteris et Novi Testamenti</head>
+                     <!-- alternativa summary in mscontents ma la visualizzazione è più brutta -->
+                     <msContents>
+                        <msItem>
+                           <locus>f. 20rb-21ra</locus>
+                           <title>capitula Exodi</title>
+                           <!-- così è corretto ma la visualizzazione va a capo e non è bellissimo -->
+                        </msItem>
+                     </msContents>
+                     <physDesc>
+                        <objectDesc form="codex">
+                           <supportDesc material="parch">
+                              <extent>422 ff.<dimensions type="leaf" unit="mm">
+                                    <height quantity="480">480</height>
+                                    <width quantity="360">360</width>
+                                 </dimensions></extent>
+                           </supportDesc>
+                           <layoutDesc>
+                              <layout columns="2">2 cols.</layout>
+                           </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                           <handNote script="minusculeCaroline">Carolingian minuscule by different
+                              hands</handNote>
+                        </handDesc>
+                     </physDesc>
+                     <history>
+                        <origin>
+                           <origDate from-custom="825" to-custom="830">825-830</origDate>
+                           <origPlace>Tours, Abbey St. Martin</origPlace>
+                        </origin>
+                     </history>
+                     <additional>
+                        <adminInfo>
+                           <recordHist>
+                              <source>
+                                 <p>Third period of the Turonian production under Fridugisus
+                                    (periode II) according to Fischer's classification (<bibl><ref
+                                          target="#Fischer"/>p. 261</bibl>). </p>
+                              </source>
+                           </recordHist>
+                        </adminInfo>
+                        <surrogates>
+                           <listBibl>
+                              <bibl subtype="full" type="digital_facsimile"><hi rend="bold"
+                                    >permalink</hi> https://doi.org/10.7891/e-manuscripta-71492<ref
+                                    target="https://doi.org/10.7891/e-manuscripta-71492"/></bibl>
+                              <bibl type="IIIF_Manifest_URL"><hi rend="bold">IIIF Manifest</hi>
+                                    https://www.e-manuscripta.ch/i3f/v20/1956411/manifest<ref
+                                    target="https://www.e-manuscripta.ch/i3f/v20/1956411/manifest"
+                                 /></bibl>
+                           </listBibl>
+                        </surrogates>
+                     </additional>
+                  </msDesc>
+               </witness>
+
+               <witness xml:id="Br">Bern, Burgerbibliothek, 3-4 [Esodo mutilo inizio]</witness>
+               
+               <witness xml:id="Mb2">
+                  <msDesc>
+                     <msIdentifier>
+                        <settlement>München</settlement>
+                        <repository>Bayerische Staatsbibliothek</repository>
+                        <idno>Clm 12741</idno>
+                        <altIdentifier type="external">
+                           <idno type="Biblissima">https://data.biblissima.fr/entity/Q173853</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                     <head>Biblia latina Veteris et Novi Testamenti</head>
+                     <!-- alternativa summary in mscontents ma la visualizzazione è più brutta -->
+                     <msContents>
+                        <msItem>
+                           <locus>f. 20va-21rb</locus>
+                           <title>capitula Exodi</title>
+                           <!-- così è corretto ma la visualizzazione va a capo e non è bellissimo -->
+                        </msItem>
+                     </msContents>
+                     <physDesc>
+                        <objectDesc form="codex">
+                           <supportDesc material="parch">
+                              <extent>353 fols.<dimensions type="leaf" unit="mm">
+                                    <height quantity="550">550</height>
+                                    <width quantity="375">375</width>
+                                 </dimensions></extent>
+                           </supportDesc>
+                           <layoutDesc>
+                              <layout columns="2">2 cols.</layout>
+                           </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                           <handNote script="minusculeCaroline">Carolingian minuscule</handNote>
+                        </handDesc>
+                     </physDesc>
+                     <history>
+                        <origin>
+                           <origDate from-custom="830" to-custom="834">830-834</origDate>
+                           <origPlace>Tours, Abbey St. Martin</origPlace>
+                        </origin>
+                     </history>
+                     <additional>
+                        <adminInfo>
+                           <recordHist>
+                              <source>
+                                 <p>Fourth period of the Turonian production under Fridugisus
+                                    (periode II) according to Fischer's classification (<bibl><ref
+                                          target="#Fischer"/>p. 262</bibl>). </p>
+                              </source>
+                           </recordHist>
+                        </adminInfo>
+                        <surrogates>
+                           <listBibl>
+                              <bibl subtype="full" type="digital_facsimile"><hi rend="bold"
+                                    >permalink</hi>
+                                    http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:de:bvb:12-bsb00047279-9<ref
+                                    target="http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:de:bvb:12-bsb00047279-9"
+                                 /></bibl>
+                              <bibl type="IIIF_Manifest_URL"><hi rend="bold">IIIF Manifest</hi>
+                                    https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00047279/manifest<ref
+                                    target="https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00047279/manifest"
+                                 /></bibl>
+                           </listBibl>
+                        </surrogates>
+                     </additional>
+                  </msDesc>
+               </witness>
+
+               <witness xml:id="B2">
+                  <msDesc>
+                     <msIdentifier>
+                        <settlement>Berlin</settlement>
+                        <repository>Staatsbibliothek zu Berlin - Preussischer
+                           Kulturbesitz</repository>
+                        <idno>Hamilton 82</idno>
+                        <altIdentifier type="external">
+                           <idno type="Biblissima">https://data.biblissima.fr/entity/Q131043</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                     <head>Biblia latina Veteris et Novi Testamenti</head>
+                     <!-- alternativa summary in mscontents ma la visualizzazione è più brutta -->
+                     <msContents>
+                        <msItem>
+                           <locus>f. 20rb-21rb</locus>
+                           <title>capitula Exodi</title>
+                           <!-- così è corretto ma la visualizzazione va a capo e non è bellissimo -->
+                        </msItem>
+                     </msContents>
+                     <physDesc>
+                        <objectDesc form="codex">
+                           <supportDesc material="parch">
+                              <extent>435 fols.<dimensions type="leaf" unit="mm">
+                                    <height quantity="490">490</height>
+                                    <width quantity="370">370</width>
+                                 </dimensions></extent>
+                           </supportDesc>
+                           <layoutDesc>
+                              <layout columns="2">2 cols.</layout>
+                           </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                           <handNote script="minusculeCaroline">Carolingian minuscule</handNote>
+                        </handDesc>
+                     </physDesc>
+                     <history>
+                        <origin>
+                           <origDate from-custom="830" to-custom="830">830</origDate>
+                           <origPlace>Tours, Abbey St. Martin or Marmoutier (Fischer)</origPlace>
+                        </origin>
+                     </history>
+                     <additional>
+                        <adminInfo>
+                           <recordHist>
+                              <source>
+                                 <p>Fourth period of the Turonian production under Fridugisus
+                                    (periode II) according to Fischer's classification (<bibl><ref
+                                          target="#Fischer"/>p. 263</bibl>). </p>
+                              </source>
+                           </recordHist>
+                        </adminInfo>
+                        <surrogates>
+                           <listBibl>
+                              <bibl subtype="full" type="digital_facsimile"><hi rend="bold"
+                                    >permalink</hi>
+                                    http://resolver.staatsbibliothek-berlin.de/SBB0001505900000000<ref
+                                    target="http://resolver.staatsbibliothek-berlin.de/SBB0001505900000000"
+                                 /></bibl>
+                              <bibl type="IIIF_Manifest_URL"><hi rend="bold">IIIF Manifest</hi>
+                                    https://content.staatsbibliothek-berlin.de/dc/778676021/manifest<ref
+                                    target="https://content.staatsbibliothek-berlin.de/dc/778676021/manifest"
+                                 /></bibl>
+                           </listBibl>
+                        </surrogates>
+                     </additional>
+                  </msDesc>
+               </witness>
+
+
+               <witness xml:id="P2">
+                  <msDesc>
+                     <msIdentifier>
+                        <settlement>Paris</settlement>
+                        <repository>Bibliothèque nationale de France</repository>
+                        <idno>latin 3</idno>
+                        <altIdentifier type="external">
+                           <idno type="Biblissima">https://data.biblissima.fr/w/Item:Q63610</idno>
+                        </altIdentifier>
+                     </msIdentifier>
+                     <head>Biblia latina Veteris et Novi Testamenti</head>
+                     <!-- alternativa summary in mscontents ma la visualizzazione è più brutta -->
+                     <msContents>
+                        <msItem>
+                           <locus>f. 21ra-21vb</locus>
+                           <title>capitula Exodi</title>
+                           <!-- così è corretto ma la visualizzazione va a capo e non è bellissimo -->
+                        </msItem>
+                     </msContents>
+                     <physDesc>
+                        <objectDesc form="codex">
+                           <supportDesc material="parch">
+                              <extent>409 fols.<dimensions type="leaf" unit="mm">
+                                    <height quantity="490">490</height>
+                                    <width quantity="380">380</width>
+                                 </dimensions></extent>
+                           </supportDesc>
+                           <layoutDesc>
+                              <layout columns="2">2 cols.</layout>
+                           </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                           <handNote script="minusculeCaroline">Carolingian minuscule</handNote>
+                        </handDesc>
+                     </physDesc>
+                     <history>
+                        <origin>
+                           <origDate from-custom="834" to-custom="843">834-843 (835 according to
+                                 <ref target="#Fischer"/>p. 264)</origDate>
+                           <origPlace>Tours, Abbey St. Martin</origPlace>
+                        </origin>
+                     </history>
+                     <additional>
+                        <adminInfo>
+                           <recordHist>
+                              <source>
+                                 <p>Second period of the Turonian production under Adelard (periode
+                                    III) according to Fischer's classification (<bibl><ref
+                                          target="#Fischer"/>p. 264</bibl>). </p>
+                              </source>
+                           </recordHist>
+                        </adminInfo>
+                        <surrogates>
+                           <listBibl>
+                              <bibl subtype="full" type="digital_facsimile"><hi rend="bold"
+                                    >permalink</hi>
+                                    https://gallica.bnf.fr/ark:/12148/btv1b8426789n<ref
+                                    target="https://gallica.bnf.fr/ark:/12148/btv1b8426789n"
+                                 /></bibl>
+                              <bibl type="IIIF_Manifest_URL"><hi rend="bold">IIIF Manifest</hi>
+                                    https://gallica.bnf.fr/iiif/ark:/12148/btv1b8426789n/manifest.json<ref
+                                    target="https://gallica.bnf.fr/iiif/ark:/12148/btv1b8426789n/manifest.json"
+                                 /></bibl>
+                           </listBibl>
+                        </surrogates>
+                     </additional>
+                  </msDesc>
+               </witness>
+
+
+
+               <witness xml:id="P1">Paris, Bibliothèque nationale de France, lat. 1</witness>
+               <witness xml:id="L1">London, British Library, Add. 10546 <note>f.
+                  24rv</note></witness>
+               <witness xml:id="Bm">Bamberg, Staatsbibliothek, Msc.Bibl. 1</witness>
+               <witness xml:id="Tu">Tours, Bibliothèque municipale, 10</witness>
+
+            </listWit>
+
+         
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <p>Some text here.</p>
+      </body>
+  </text>
+</TEI>
