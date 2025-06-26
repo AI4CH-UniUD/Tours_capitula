@@ -8,7 +8,6 @@
 			<titleStmt>
 				<title>Deuteronomius summaries in Tours' Bibles</title>
 				<respStmt>
-					<!-- è davvero utile? -->
 					<resp>Critical Edition by</resp>
 					<name>Silverio Franzoni</name>
 				</respStmt>
@@ -20,23 +19,26 @@
 				<listBibl>
 					<head>bibliographical abbreviations</head>
 					<bibl xml:id="DBsomm">
-						<author>D. de Bruyne</author>
+						<author>Donatien de Bruyne</author>
 						<title>Sommaires, divisions et rubriques de la Bible latine</title>
 						<pubPlace>Namur</pubPlace>
-						<date>1914</date>
-					</bibl>
+						<date>1914</date></bibl>
+					<bibl xml:id="Fischer"><author>Bonifatius Fischer</author><title>Lateinische
+							Bibelhandschriften im frühen Mittelalter</title><pubPlace>Freiburg ;
+							Basel ; Wien</pubPlace><date>1985</date></bibl>
+
+					<bibl xml:id="Bischoff"><author>B. Bischoff</author><title>Katalog der
+							festländischen Handschriften des neunten Jahrhunderts (mit Ausnahme der
+							wisigotischen)</title><pubPlace>Wiesbaden</pubPlace><date>1998-2017</date></bibl>
 				</listBibl>
 				<listWit>
 					<witness xml:id="Am1">
 						<msDesc>
-							<!-- copiata da descrizione Emanuela, perlopiù da adeguare
-			+ modifiche fatte in file "*descrizioneMss": 
-			>>>>>> recuperare msDesc da lì! -->
 							<msIdentifier>
 								<settlement>Amiens</settlement>
 								<repository>Bibliothèques d'Amiens Métropole [formerly Bibliothèque
 									municipale]</repository>
-								<idno>MS 6</idno>
+								<idno>Ms. 6</idno>
 								<altIdentifier type="external">
 									<idno type="Biblissima"
 										>https://data.biblissima.fr/entity/Q121769</idno>
@@ -44,10 +46,10 @@
 								<altIdentifier type="external">
 									<idno type="TM">https://www.trismegistos.org/text/66875</idno>
 								</altIdentifier>
+
 							</msIdentifier>
 							<head>Biblia latina, Pentateuchus. 1st volume of Mordramnus'
 								Bible</head>
-							<!-- alternativa summary in mscontents ma la visualizzazione è più brutta -->
 							<msContents>
 								<msItem>
 									<locus>ff. 205va-207va</locus>
@@ -57,11 +59,83 @@
 							<physDesc>
 								<objectDesc form="codex">
 									<supportDesc material="parch">
-										<!-- metterei "folios" e non "pages" -->
-										<extent>250 folios <lb/>
-											<dimensions type="leaf" unit="mm">
-												<height quantity="378">378 mm</height>
-												<width quantity="255">255 mm</width>
+										<extent>250 pages <lb/><dimensions type="leaf" unit="mm">
+												<height quantity="378">height 378 mm</height>
+												<width quantity="255">width 255 mm</width>
+											</dimensions></extent>
+									</supportDesc>
+									<layoutDesc>
+										<layout columns="2">2 cols.</layout>
+									</layoutDesc>
+								</objectDesc>
+								<handDesc>
+									<handNote script="minusculeCaroline">Mordramnus
+										minuscule</handNote>
+								</handDesc>
+							</physDesc>
+							<history>
+								<origin>
+									<origDate from-custom="772" to-custom="781">772-781</origDate>
+									<origPlace>Corbie</origPlace>
+								</origin>
+							</history>
+							<additional>
+								<surrogates>
+									<p>
+										<bibl subtype="full" type="digital_facsimile"><hi
+												rend="bold">digital facsimile:</hi>
+												https://gallica.bnf.fr/ark:/12148/btv1b8452188r<ref
+												target="https://gallica.bnf.fr/ark:/12148/btv1b8452188r"
+											/></bibl><lb/>
+										<bibl type="description"><hi rend="bold"
+												>description:</hi>https://portail.biblissima.fr/ark:/43093/mdatad4fbfba53794f3bf4827d3d72b031219d750cd0c<ref
+												target="https://portail.biblissima.fr/ark:/43093/mdatad4fbfba53794f3bf4827d3d72b031219d750cd0c"
+											/></bibl>
+										<bibl type="IIIF_Manifest_URL"><hi rend="bold">IIIF
+												Manifest</hi>
+												https://api.irht.cnrs.fr/ark:/63955/fl3mc5w96sgt/manifest.json<ref
+												target="https://api.irht.cnrs.fr/ark:/63955/fl3mc5w96sgt/manifest.json"
+											/></bibl><lb/>
+										<bibl type="CLA"><hi rend="bold">CLA 6.707:</hi>
+												https://elmss.nuigalway.ie/catalogue/1102<ref
+												target="https://elmss.nuigalway.ie/catalogue/1102"
+											/></bibl></p>
+								</surrogates>
+							</additional>
+						</msDesc>
+					</witness>
+
+					<witness xml:id="Tu">
+						<msDesc>
+							<msIdentifier>
+								<settlement>Tours</settlement>
+								<repository>Bibliothèque municipale</repository>
+								<idno>Ms. 10</idno>
+								<altIdentifier type="external">
+									<idno type="Biblissima"
+										>https://data.biblissima.fr/w/Item:Q422437</idno>
+								</altIdentifier>
+								<altIdentifier type="external">
+									<idno type="TM">www.trismegistos.org/text/67614</idno>
+								</altIdentifier>
+								<altIdentifier type="external">
+									<idno source="#Bischoff">Bischoff No. 6119</idno>
+								</altIdentifier>
+							</msIdentifier>
+							<head>Tours' Octateuchus</head>
+							<msContents>
+								<msItem>
+									<locus>ff. 220rb-221vb</locus>
+									<title>capitula Deuteronomii</title>
+								</msItem>
+							</msContents>
+							<physDesc>
+								<objectDesc form="codex">
+									<supportDesc material="parch">
+										<extent>II + 351 folios <lb/><dimensions type="leaf"
+												unit="mm">
+												<height quantity="352">height 352 mm</height>
+												<width quantity="260">width 260 mm</width>
 											</dimensions></extent>
 									</supportDesc>
 									<layoutDesc>
@@ -69,81 +143,158 @@
 									</layoutDesc>
 								</objectDesc>
 								<handDesc>
-									<handNote script="minusculeCaroline">Maurdramnus
+									<handNote script="minusculeCaroline">Carolingian
 										minuscule</handNote>
 								</handDesc>
 							</physDesc>
 							<history>
 								<origin>
-									<origDate from-custom="796" to-custom="804">772-781</origDate>
-									<origPlace>Corbie</origPlace>
+									<origDate from-custom="801" to-custom="825">801-825</origDate>
+									<origPlace cert="medium">Tours (?)</origPlace>
 								</origin>
 							</history>
 							<additional>
-								<!-- EC: "rispetto a Sg1 non ho messo nulla come record history e source" -->
 								<surrogates>
 									<p>
-										<bibl subtype="full" type="digital_facsimile"><hi
-												rend="bold">digital reproduction</hi>
-												https://gallica.bnf.fr/ark:/12148/btv1b8452188r<ref
-												target="https://gallica.bnf.fr/ark:/12148/btv1b8452188r"
+										<bibl type="digital_facsimile" subtype="full"><hi
+												rend="bold">digital
+											facsimile:</hi>https://arca.irht.cnrs.fr/ark:/63955/md45q811nc16
+												<ref
+												target="https://arca.irht.cnrs.fr/ark:/63955/md45q811nc16"
+											/></bibl>
+										<lb/>
+										<bibl type="description"><hi rend="bold"
+												>description:</hi>https://ccfr.bnf.fr/portailccfr/jsp/index_view_direct_anonymous.jsp?record=eadcgm:EADC:D37A10321<ref
+												target="https://ccfr.bnf.fr/portailccfr/jsp/index_view_direct_anonymous.jsp?record=eadcgm:EADC:D37A10321"
 											/></bibl>
 										<lb/>
 										<bibl type="IIIF_Manifest_URL"><hi rend="bold">IIIF
-												Manifest</hi>
-												https://api.irht.cnrs.fr/ark:/63955/fl3mc5w96sgt/manifest.json<ref
-												target="https://api.irht.cnrs.fr/ark:/63955/fl3mc5w96sgt/manifest.json"
+												Manifest:</hi>
+												https://api.irht.cnrs.fr/ark:/63955/fet5llr80e75/manifest.json<ref
+												target="https://api.irht.cnrs.fr/ark:/63955/fet5llr80e75/manifest.json"
 											/></bibl>
 										<lb/>
-										<bibl type="CLA"><hi rend="bold">CLA 6.707</hi>
-												https://elmss.nuigalway.ie/catalogue/1102<ref
-												target="https://elmss.nuigalway.ie/catalogue/1102"/>
-										</bibl>
+										<bibl type="CLA"><hi rend="bold">CLA
+												6.837:</hi>https://elmss.nuigalway.ie/catalogue/1252<ref
+												target="https://elmss.nuigalway.ie/catalogue/1252"
+											/></bibl>
+									</p></surrogates>
+							</additional>
+						</msDesc>
+					</witness>
+
+					<witness xml:id="Sg1">
+						<msDesc>
+							<msIdentifier>
+								<settlement>Sankt Gallen</settlement>
+								<repository>Stiftsbibliothek</repository>
+								<idno>Cod. Sang. 75</idno>
+								<altIdentifier type="external">
+									<idno type="Biblissima"
+										>https://data.biblissima.fr/entity/Q188328</idno>
+								</altIdentifier>
+								<altIdentifier type="external">
+									<idno type="TM">https://www.trismegistos.org/text/67048</idno>
+								</altIdentifier>
+								<altIdentifier source="#Bischoff">
+									<idno>Bischoff No. 5547</idno>
+								</altIdentifier>
+							</msIdentifier>
+							<head>Biblia latina Veteris et Novi Testamenti</head>
+							<msContents>
+								<msItem>
+									<locus>pp. 123b-125b</locus>
+									<title>capitula Deuteronomii</title>
+								</msItem>
+							</msContents>
+							<physDesc>
+								<objectDesc form="codex">
+									<supportDesc material="parch">
+										<extent>840 pages <lb/><dimensions type="leaf" unit="mm">
+												<height quantity="550">height 550 mm</height>
+												<width quantity="400">width 400 mm</width>
+											</dimensions></extent>
+									</supportDesc>
+									<layoutDesc>
+										<layout columns="2">2 cols.</layout>
+									</layoutDesc>
+								</objectDesc>
+								<handDesc>
+									<handNote script="minusculeCaroline">Carolingian minuscule by
+										different hands</handNote>
+								</handDesc>
+							</physDesc>
+							<history>
+								<origin>
+									<origDate from-custom="796" to-custom="804">796-804</origDate>
+									<origPlace>Tours, Abbey St. Martin</origPlace>
+								</origin>
+							</history>
+							<additional>
+								<adminInfo>
+									<recordHist>
+										<source>
+											<p>First period of the Turonian production according to
+												Fischer's classification (<bibl><ref
+												target="#Fischer"/>p. 257</bibl>). </p>
+										</source>
+									</recordHist>
+								</adminInfo>
+								<surrogates>
+									<p>
+										<bibl subtype="full" type="digital_facsimile"><hi
+												rend="bold">digital facsimile:</hi>
+												https://www.e-codices.unifr.ch/it/list/one/csg/0075<ref
+												target="https://www.e-codices.unifr.ch/it/list/one/csg/0075"
+											/></bibl>
+										<lb/>
+										<bibl type="description"><hi rend="bold"
+												>description:</hi>https://www.e-codices.unifr.ch/it/description/csg/0075/<ref
+												target="https://www.e-codices.unifr.ch/it/description/csg/0075/"
+											/></bibl>
+										<bibl type="IIIF_Manifest_URL"><hi rend="bold">IIIF
+												Manifest:</hi>
+												https://www.e-codices.unifr.ch/metadata/iiif/csg-0075/manifest.json<ref
+												target="https://www.e-codices.unifr.ch/metadata/iiif/csg-0075/manifest.json"
+											/></bibl>
+										<lb/>
 									</p>
 								</surrogates>
 							</additional>
 						</msDesc>
 					</witness>
 
-					<witness xml:id="Tu">Tours, Bibliothèque municipale, 10<note>ff.
-							220rb-221vb</note><note
-							facs="https://arca.irht.cnrs.fr/ark:/63955/md45q811nc16"/></witness>
-
-					<witness xml:id="Sg1">Sankt Gallen, Stiftsbibliothek, 75<note>pp.
-							123b-125b</note><note
-							facs="https://www.e-codices.unifr.ch/it/csg/0075/123"/></witness>
-
 					<!-- witness xml:id="Mz1">Monza, Biblioteca Capitolare, G. 1<note>ff.</note><note>NON ONLINE</note></witness -->
 
-					<witness xml:id="Tr"><msDesc>
+					<witness xml:id="Tr">
+						<msDesc>
 							<msIdentifier>
 								<settlement>Troyes</settlement>
-								<repository>Médiathèque Jacques-Chirac (formerly Bibliothèque
-									Municipale)</repository>
-								<idno>29</idno>
+								<repository>Médiathèque Jacques-Chirac [formerly Bibliothèque
+									Municipale]</repository>
+								<idno>Ms. 29</idno>
 								<altIdentifier type="external">
-									<idno type="ARCA_IRHT"
-										>https://arca.irht.cnrs.fr/ark:/63955/md9673667d1q</idno>
-									<!-- siccome manca in data.biblissima metto ARCA, ma non so se va bene -->
+									<idno type="Biblissima"
+										>https://data.biblissima.fr/entity/Q416966</idno>
 								</altIdentifier>
 								<altIdentifier type="external">
-									<idno type="TM"><!-- verificare se esiste --></idno>
+									<idno source="#Bischoff">Bischoff No. 6240</idno>
 								</altIdentifier>
 							</msIdentifier>
 							<head>Biblia latina Veteris Testamenti</head>
-							<!-- va bene??? -->
 							<msContents>
 								<msItem>
-									<locus><!-- completare --></locus>
-									<title><!-- completare --></title>
+									<locus>ff. 59v-60rb</locus>
+									<title>capitula Deuteronomii</title>
 								</msItem>
 							</msContents>
 							<physDesc>
 								<objectDesc form="codex">
 									<supportDesc material="parch">
-										<extent>216 folios <lb/><dimensions type="leaf" unit="mm">
-												<height quantity="405">405</height>
-												<width quantity="295">295</width>
+										<extent>II + 214 folios <lb/><dimensions type="leaf"
+												unit="mm">
+												<height quantity="405">height 405 mm</height>
+												<width quantity="295">width 295 mm</width>
 											</dimensions></extent>
 									</supportDesc>
 									<layoutDesc>
@@ -165,7 +316,9 @@
 								<adminInfo>
 									<recordHist>
 										<source>
-											<p>Not recorded in Fischer's classification.<bibl><ref
+											<p>Excluded from the Turonian production according to
+												Fischer's classification (<bibl><ref
+												target="#Fischer"/>p. 252</bibl>).<bibl><ref
 												target="#Fischer"/></bibl>
 											</p>
 										</source>
@@ -174,74 +327,973 @@
 								<surrogates>
 									<p>
 										<bibl type="digital_facsimile" subtype="full"><hi
-												rend="bold">digital reproduction (b/w)</hi>
+												rend="bold">digital facsimile (b/w):</hi>
 												https://arca.irht.cnrs.fr/ark:/63955/md9673667d1q<ref
 												target="https://arca.irht.cnrs.fr/ark:/63955/md9673667d1q"
 											/></bibl>
 										<lb/>
-										<bibl type="description"><hi rend="bold">short
-												description</hi> https://bibale.irht.cnrs.fr/47063
-												<ref target="https://bibale.irht.cnrs.fr/47063"
+										<bibl type="description"><hi rend="bold">description:</hi>
+											https://bibale.irht.cnrs.fr/47063 <ref
+												target="https://bibale.irht.cnrs.fr/47063"/></bibl>
+										<lb/>
+										<bibl type="description"><hi rend="bold">description:</hi>
+												https://ccfr.bnf.fr/portailccfr/jsp/index_view_direct_anonymous.jsp?record=eadcgm:EADC:D02A10280<ref
+												target="https://ccfr.bnf.fr/portailccfr/jsp/index_view_direct_anonymous.jsp?record=eadcgm:EADC:D02A10280"
 											/></bibl>
 										<lb/>
 										<bibl type="IIIF_Manifest_URL"><hi rend="bold">IIIF
-												Manifest</hi>
+												Manifest:</hi>
 												https://api.irht.cnrs.fr/ark:/63955/fbc1ozmc3ik2/manifest.json<ref
 												target="https://api.irht.cnrs.fr/ark:/63955/fbc1ozmc3ik2/manifest.json"
 											/></bibl>
 									</p>
 								</surrogates>
 							</additional>
-						</msDesc></witness>
+						</msDesc>
+					</witness>
 
-					<witness xml:id="P8">Paris, Bibliothèque nationale de France, lat.
-							11514<note>ff. 61va-62rb</note><note
-							facs="https://gallica.bnf.fr/ark:/12148/btv1b90808164/f69"/></witness>
+					<witness xml:id="P8">
+						<msDesc>
+							<msIdentifier>
+								<settlement>Paris</settlement>
+								<repository>Bibliothèque nationale de France</repository>
+								<idno>latin 11514</idno>
+								<altIdentifier type="external">
+									<idno type="Biblissima"
+										>https://data.biblissima.fr/entity/Q59141</idno>
+								</altIdentifier>
+								<altIdentifier type="external">
+									<idno source="#Bischoff">Bischoff No. 4685</idno>
+								</altIdentifier>
+							</msIdentifier>
+							<head>Biblia latina Veteris Testamenti</head>
+							<msContents>
+								<msItem>
+									<locus>ff. 61va-62rb</locus>
+									<title>capitula Deuteronomii</title>
+								</msItem>
+							</msContents>
+							<physDesc>
+								<objectDesc form="codex">
+									<supportDesc material="parch">
+										<extent>215 folios <lb/><dimensions type="leaf" unit="mm">
+												<height quantity="490">height 490 mm</height>
+												<width quantity="355">width 355 mm</width>
+											</dimensions></extent>
+									</supportDesc>
+									<layoutDesc>
+										<layout columns="2"><lb/>2 cols.</layout>
+									</layoutDesc>
+								</objectDesc>
+								<handDesc>
+									<handNote script="minusculeCaroline">Carolingian
+										minuscule.</handNote>
+								</handDesc>
+							</physDesc>
+							<history>
+								<origin>
+									<origDate from-custom="807" to-custom="834">807-834</origDate>
+									<origPlace>Tours, Abbey St. Martin</origPlace>
+								</origin>
+							</history>
+							<additional>
+								<adminInfo>
+									<recordHist>
+										<source>
+											<p>Second period of the Turonian production according to
+												Fischer's classification (<bibl><ref
+												target="#Fischer"/>p. 259</bibl>). </p>
+										</source>
+									</recordHist>
+								</adminInfo>
+								<surrogates>
+									<p>
+										<bibl type="digital_facsimile" subtype="full"><hi
+												rend="bold">digital facsimile (b/w):</hi>
+												https://gallica.bnf.fr/ark:/12148/btv1b90808164<ref
+												target="https://gallica.bnf.fr/ark:/12148/btv1b90808164"
+											/></bibl>
+										<lb/>
+										<bibl type="description"><hi rend="bold">description:</hi>
+												https://archivesetmanuscrits.bnf.fr/ark:/12148/cc73059g<ref
+												target="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc73059g"
+											/></bibl>
+										<lb/>
+										<bibl type="description"><hi rend="bold">description:</hi>
+												https://bibale.irht.cnrs.fr/46912<ref
+												target="https://bibale.irht.cnrs.fr/46912"/></bibl>
+										<lb/>
+										<bibl type="IIIF_Manifest_URL"><hi rend="bold">IIIF
+												Manifest:</hi>
+												https://gallica.bnf.fr/iiif/ark:/12148/btv1b90808164/manifest.json<ref
+												target="https://gallica.bnf.fr/iiif/ark:/12148/btv1b90808164/manifest.json"
+											/></bibl>
+									</p>
+								</surrogates>
+							</additional>
+						</msDesc>
+					</witness>
 
-					<!-- witness xml:id="P4">Paris, Bibliothèque Nationale de France, lat. 68<note>ff. 37va-38rb</note><note>NON ONLINE</note></witness -->
+					<witness xml:id="P4">
+						<msDesc>
+							<msIdentifier>
+								<settlement>Paris</settlement>
+								<repository>Bibliothèque nationale de France</repository>
+								<idno>latin 68</idno>
+								<altIdentifier type="external">
+									<idno type="Biblissima"
+										>https://data.biblissima.fr/entity/Q119117</idno>
+								</altIdentifier>
+								<altIdentifier type="external">
+									<idno source="#Bischoff">Bischoff No. 3957</idno>
+								</altIdentifier>
+							</msIdentifier>
+							<head>Biblia latina Veteris Testamenti (incomplete: from Ex 12:23 to Mi
+								4:9)</head>
+							<msContents>
+								<msItem>
+									<locus>ff. 37va-38rb</locus>
+									<title>capitula Deuteronomii</title>
+								</msItem>
+							</msContents>
+							<physDesc>
+								<objectDesc form="codex">
+									<supportDesc material="parch">
+										<extent>159 folios <lb/><dimensions type="leaf" unit="mm">
+												<height quantity="515">height 515 mm</height>
+												<width quantity="385">width 385 mm</width>
+											</dimensions></extent>
+									</supportDesc>
+									<layoutDesc>
+										<layout columns="2"><lb/>2 cols.</layout>
+									</layoutDesc>
+								</objectDesc>
+								<handDesc>
+									<handNote script="minusculeCaroline">Carolingian minuscule of c.
+										twelve hands</handNote>
+								</handDesc>
+							</physDesc>
+							<history>
+								<origin>
+									<origDate from-custom="815" to-custom="820">815-820</origDate>
+									<origPlace>Tours, Abbey St. Martin</origPlace>
+								</origin>
+							</history>
+							<additional>
+								<adminInfo>
+									<recordHist>
+										<source>
+											<p>Second period of the Turonian production according to
+												Fischer's classification (<bibl><ref
+												target="#Fischer"/>p. 259</bibl>). </p>
+										</source>
+									</recordHist>
+								</adminInfo>
+								<surrogates>
+									<p>
+										<bibl type="digital_facsimile" subtype="full"><hi
+												rend="bold">digital facsimile:</hi>none</bibl>
+										<lb/>
+										<bibl type="description"><hi rend="bold">description:</hi>
+												https://archivesetmanuscrits.bnf.fr/ark:/12148/cc8452s<ref
+												target="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc8452s"
+											/></bibl>
+										<lb/>
+									</p>
+								</surrogates>
+							</additional>
+						</msDesc>
+					</witness>
 
-					<witness xml:id="L2">London, British Library, Harley 2805<note>ff.
-							61va-62rb</note><note
-							facs="https://iiif.bl.uk/uv/#%3Fmanifest=https://bl.digirati.io/iiif/ark:/81055/vdc_100056042404.0x000001"
-						/></witness>
+					<witness xml:id="L2">
+						<msDesc>
+							<msIdentifier>
+								<settlement>London</settlement>
+								<repository>British Library</repository>
+								<idno>Harley MS 2805</idno>
+								<altIdentifier type="external">
+									<idno source="#Bischoff">Bischoff No. 3957</idno>
+								</altIdentifier>
+							</msIdentifier>
+							<head>Biblia latina Veteris Testamenti (Gn-Ps)</head>
+							<msContents>
+								<msItem>
+									<locus>ff. 61va-62rb</locus>
+									<title>capitula Deuteronomii</title>
+								</msItem>
+							</msContents>
+							<physDesc>
+								<objectDesc form="codex">
+									<supportDesc material="parch">
+										<extent>237 folios <lb/><dimensions type="leaf" unit="mm">
+												<height quantity="525">height 525 mm</height>
+												<width quantity="365">width 365 mm</width>
+											</dimensions></extent>
+									</supportDesc>
+									<layoutDesc>
+										<layout columns="2"><lb/>2 cols.</layout>
+									</layoutDesc>
+								</objectDesc>
+								<handDesc>
+									<handNote script="minusculeCaroline">Carolingian minuscule of
+										several different hands</handNote>
+								</handDesc>
+							</physDesc>
+							<history>
+								<origin>
+									<origDate from-custom="815" to-custom="820">815-820</origDate>
+									<origPlace>Tours, Abbey St. Martin</origPlace>
+								</origin>
+							</history>
+							<additional>
+								<adminInfo>
+									<recordHist>
+										<source>
+											<p>Second period of the Turonian production according to
+												Fischer's classification (<bibl><ref
+												target="#Fischer"/>p. 260</bibl>). </p>
+										</source>
+									</recordHist>
+								</adminInfo>
+								<surrogates>
+									<p>
+										<bibl type="digital_facsimile" subtype="full"><hi
+												rend="bold">digital facsimile:</hi>
+												https://iiif.bl.uk/uv/#%3Fmanifest=https://bl.digirati.io/iiif/ark:/81055/vdc_100056042404.0x000001<ref
+												target="https://iiif.bl.uk/uv/#%3Fmanifest=https://bl.digirati.io/iiif/ark:/81055/vdc_100056042404.0x000001"
+											/></bibl>
+										<lb/>
+										<bibl type="description"><hi rend="bold">description:</hi>
+												https://bibale.irht.cnrs.fr/46881<ref
+												target="https://bibale.irht.cnrs.fr/46881"/></bibl>
+										<lb/>
+										<bibl type="IIIF_Manifest_URL"><hi rend="bold">IIIF
+												Manifest:</hi>
+												https://iiif.bl.uk/uv/#%3Fmanifest=https://bl.digirati.io/iiif/ark:/81055/vdc_100056042404.0x000001<ref
+												target="https://iiif.bl.uk/uv/#%3Fmanifest=https://bl.digirati.io/iiif/ark:/81055/vdc_100056042404.0x000001"
+											/></bibl>
+									</p>
+								</surrogates>
+							</additional>
+						</msDesc>
+					</witness>
 
 					<!-- witness xml:id="Bs1">Basel, Universitätsbibliothek, A. N. I. 3<note>ff.</note><note>NON ONLINE</note></witness -->
 
-					<witness xml:id="Br1">Bern, Burgerbibliothek, 3<note>ff. 46ra-46vb</note><note
-							facs="https://www.e-codices.unifr.ch/en/bbb/0003/46r"/></witness>
+					<witness xml:id="Br1">
+						<msDesc>
+							<msIdentifier>
+								<settlement>Bern</settlement>
+								<repository>Burgerbibliothek</repository>
+								<idno>Cod. 3</idno>
+								<altIdentifier type="external">
+									<idno type="ARCA_IRHT"
+										>https://arca.irht.cnrs.fr/ark:/63955/md612n49wh9h</idno>
+								</altIdentifier>
+								<altIdentifier type="external">
+									<idno source="#Bischoff">Bischoff No. 489</idno>
+								</altIdentifier>
+							</msIdentifier>
+							<head>Biblia latina (Vulgata). <note>Part 1: Genesis to
+								Psalms</note></head>
+							<msContents>
+								<msItem>
+									<locus>ff. 46ra-46vb</locus>
+									<title>capitula Deuteronomii</title>
+								</msItem>
+							</msContents>
+							<physDesc>
+								<objectDesc form="codex">
+									<supportDesc material="parch">
+										<extent>209 folios <lb/><dimensions type="leaf" unit="mm">
+												<height quantity="460">height 460 mm</height>
+												<width quantity="350">width 350 mm</width>
+											</dimensions></extent>
+									</supportDesc>
+									<layoutDesc>
+										<layout columns="2"><lb/>2 cols.</layout>
+									</layoutDesc>
+								</objectDesc>
+								<handDesc>
+									<handNote script="minusculeCaroline">Carolingian minuscule by
+										two hands</handNote>
+								</handDesc>
+							</physDesc>
+							<history>
+								<origin>
+									<origDate from-custom="820" to-custom="830">820-830</origDate>
+									<origPlace>Tours, Abbey St. Martin</origPlace>
+								</origin>
+							</history>
+							<additional>
+								<adminInfo>
+									<recordHist>
+										<source>
+											<p>Second period of the Turonian production according to
+												Fischer's classification (<bibl><ref
+												target="#Fischer"/>p. 261</bibl>). </p>
+										</source>
+									</recordHist>
+								</adminInfo>
+								<surrogates>
+									<p>
+										<bibl type="digital_facsimile" subtype="full"><hi
+												rend="bold">digital facsimile:</hi>
+												https://www.e-codices.ch/en/list/one/bbb/0003<ref
+												target="https://www.e-codices.ch/en/list/one/bbb/0003"
+											/></bibl>
+										<lb/>
+										<bibl type="description"><hi rend="bold">description:</hi>
+												https://bibale.irht.cnrs.fr/99517<ref
+												target="https://bibale.irht.cnrs.fr/99517"/></bibl>
+										<lb/>
+										<bibl type="IIIF_Manifest_URL"><hi rend="bold">IIIF
+												Manifest:</hi>
+												https://www.e-codices.unifr.ch/metadata/iiif/bbb-0003/manifest.json<ref
+												target="https://www.e-codices.unifr.ch/metadata/iiif/bbb-0003/manifest.json"
+											/></bibl>
+									</p>
+								</surrogates>
+							</additional>
+						</msDesc>
+					</witness>
 
-					<witness xml:id="Z">Zürich, Zentralbibliothek, Car. C. 1<note>ff.
-							58rb-59ra</note><note
-							facs="https://www.e-manuscripta.ch/zuz/content/zoom/1956539"/></witness>
+					<witness xml:id="Z">
+						<msDesc>
+							<msIdentifier>
+								<settlement>Zürich</settlement>
+								<repository>Zentralbibliothek Zürich</repository>
+								<idno>Car C 1</idno>
+								<altIdentifier type="external">
+									<idno source="#Bischoff">Bischoff No. 7589</idno>
+								</altIdentifier>
+							</msIdentifier>
+							<head>Biblia latina Veteris et Novi Testamenti</head>
+							<msContents>
+								<msItem>
+									<locus>ff. 58rb-59ra</locus>
+									<title>capitula Deuteronomii</title>
 
-					<witness xml:id="Mb2">München, Bayerische Staatsbibliothek, Clm. 12741<note>ff.
-							54ra-54vb</note><note
-							facs="https://www.digitale-sammlungen.de/en/view/bsb00047279?page=111"
-						/></witness>
-					<witness xml:id="B2">Berlin, Deutsche Staatsbibliothek, Hamilton 82<note>ff.
-							61va-62rb</note><note
-							facs="https://resolver.staatsbibliothek-berlin.de/HSP0003788E00000000"
-						/></witness>
-					<witness xml:id="P2">Paris, Bibliothèque Nationale de France, lat. 3<note>ff.
-							55vb-56va</note><note
-							facs="https://gallica.bnf.fr/ark:/12148/btv1b8426789n/f116"/></witness>
-					<witness xml:id="L1">London, British Library, Add. 10546<note>ff.
-							66rb-67rb</note><note
-							facs="https://iiif.bl.uk/uv/#%3Fmanifest=https://bl.digirati.io/manifests/ark:/81055/man_10000009.0x000001"
-						/></witness>
-					<witness xml:id="Bm">Bamberg, Staatsbibliothek, Bibl. 1 (A.I.05)<note>ff.
-							63ra-63vb</note><note
-							facs="https://www.digitale-sammlungen.de/view/bsb00140662?page=127"
-						/></witness>
-					<witness xml:id="P1">Paris, Bibliothèque Nationale de France, lat. 1<note>ff.
-							61va-62rb</note><note
-							facs="https://gallica.bnf.fr/ark:/12148/btv1b8455903b/f130"/></witness>
-					<witness xml:id="K">Köln, Dombibliothek, 1<note>ff. 54rb-54vb</note><note
-							facs="https://resolver.staatsbibliothek-berlin.de/HSP00068AD900000000"
-						/></witness>
+								</msItem>
+							</msContents>
+							<physDesc>
+								<objectDesc form="codex">
+									<supportDesc material="parch">
+										<extent>422 folios <lb/><dimensions type="leaf" unit="mm">
+												<height quantity="480">height 480 mm</height>
+												<width quantity="360">width 360 mm</width>
+											</dimensions></extent>
+									</supportDesc>
+									<layoutDesc>
+										<layout columns="2">2 cols.</layout>
+									</layoutDesc>
+								</objectDesc>
+								<handDesc>
+									<handNote script="minusculeCaroline">Carolingian minuscule by
+										different hands</handNote>
+								</handDesc>
+							</physDesc>
+							<history>
+								<origin>
+									<origDate from-custom="82o" to-custom="830">820-830</origDate>
+									<origPlace>Tours, Abbey St. Martin</origPlace>
+								</origin>
+							</history>
+							<additional>
+								<adminInfo>
+									<recordHist>
+										<source>
+											<p>Third period of the Turonian production under
+												Fridugisus (periode II) according to Fischer's
+												classification (<bibl><ref target="#Fischer"/>p.
+												261</bibl>). </p>
+										</source>
+									</recordHist>
+								</adminInfo>
+								<surrogates>
+									<p>
+										<bibl type="digital_facsimile" subtype="full"><hi
+												rend="bold">digital facsimile:</hi>
+												https://www.e-manuscripta.ch/zuz/content/zoom/1956415<ref
+												target="https://www.e-manuscripta.ch/zuz/content/zoom/1956415"
+											/></bibl>
+										<lb/>
+										<bibl type="description"><hi rend="bold">description:</hi>
+												https://doi.org/10.7891/e-manuscripta-71492<ref
+												target="https://doi.org/10.7891/e-manuscripta-71492"
+											/></bibl>
+										<lb/>
+										<bibl type="description"><hi rend="bold">description:</hi>
+												https://bibale.irht.cnrs.fr/99581<ref
+												target="https://bibale.irht.cnrs.fr/99581"/></bibl>
+										<lb/>
+										<bibl type="IIIF_Manifest_URL"><hi rend="bold">IIIF
+												Manifest:</hi>
+												https://www.e-manuscripta.ch/i3f/v20/1956411/manifest<ref
+												target="https://www.e-manuscripta.ch/i3f/v20/1956411/manifest"
+											/></bibl>
+									</p>
+								</surrogates>
+							</additional>
+						</msDesc>
+					</witness>
+
+					<witness xml:id="Mb2">
+						<msDesc>
+							<msIdentifier>
+								<settlement>München</settlement>
+								<repository>Bayerische Staatsbibliothek</repository>
+								<idno>Clm 12741</idno>
+								<altIdentifier type="external">
+									<idno type="Biblissima"
+										>https://data.biblissima.fr/entity/Q173853</idno>
+								</altIdentifier>
+								<altIdentifier type="external">
+									<idno source="#Bischoff">Bischoff No. 3117</idno>
+								</altIdentifier>
+							</msIdentifier>
+							<head>Biblia latina Veteris et Novi Testamenti</head>
+							<msContents>
+								<msItem>
+									<locus>ff. 54ra-54vb</locus>
+									<title>capitula Deuteronomii</title>
+								</msItem>
+							</msContents>
+							<physDesc>
+								<objectDesc form="codex">
+									<supportDesc material="parch">
+										<extent>353 folios <lb/><dimensions type="leaf" unit="mm">
+												<height quantity="550">height 550 mm</height>
+												<width quantity="375">width 375 mm</width>
+											</dimensions></extent>
+									</supportDesc>
+									<layoutDesc>
+										<layout columns="2">2 cols.</layout>
+									</layoutDesc>
+								</objectDesc>
+								<handDesc>
+									<handNote script="minusculeCaroline">Carolingian
+										minuscule</handNote>
+								</handDesc>
+							</physDesc>
+							<history>
+								<origin>
+									<origDate from-custom="830" to-custom="834">830-834</origDate>
+									<origPlace>Tours, Abbey St. Martin</origPlace>
+								</origin>
+							</history>
+							<additional>
+								<adminInfo>
+									<recordHist>
+										<source>
+											<p>Fourth period of the Turonian production under
+												Fridugisus (periode II) according to Fischer's
+												classification (<bibl><ref target="#Fischer"/>p.
+												262</bibl>). </p>
+										</source>
+									</recordHist>
+								</adminInfo>
+								<surrogates>
+									<p>
+										<bibl subtype="full" type="digital_facsimile"><hi
+												rend="bold">digital facsimile:</hi>
+												http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:de:bvb:12-bsb00047279-9<ref
+												target="http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:de:bvb:12-bsb00047279-9"
+											/></bibl><lb/>
+										<bibl type="description"><hi rend="bold">description:</hi>
+												https://handschriftenportal.de/search?hspobjectid=HSP-d5e8e9bf-c89f-3314-b4ba-443efed6a1b8<ref
+												target="https://handschriftenportal.de/search?hspobjectid=HSP-d5e8e9bf-c89f-3314-b4ba-443efed6a1b8"
+											> </ref></bibl><lb/>
+										<bibl type="IIIF_Manifest_URL"><hi rend="bold">IIIF
+												Manifest:</hi>
+												https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00047279/manifest<ref
+												target="https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00047279/manifest"
+											/></bibl><lb/>
+									</p>
+								</surrogates>
+							</additional>
+						</msDesc>
+					</witness>
+
+					<witness xml:id="B2">
+						<msDesc>
+							<msIdentifier>
+								<settlement>Berlin</settlement>
+								<repository>Staatsbibliothek zu Berlin - Preussischer
+									Kulturbesitz</repository>
+								<idno>Hamilton 82</idno>
+								<altIdentifier type="external">
+									<idno type="Biblissima"
+										>https://data.biblissima.fr/entity/Q131043</idno>
+								</altIdentifier>
+								<altIdentifier type="external">
+									<idno source="#Bischoff">Bischoff No. 352</idno>
+								</altIdentifier>
+							</msIdentifier>
+							<head>Biblia latina Veteris et Novi Testamenti</head>
+							<msContents>
+								<msItem>
+									<locus>ff. 61va-62rb</locus>
+									<title>capitula Deuteronomii</title>
+								</msItem>
+							</msContents>
+							<physDesc>
+								<objectDesc form="codex">
+									<supportDesc material="parch">
+										<extent>435 folios <lb/><dimensions type="leaf" unit="mm">
+												<height quantity="490">height 490 mm</height>
+												<width quantity="370">width 370 mm</width>
+											</dimensions></extent>
+									</supportDesc>
+									<layoutDesc>
+										<layout columns="2">2 cols.</layout>
+									</layoutDesc>
+								</objectDesc>
+								<handDesc>
+									<handNote script="minusculeCaroline">Carolingian
+										minuscule</handNote>
+								</handDesc>
+							</physDesc>
+							<history>
+								<origin>
+									<origDate from-custom="830" to-custom="830">830</origDate>
+									<origPlace>Tours, Abbey St. Martin or Marmoutier (<ref
+											target="#Fischer"/>p. 263)</origPlace>
+								</origin>
+							</history>
+							<additional>
+								<adminInfo>
+									<recordHist>
+										<source>
+											<p>Fourth period of the Turonian production under
+												Fridugisus (periode II) according to Fischer's
+												classification (<bibl><ref target="#Fischer"/>p.
+												263</bibl>). </p>
+										</source>
+									</recordHist>
+								</adminInfo>
+								<surrogates>
+									<p>
+										<bibl subtype="full" type="digital_facsimile"><hi
+												rend="bold">digital facsimile:</hi>
+												http://resolver.staatsbibliothek-berlin.de/SBB0001505900000000<ref
+												target="http://resolver.staatsbibliothek-berlin.de/SBB0001505900000000"
+											/></bibl><lb/>
+										<bibl type="description"><hi rend="bold">description:</hi>
+												https://bibale.irht.cnrs.fr/9536<ref
+												target="https://bibale.irht.cnrs.fr/9536"
+											> </ref></bibl><lb/>
+										<bibl type="IIIF_Manifest_URL"><hi rend="bold">IIIF
+												Manifest</hi>
+												https://content.staatsbibliothek-berlin.de/dc/778676021/manifest<ref
+												target="https://content.staatsbibliothek-berlin.de/dc/778676021/manifest"
+											/></bibl>
+									</p>
+								</surrogates>
+							</additional>
+						</msDesc>
+					</witness>
+
+					<witness xml:id="P2">
+						<msDesc>
+							<msIdentifier>
+								<settlement>Paris</settlement>
+								<repository>Bibliothèque nationale de France</repository>
+								<idno>latin 3</idno>
+								<altIdentifier type="external">
+									<idno type="Biblissima"
+										>https://data.biblissima.fr/w/Item:Q63610</idno>
+								</altIdentifier>
+								<altIdentifier type="external">
+									<idno source="#Bischoff">Bischoff No. 3953</idno>
+								</altIdentifier>
+							</msIdentifier>
+							<head>Biblia latina Veteris et Novi Testamenti</head>
+							<msContents>
+								<msItem>
+									<locus>ff. 55vb-56va</locus>
+									<title>capitula Deuteronomii</title>
+								</msItem>
+							</msContents>
+							<physDesc>
+								<objectDesc form="codex">
+									<supportDesc material="parch">
+										<extent>409 folios <lb/><dimensions type="leaf" unit="mm">
+												<height quantity="490">height 490 mm</height>
+												<width quantity="380">width 380 mm</width>
+											</dimensions></extent>
+									</supportDesc>
+									<layoutDesc>
+										<layout columns="2">2 cols.</layout>
+									</layoutDesc>
+								</objectDesc>
+								<handDesc>
+									<handNote script="minusculeCaroline">Carolingian
+										minuscule</handNote>
+								</handDesc>
+							</physDesc>
+							<history>
+								<origin>
+									<origDate from-custom="834" to-custom="843">834-843 (835
+										according to <ref target="#Fischer"/>p. 264)</origDate>
+									<origPlace>Tours, Abbey St. Martin</origPlace>
+								</origin>
+							</history>
+							<additional>
+								<adminInfo>
+									<recordHist>
+										<source>
+											<p>Second period of the Turonian production under
+												Adelard (periode III) according to Fischer's
+												classification (<bibl><ref target="#Fischer"/>p.
+												264</bibl>). </p>
+										</source>
+									</recordHist>
+								</adminInfo>
+								<surrogates>
+									<p>
+										<bibl subtype="full" type="digital_facsimile"><hi
+												rend="bold">digital facsimile:</hi>
+												https://gallica.bnf.fr/ark:/12148/btv1b8426789n<ref
+												target="https://gallica.bnf.fr/ark:/12148/btv1b8426789n"
+											/></bibl><lb/>
+										<bibl type="description"><hi rend="bold">description:</hi>
+												https://archivesetmanuscrits.bnf.fr/ark:/12148/cc84492<ref
+												target="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc84492"
+											> </ref></bibl><lb/>
+										<bibl type="IIIF_Manifest_URL"><hi rend="bold">IIIF
+												Manifest:</hi>
+												https://gallica.bnf.fr/iiif/ark:/12148/btv1b8426789n/manifest.json<ref
+												target="https://gallica.bnf.fr/iiif/ark:/12148/btv1b8426789n/manifest.json"
+											/></bibl><lb/>
+									</p>
+								</surrogates>
+							</additional>
+						</msDesc>
+					</witness>
+
+					<witness xml:id="L1">
+						<msDesc>
+							<msIdentifier>
+								<settlement>London</settlement>
+								<repository>British Library</repository>
+								<idno>Add. 10546</idno>
+								<altIdentifier>
+									<idno type="ARCA_IRHT"
+										>https://arca.irht.cnrs.fr/ark:/63955/md139019vp3t</idno>
+								</altIdentifier>
+								<altIdentifier type="external">
+									<idno source="#Bischoff">Bischoff No. 2360</idno>
+								</altIdentifier>
+							</msIdentifier>
+							<head>Biblia latina Veteris et Novi Testamenti <note>The
+									Moutier-Grandval Bible</note></head>
+							<msContents>
+								<msItem>
+									<locus>ff. 66rb-67rb</locus>
+									<title>capitula Deuteronomii</title>
+								</msItem>
+							</msContents>
+							<physDesc>
+								<objectDesc form="codex">
+									<supportDesc material="parch">
+										<extent>449 folios <lb/><dimensions type="leaf" unit="mm">
+												<height quantity="510">height 510 mm</height>
+												<width quantity="375">width 375 mm</width>
+											</dimensions></extent>
+									</supportDesc>
+									<layoutDesc>
+										<layout columns="2"><lb/>2 cols.</layout>
+									</layoutDesc>
+								</objectDesc>
+								<handDesc>
+									<handNote script="minusculeCaroline">Carolingian
+										minuscule</handNote>
+								</handDesc>
+							</physDesc>
+							<history>
+								<origin>
+									<origDate from-custom="834" to-custom="843">834-843</origDate>
+									<origPlace>Tours, Abbey St. Martin</origPlace>
+								</origin>
+							</history>
+							<additional>
+								<adminInfo>
+									<recordHist>
+										<source>
+											<p>Third period of the Turonian production according to
+												Fischer's classification<bibl>
+												<ref target="#Fischer"/>pp. 264-265</bibl>
+											</p>
+										</source>
+									</recordHist>
+								</adminInfo>
+								<surrogates>
+									<p>
+										<bibl type="digital_facsimile" subtype="full"><hi
+												rend="bold">digital facsimile:</hi>
+												https://iiif.bl.uk/uv/#?manifest=https://bl.digirati.io/manifests/ark:/81055/man_10000009.0x000001<ref
+												target="https://iiif.bl.uk/uv/#?manifest=https://bl.digirati.io/manifests/ark:/81055/man_10000009.0x000001"
+											/></bibl>
+										<lb/>
+										<bibl type="description"><hi rend="bold">description:</hi>
+												https://bibale.irht.cnrs.fr/46996<ref
+												target="https://bibale.irht.cnrs.fr/46996"/></bibl>
+										<lb/>
+										<bibl type="IIIF_Manifest_URL"><hi rend="bold">IIIF
+												Manifest:</hi>
+												https://iiif.bl.uk/uv/#?manifest=https://bl.digirati.io/manifests/ark:/81055/man_10000009.0x000001<ref
+												target="https://iiif.bl.uk/uv/#?manifest=https://bl.digirati.io/manifests/ark:/81055/man_10000009.0x000001"
+											/></bibl><lb/>
+									</p>
+								</surrogates>
+							</additional>
+						</msDesc>
+					</witness>
+
+					<witness xml:id="Bm">
+						<msDesc>
+							<msIdentifier>
+								<settlement>Bamberg</settlement>
+								<repository>Staatsbibliothek</repository>
+								<idno>Msc.Bibl.1 (A.I.5)</idno>
+								<altIdentifier type="external">
+									<idno type="ARCA_IRHT"
+										>https://arca.irht.cnrs.fr/ark:/63955/md46qz20wd82</idno>
+								</altIdentifier>
+								<altIdentifier type="external">
+									<idno source="#Bischoff">Bischoff No. 190</idno>
+								</altIdentifier>
+							</msIdentifier>
+							<head>Biblia latina Veteris et Novi Testamenti <note>Alcuin's
+									Bible</note></head>
+							<msContents>
+								<msItem>
+									<locus>ff. 63ra-63vb</locus>
+									<title>capitula Deuteronomii</title>
+								</msItem>
+							</msContents>
+							<physDesc>
+								<objectDesc form="codex">
+									<supportDesc material="parch">
+										<extent>423 folios <lb/><dimensions type="leaf" unit="mm">
+												<height quantity="470">heigth 470 mm</height>
+												<width quantity="355">width 355 mm</width>
+											</dimensions></extent>
+									</supportDesc>
+									<layoutDesc>
+										<layout columns="2"><lb/>2 cols.</layout>
+									</layoutDesc>
+								</objectDesc>
+								<handDesc>
+									<handNote script="minusculeCaroline">Carolingian
+										minuscule</handNote>
+								</handDesc>
+							</physDesc>
+							<history>
+								<origin>
+									<origDate from-custom="834" to-custom="843">834-843</origDate>
+									<origPlace>Tours, Marmoutier Abbey</origPlace>
+								</origin>
+							</history>
+							<additional>
+								<adminInfo>
+									<recordHist>
+										<source>
+											<p>Third period of the Turonian production according to
+												Fischer's classification<bibl><ref target="#Fischer"
+												/>p. 265</bibl>
+											</p>
+										</source>
+									</recordHist>
+								</adminInfo>
+								<surrogates>
+									<p>
+										<bibl type="digital_facsimile" subtype="full"><hi
+												rend="bold">digital facsimile:</hi>
+												https://www.digitale-sammlungen.de/en/details/bsb00140662<ref
+												target="https://www.digitale-sammlungen.de/en/details/bsb00140662"
+											/></bibl>
+										<lb/>
+										<bibl type="description"><hi rend="bold">description:</hi>
+												https://bibale.irht.cnrs.fr/43718<ref
+												target="https://bibale.irht.cnrs.fr/43718"/></bibl>
+										<lb/>
+										<bibl type="description"><hi rend="bold">description:</hi>
+												https://opacplus.bsb-muenchen.de/title/BV035334719<ref
+												target="https://opacplus.bsb-muenchen.de/title/BV035334719"
+											/></bibl>
+										<lb/>
+										<bibl type="IIIF_Manifest_URL"><hi rend="bold">IIIF
+												Manifest:</hi>
+												https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00140662/manifest<ref
+												target="https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00140662/manifest"
+											/></bibl>
+									</p>
+								</surrogates>
+							</additional>
+						</msDesc>
+					</witness>
+
+					<witness xml:id="P1">
+						<msDesc>
+							<msIdentifier>
+								<settlement>Paris</settlement>
+								<repository>Bibliothèque nationale de France</repository>
+								<idno>latin 1</idno>
+								<altIdentifier type="external">
+									<idno type="Biblissima"
+										>https://data.biblissima.fr/entity/Q62750</idno>
+								</altIdentifier>
+								<altIdentifier type="external">
+									<idno source="#Bischoff">Bischoff No. 3951</idno>
+								</altIdentifier>
+							</msIdentifier>
+							<head>Biblia latina ("First Bible of Charles the Bald")</head>
+							<msContents>
+								<msItem>
+									<locus>ff. 61va-62rb</locus>
+									<title>capitula Deuteronomii</title>
+								</msItem>
+							</msContents>
+							<physDesc>
+								<objectDesc form="codex">
+									<supportDesc material="parch">
+										<extent>I + 423 folios <lb/><dimensions type="leaf"
+												unit="mm">
+												<height quantity="495">height 495 mm</height>
+												<width quantity="375">width 375 mm</width>
+											</dimensions></extent>
+									</supportDesc>
+									<layoutDesc>
+										<layout columns="2"><lb/>2 cols.</layout>
+									</layoutDesc>
+								</objectDesc>
+								<handDesc>
+									<handNote script="minusculeCaroline">Carolingian
+										minuscule</handNote>
+								</handDesc>
+							</physDesc>
+							<history>
+								<origin>
+									<origDate from-custom="845" to-custom="851">845-851</origDate>
+									<origPlace>Tours, Abbey St. Martin</origPlace>
+								</origin>
+							</history>
+							<additional>
+								<adminInfo>
+									<recordHist>
+										<source>
+											<p>Fourth period (Abbot Vivian, 843-851) of the Turonian
+												production according to Fischer's classification
+												(<bibl><ref target="#Fischer"/>p. 267</bibl>).
+											</p>
+										</source>
+									</recordHist>
+								</adminInfo>
+								<surrogates>
+									<p>
+										<bibl type="digital_facsimile" subtype="full"><hi
+												rend="bold">digital facsimile:</hi>
+												https://gallica.bnf.fr/ark:/12148/btv1b8455903b<ref
+												target="https://gallica.bnf.fr/ark:/12148/btv1b8455903b"
+											/></bibl>
+										<lb/>
+										<bibl type="description"><hi rend="bold">description:</hi>
+												https://archivesetmanuscrits.bnf.fr/ark:/12148/cc8447n<ref
+												target="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc8447n"
+											/></bibl>
+										<lb/>
+										<bibl type="IIIF_Manifest_URL"><hi rend="bold">IIIF
+												Manifest:</hi>
+												https://gallica.bnf.fr/iiif/ark:/12148/btv1b8455903b/manifest.json<ref
+												target="https://gallica.bnf.fr/iiif/ark:/12148/btv1b8455903b/manifest.json"
+											/></bibl>
+									</p>
+								</surrogates>
+							</additional>
+						</msDesc>
+					</witness>
+
+					<witness xml:id="K">
+						<msDesc>
+							<msIdentifier>
+								<settlement>Köln</settlement>
+								<repository>Erzbischöfliche Diözesan- und Dombibliothek</repository>
+								<idno>1</idno>
+								<altIdentifier type="external">
+									<idno source="#Bischoff">Bischoff No. 1867</idno>
+								</altIdentifier>
+							</msIdentifier>
+							<head>Biblia Latina Veteris et Novi Testamenti</head>
+							<msContents>
+								<msItem>
+									<locus>ff. 54rb-54vb</locus>
+									<title>capitula Deuteronomii</title>
+								</msItem>
+							</msContents>
+							<physDesc>
+								<objectDesc form="codex">
+									<supportDesc material="parch">
+										<extent>I + 382 + I folios <lb/><dimensions type="leaf"
+												unit="mm">
+												<height quantity="495">height 495 mm</height>
+												<width quantity="350">width 350 mm</width>
+											</dimensions></extent>
+									</supportDesc>
+									<layoutDesc>
+										<layout columns="2"><lb/>2 cols.</layout>
+									</layoutDesc>
+								</objectDesc>
+								<handDesc>
+									<handNote script="minusculeCaroline">Carolingian minuscule, one
+										hand</handNote>
+								</handDesc>
+							</physDesc>
+							<history>
+								<origin>
+									<origDate from-custom="857" to-custom="862">857-862</origDate>
+									<origPlace>Tours, Abbey St. Martin</origPlace>
+								</origin>
+							</history>
+							<additional>
+								<adminInfo>
+									<recordHist>
+										<source>
+											<p>Fifth period (853-c.900) of the Turonian production
+												according to Fischer's classification (<bibl><ref
+												target="#Fischer"/>p. 268</bibl>). </p>
+										</source>
+									</recordHist>
+								</adminInfo>
+								<surrogates>
+									<p>
+										<bibl type="digital_facsimile" subtype="full"><hi
+												rend="bold">digital facsimile:</hi>
+												https://resolver.staatsbibliothek-berlin.de/HSP00068AD900000000<ref
+												target="https://resolver.staatsbibliothek-berlin.de/HSP00068AD900000000"
+											/></bibl>
+										<lb/>
+										<bibl type="description"><hi rend="bold">description:</hi>
+												https://nbn-resolving.org/urn:nbn:de:hbz:kn28-3-3052<ref
+												target="https://nbn-resolving.org/urn:nbn:de:hbz:kn28-3-3052"
+											/></bibl>
+										<lb/>
+										<bibl type="IIIF_Manifest_URL"><hi rend="bold">IIIF
+												Manifest:</hi>
+												https://digital.dombibliothek-koeln.de/i3f/v20/273024/manifest<ref
+												target="https://digital.dombibliothek-koeln.de/i3f/v20/273024/manifest"
+											/></bibl>
+									</p>
+								</surrogates>
+							</additional>
+						</msDesc>
+					</witness>
+
 					<!-- indicare che P3 segue la serie B? (contrary to all the other Tours Bibles, 
 						P3 witnesses DeBruyne's B Series instead of A Series) -->
-					<witness xml:id="DeBrA">text of series A as printed by D. de Bruyne,
+
+					<witness xml:id="de_Bruyne">text of series A as printed by D. de Bruyne,
 						Sommaires..., p. 34-40</witness>
 				</listWit>
 			</sourceDesc>
@@ -303,6 +1355,8 @@
 						<rdg wit="#P8" rendition="#Ca #bw">XP INCiPiuNT CAPituLa LIBRI
 							DEUTERoNOMII</rdg>
 						<note>in the top margin, at the center of the page</note>
+						<rdg wit="#P4" rendition="#Ca #red">INCiPiuNT CAPituLa LIBRI
+							DEUTERoNoMII</rdg>
 						<rdg wit="#L2" rendition="#Ca #textink">INCiPiuNT CAPiTuLa DE LIBRO
 							DEUTERONOMII</rdg>
 						<rdg wit="#Br1" rendition="#CU #red">INCIPIUNT CAPITULA IN LIBRO
@@ -375,6 +1429,7 @@
 								<rdg wit="#Tr" varSeq="1" type="minor" cause="slip">ordina</rdg>
 								<rdg wit="#Tr" varSeq="2" type="minor" cause="correction" hand="#m"
 									rend="above">ordinaui</rdg>
+								<rdg wit="#P4" type="minor" cause="grammatical">ordinauit</rdg>
 							</app>
 							<app>
 								<lem>uobis</lem>
@@ -410,7 +1465,7 @@
 							<rdg wit="#P8" varSeq="2" type="minor"
 								cause="orthographic_falseEmendation" ana="hebrew" hand="#u">de
 								horeb</rdg>
-							<rdg wit="#B2" type="minor" cause="orthographic" ana="hebrew">de
+							<rdg wit="#P4 #B2" type="minor" cause="orthographic" ana="hebrew">de
 								horeb</rdg>
 						</app> ambulauerunt per omnem<app>
 							<lem>heremum</lem>
@@ -426,11 +1481,11 @@
 							<rdg wit="#Z" varSeq="1" type="omission" cause="slip"/>
 							<rdg wit="#Z" varSeq="2" type="lem" cause="correction" hand="#u"
 								rend="above">et</rdg>
-						</app> dixistis mittamus uiros ante <app>
-							<lem>nos</lem>
-							<rdg wit="#Am1" type="minor" cause="grammatical_paleographicConfusion"
-								>uos</rdg>
-						</app> et<app>
+						</app> dixistis <q type="spoken">mittamus uiros ante <app>
+								<lem>nos</lem>
+								<rdg wit="#Am1" type="minor"
+									cause="grammatical_paleographicConfusion">uos</rdg>
+							</app></q> et<app>
 							<lem>feci</lem>
 							<rdg wit="#Sg1" type="substantive" subtype="error" cause="grammatical"
 								>fecisti</rdg>
@@ -459,30 +1514,33 @@
 							<lem>VI</lem>
 							<witDetail wit="#Tr" type="unreadable"/>
 						</app></num>
-					<title>Et dixi uobis dominus deus<app>
-							<lem>praecedit</lem>
-							<rdg wit="#Tu" type="minor" cause="grammatical">praecedet</rdg>
-							<rdg wit="#L2" type="minor" cause="grammatical">praecepit</rdg>
-							<rdg wit="#Z" varSeq="1" type="minor" cause="grammatical"
-								rend="subpunctuated">praecedet</rdg>
-							<rdg wit="#Z" varSeq="2" type="lem" cause="correction" hand="#u"
-								rend="above">praecedit</rdg>
-							<rdg wit="#P2" varSeq="1" type="minor" cause="grammatical" cert="low"
-								>praecepit</rdg>
-							<rdg wit="#P2" varSeq="2" type="lem" cause="correction" hand="#m"
-								rend="overstrike" cert="low">praecedit</rdg>
-							<rdg wit="#Bm" varSeq="1" type="minor" cause="grammatical"
-								rend="erasure" cert="low">praecepit</rdg>
-							<rdg wit="#Bm" varSeq="2" type="lem" cause="correction" hand="#u"
-								rend="overstrike" cert="low">praecedit</rdg>
-							<rdg wit="#K" type="minor" cause="orthographic">precedit</rdg>
-						</app> uos et non<app>
-							<lem>credidistis</lem>
-							<rdg wit="#Z" varSeq="1" type="minor" cause="haplography"
-								>credistis</rdg>
-							<rdg wit="#Z" varSeq="2" type="lem" cause="correction" hand="#u"
-								rend="above">credidistis</rdg>
-						</app></title>
+					<title>Et <app>
+							<lem>dixi</lem>
+							<rdg wit="#P4" type="minor" cause="grammatical">dixit</rdg>
+						</app> uobis <q type="spoken">dominus deus<app>
+								<lem>praecedit</lem>
+								<rdg wit="#Tu" type="minor" cause="grammatical">praecedet</rdg>
+								<rdg wit="#L2" type="minor" cause="grammatical">praecepit</rdg>
+								<rdg wit="#Z" varSeq="1" type="minor" cause="grammatical"
+									rend="subpunctuated">praecedet</rdg>
+								<rdg wit="#Z" varSeq="2" type="lem" cause="correction" hand="#u"
+									rend="above">praecedit</rdg>
+								<rdg wit="#P2" varSeq="1" type="minor" cause="grammatical"
+									cert="low">praecepit</rdg>
+								<rdg wit="#P2" varSeq="2" type="lem" cause="correction" hand="#m"
+									rend="overstrike" cert="low">praecedit</rdg>
+								<rdg wit="#Bm" varSeq="1" type="minor" cause="grammatical"
+									rend="erasure" cert="low">praecepit</rdg>
+								<rdg wit="#Bm" varSeq="2" type="lem" cause="correction" hand="#u"
+									rend="overstrike" cert="low">praecedit</rdg>
+								<rdg wit="#K" type="minor" cause="orthographic">precedit</rdg>
+							</app> uos et non<app>
+								<lem>credidistis</lem>
+								<rdg wit="#Z" varSeq="1" type="minor" cause="haplography"
+									>credistis</rdg>
+								<rdg wit="#Z" varSeq="2" type="lem" cause="correction" hand="#u"
+									rend="above">credidistis</rdg>
+							</app></q></title>
 				</item>
 				<item n="7">
 					<num><app>
@@ -494,6 +1552,7 @@
 						</app></num>
 					<title><app>
 							<lem>Murmurastis</lem>
+							<rdg wit="#P4" type="minor" cause="ortographical">murmorastis</rdg>
 							<rdg wit="#P2" varSeq="1" type="minor" cause="slip">murmurattis</rdg>
 							<rdg wit="#P2" varSeq="2" type="lem" cause="correction" hand="#m"
 								rend="overstrike">murmurastis</rdg>
@@ -517,7 +1576,7 @@
 								cert="low">chabeb</rdg>
 							<rdg wit="#Am1" varSeq="2" type="minor" cause="correction" hand="#m"
 								rend="overstrike" cert="low">chaleb</rdg>
-							<rdg wit="#Tu #Tr #P8 #L2 #Mb2 #P2 #L1 #Bm" type="minor"
+							<rdg wit="#Tu #Tr #P8 #P4 #L2 #Mb2 #P2 #L1 #Bm" type="minor"
 								cause="orthographic" ana="hebrew">chaleb</rdg>
 						</app> et<app>
 							<lem>filios</lem>
@@ -530,21 +1589,25 @@
 					<title>Et <app>
 							<lem>mihi</lem>
 							<rdg wit="#Bm" type="minor" cause="orthographic">michi</rdg>
-						</app> iratus est dominus causa uestri dicens nec <app>
-							<lem/>
-							<rdg wit="#Tu" varSeq="1" type="addition" cause="unknown"
-								rend="subpunctuated">et</rdg>
-							<rdg wit="#Tu" varSeq="2" type="lem" cause="correction" hand="#l"/>
-						</app> tu intrabis ibi sed<app>
-							<lem>hiesus</lem>
-							<rdg wit="#Am1 #Tr #DeBrA" type="minor" cause="orthographic"
-								ana="hebrew">iesus</rdg>
-						</app> filius naue intrabit ibi et<app>
-							<lem>filii</lem>
-							<rdg wit="#Sg1" varSeq="1" type="minor" cause="orthographic">fili</rdg>
-							<rdg wit="#Sg1" varSeq="2" type="lem" cause="correction" hand="#m"
-								rend="above">filii</rdg>
-						</app> eorum quos dixerunt captiuos futuros</title>
+						</app> iratus est <app>
+							<lem>dominus</lem>
+							<rdg wit="#P4" type="omission" cause="slip"/>
+						</app> causa uestri dicens <q type="spoken">nec <app>
+								<lem/>
+								<rdg wit="#Tu" varSeq="1" type="addition" cause="unknown"
+									rend="subpunctuated">et</rdg>
+								<rdg wit="#Tu" varSeq="2" type="lem" cause="correction" hand="#l"/>
+							</app> tu intrabis ibi sed<app>
+								<lem>hiesus</lem>
+								<rdg wit="#Am1 #Tr #P4 #DeBrA" type="minor" cause="orthographic"
+									ana="hebrew">iesus</rdg>
+							</app> filius naue intrabit ibi et<app>
+								<lem>filii</lem>
+								<rdg wit="#Sg1" varSeq="1" type="minor" cause="orthographic"
+									>fili</rdg>
+								<rdg wit="#Sg1" varSeq="2" type="lem" cause="correction" hand="#m"
+									rend="above">filii</rdg>
+							</app> eorum quos dixerunt captiuos futuros</q></title>
 				</item>
 				<item n="9">
 					<num>VIIII</num>
@@ -559,7 +1622,7 @@
 							<rdg wit="#K" type="minor" cause="grammatical">monte</rdg>
 						</app> et exiuit <app>
 							<lem>amorraeus</lem>
-							<rdg wit="#Am1 #Tu" type="minor" cause="orthographic">amorreus</rdg>
+							<rdg wit="#Am1 #Tu #P4" type="minor" cause="orthographic">amorreus</rdg>
 							<rdg wit="#Sg1 #K" type="minor" cause="orthographic">amorr&#553;us</rdg>
 							<rdg wit="#Tr" type="minor" cause="orthographic">amorr&#230;us</rdg>
 						</app> et persecutus est uos</title>
@@ -569,7 +1632,10 @@
 					<title>Similiter decurrit per singula et dinumerat uniuersa magnalia dei et <app>
 							<lem>uirtutes</lem>
 							<rdg wit="#Am1" type="minor" cause="grammatical">uirtutis</rdg>
-						</app> quibus praeibat<app>
+						</app> quibus <app>
+							<lem>praeibat</lem>
+							<rdg wit="#P4" type="medium" cause="misspelling">praedicabat</rdg>
+						</app><app>
 							<lem>eos</lem>
 							<rdg wit="#Z" varSeq="1" type="omission" cause="slip"/>
 							<rdg wit="#Z" varSeq="2" type="lem" cause="correction" hand="#m"
@@ -590,8 +1656,9 @@
 							<rdg wit="#Sg1" varSeq="1" type="minor" cause="slip">l</rdg>
 							<rdg wit="#Sg1" varSeq="2" type="lem" cause="correction" hand="#m"
 								rend="overstrike">xl</rdg>
-							<rdg wit="#Am1 #Tu #Tr #P8 #L2 #Br1 #Z #B2 #L1 #Bm" type="substantive"
-								subtype="adiaphoric" cause="orthographic">xl</rdg>
+							<rdg wit="#Am1 #Tu #Tr #P8 #P4 #L2 #Br1 #Z #B2 #L1 #Bm"
+								type="substantive" subtype="adiaphoric" cause="orthographic"
+								>xl</rdg>
 						</app> annos et <app>
 							<lem>quae</lem>
 							<rdg wit="#Am1" type="minor" cause="orthographic">qu&#553;</rdg>
@@ -626,6 +1693,7 @@
 								>hic</rdg>
 						</app> iterum<app>
 							<lem>astringit</lem>
+							<rdg wit="#P4" type="minor" cause="grammatical">astrinxit</rdg>
 							<rdg wit="#Z" type="minor" cause="orthographic">adstringit</rdg>
 							<rdg wit="#P2" varSeq="1" type="minor" cause="grammatical"
 								rend="erasure">adstrinxit</rdg>
@@ -635,7 +1703,11 @@
 				</item>
 				<item n="13">
 					<num>XIII</num>
-					<title>Videte ne faciatis uobis sculptile similitudinem omnis hominis aut<app>
+					<title>Videte ne faciatis uobis <app>
+							<lem>sculptile</lem>
+							<rdg wit="#P4" type="minor" cause="grammatical_diplography"
+								>sculptiles</rdg>
+						</app> similitudinem omnis hominis aut<app>
 							<lem>pecoris</lem>
 							<rdg wit="Sg1" type="minor" cause="orthographic">peccoris</rdg>
 						</app> aut alicuius rei<app>
@@ -701,7 +1773,11 @@
 						</app> cui <app>
 							<lem>locutus</lem>
 							<rdg wit="#Tu" type="minor" cause="orthographic">loquutus</rdg>
-						</app> sit dominus de medio<app>
+						</app> sit <app>
+							<lem>dominus</lem>
+							<rdg wit="#P4" type="substantive" subtype="error" cause="slip"
+								>deus</rdg>
+						</app> de medio<app>
 							<lem>igni</lem>
 							<rdg wit="#DeBrA" type="minor" cause="grammatical">ignis</rdg>
 						</app></title>
@@ -750,9 +1826,13 @@
 						</app><app>
 							<lem>locutus</lem>
 							<rdg wit="#Tu" type="minor" cause="orthographic">loquutus</rdg>
-						</app> est dominus ad omnem<app>
+						</app> est <app>
+							<lem>dominus</lem>
+							<rdg wit="#P4" type="omission" cause="slip"/>
+						</app> ad omnem<app>
 							<lem>synagogam</lem>
-							<rdg wit="#Tu #Sg1" type="minor" cause="orthographic">sinagogam</rdg>
+							<rdg wit="#Tu #Sg1 #P4" type="minor" cause="orthographic"
+								>sinagogam</rdg>
 						</app> israhel et dixistis <app>
 							<lem>mihi</lem>
 							<rdg wit="#Bm" type="minor" cause="orthographic">michi</rdg>
@@ -796,7 +1876,7 @@
       				volevo soprattutto fare un lemma unico con la trasposizione di Mb2, che altrimenti
       				non saprei bene come codificare --> non declinantes in <app>
 							<lem>dexteram</lem>
-							<rdg wit="#Tu #L2 #B2 #Bm #P1" type="minor" cause="orthographic"
+							<rdg wit="#Tu #P4 #L2 #B2 #Bm #P1" type="minor" cause="orthographic"
 								>dextram</rdg>
 							<rdg wit="#L1" varSeq="1" type="lem" rend="subpunctuated">dexteram</rdg>
 							<rdg wit="#L1" varSeq="2" type="minor"
@@ -836,7 +1916,10 @@
 				</item>
 				<item n="21">
 					<num>XXI</num>
-					<title>Non ibitis post<app>
+					<title>Non <app>
+							<lem>ibitis</lem>
+							<rdg wit="#P4" type="minor" cause="grammatical">ibis</rdg>
+						</app> post<app>
 							<lem>deos</lem>
 							<rdg wit="#P8" type="minor" cause="orthographic">daeos</rdg>
 							<rdg wit="#B2" type="minor" cause="slip">deo</rdg>
@@ -884,6 +1967,7 @@
 					<title>Quod si introduxerit te dominus in terram quam possessurus es <app>
 							<lem>disperdes</lem>
 							<rdg wit="#Am1" type="minor" cause="orthographic">desperdes</rdg>
+							<rdg wit="#P4" type="minor" cause="grammatical">disperdas</rdg>
 						</app> omnes gentes ipsas et aras <app>
 							<lem>eorum</lem>
 							<rdg wit="#Tu #P8" type="minor" subtype="adiaphoric" cause="grammatical"
@@ -894,6 +1978,7 @@
 								>titulus</rdg>
 							<rdg wit="#Am1" varSeq="2" type="lem" cause="correction" hand="#l"
 								rend="overstrike">titulos</rdg>
+							<rdg wit="#P4" type="minor" cause="slip">uitulos</rdg>
 							<rdg wit="#P2" varSeq="1" type="minor" cause="slip" rend="erasure"
 								>titutos</rdg>
 							<rdg wit="#P2" varSeq="2" type="lem" cause="correction" hand="#l"
@@ -903,7 +1988,7 @@
 							<rdg wit="#Z" type="minor" cause="grammatical">sculptibilia</rdg>
 						</app><app>
 							<lem>combures</lem>
-							<rdg wit="#Sg1" type="minor" cause="orthographic">conbures</rdg>
+							<rdg wit="#Sg1 #P4" type="minor" cause="orthographic">conbures</rdg>
 						</app> igni</title>
 				</item>
 				<item n="24">
@@ -914,16 +1999,19 @@
 							<rdg wit="#L2" varSeq="2" type="lem" cause="correction" hand="#u"
 								cert="low"/>
 						</app></num>
-					<title>Si obseruaueritis praecepta et iustitias istas seruabit<app>
+					<title>Si obseruaueritis praecepta et <app>
+							<lem>iustitias</lem>
+							<rdg wit="#P4" type="minor" cause="orthographic">iusticias</rdg>
+						</app> istas seruabit<app>
 							<lem>et</lem>
-							<rdg wit="#Tr" type="omission" cause="unknown"/>
+							<rdg wit="#Tr #P4" type="omission" cause="slip"/>
 						</app> uobis dominus testamentum quod iurauit patribus uestris et benedicet <app>
 							<lem>uos</lem>
 							<rdg wit="#P2" type="minor" subtype="error" cause="grammatical"
 								>uobis</rdg>
 						</app> et expellet omnem <app>
 							<lem>languorem</lem>
-							<rdg wit="#B2" type="minor" cause="orthographic">langorem</rdg>
+							<rdg wit="#P4 #B2" type="minor" cause="orthographic">langorem</rdg>
 						</app> a uobis</title>
 				</item>
 				<pb facs="data/images/single/Z_58v.jpeg" n="Z_58v"/>
@@ -939,6 +2027,9 @@
 						</app> gentibus quas dominus <app>
 							<lem>subiciet</lem>
 							<rdg wit="#Am1" type="minor" cause="grammatical">subiciat</rdg>
+						</app><app>
+							<lem/>
+							<rdg wit="#P4" type="addition" cause="slip">e</rdg>
 						</app> tibi nec <app>
 							<lem>dices</lem>
 							<rdg wit="#Am1" type="minor" cause="grammatical">dicis</rdg>
@@ -963,7 +2054,11 @@
 								>anatemazabis</rdg>
 							<rdg wit="#Tu" varSeq="2" type="minor" cause="orthographic_correction"
 								hand="#m" rend="above">anatematizabis</rdg>
-						</app> ea</title>
+						</app>
+						<app>
+							<lem>ea</lem>
+							<rdg wit="#P4" type="minor" cause="grammatical">eam</rdg>
+						</app></title>
 				</item>
 				<item n="26">
 					<num>XXVI<app>
@@ -974,11 +2069,19 @@
 					<title>Omnia mandata<app>
 							<lem>quae</lem>
 							<rdg wit="#Am1" type="minor" cause="orthographic">qu&#230;</rdg>
-						</app> trado uobis hodie obseruabitis ut uiuatis et in mente<app>
+						</app>
+						<app>
+							<lem>trado</lem>
+							<rdg wit="#P4" type="medium" cause="unknown_grammatical">tradidi</rdg>
+						</app> uobis hodie obseruabitis <app>
+							<lem>ut</lem>
+							<rdg wit="#P4" type="medium" cause="grammatical">et</rdg>
+						</app> uiuatis et in mente<app>
 							<lem>habete</lem>
 							<rdg wit="#L2" type="minor" cause="slip">habet</rdg>
 						</app> omnia <app>
 							<lem>quae</lem>
+							<rdg wit="#P4" type="minor" cause="orthographic">que</rdg>
 							<rdg wit="#K" type="minor" cause="orthographic">qu&#553;</rdg>
 						</app> experti estis in <app>
 							<lem>desertis</lem>
@@ -995,7 +2098,8 @@
 								cert="low"/>
 						</app> et dedit uobis dominus<app>
 							<lem>manna</lem>
-							<rdg wit="#Am1 #Tu #DeBrA" type="minor" cause="grammatical">mannam</rdg>
+							<rdg wit="#Am1 #Tu #P4 #DeBrA" type="minor" cause="grammatical"
+								>mannam</rdg>
 						</app> ut sciretis quia non in <app>
 							<lem>pane</lem>
 							<rdg wit="#Z" varSeq="1" type="minor" cause="unknown" rend="erasure"
@@ -1021,7 +2125,7 @@
 					<num>XXVIII</num>
 					<title><app>
 							<lem>Non</lem>
-							<rdg wit="#L1 #Bm" type="maior" subtype="error" cause="grammatical"
+							<rdg wit="#P4 #L1 #Bm" type="maior" subtype="error" cause="grammatical"
 								>ne</rdg>
 						</app> dicas in corde tuo uirtus mea fecit <app>
 							<lem>haec</lem>
@@ -1056,13 +2160,15 @@
 								cert="low">iniustitias</rdg>
 							<rdg wit="#P8" varSeq="2" type="lem" cause="correction" hand="#u"
 								>iustitias</rdg>
+							<rdg wit="#P4" type="minor" cause="orthographic">iusticias</rdg>
 						</app> meas introduxit me dominus in terram istam</title>
 				</item>
 				<item n="31">
 					<num>XXXI</num>
 					<title>In mente habete <app>
 							<lem>quotiens</lem>
-							<rdg wit="#P8 #DeBrA" type="minor" cause="orthographic">quoties</rdg>
+							<rdg wit="#P8 #P4 #DeBrA" type="minor" cause="orthographic"
+								>quoties</rdg>
 							<rdg wit="#Mb2" varSeq="1" type="minor" cause="orthographic"
 								>quoties</rdg>
 							<rdg wit="#Mb2" varSeq="2" type="lem" cause="correction" hand="#l"
@@ -1075,7 +2181,7 @@
 								rend="erasure" cert="low">exacerba**tis</rdg>
 							<rdg wit="#P8" varSeq="2" type="medium" cause="correction"
 								rend="overstrike">exacerbastis</rdg>
-							<rdg wit="#L2 #B2 #Bm #P1" type="medium"
+							<rdg wit="#P4 #L2 #B2 #Bm #P1" type="medium"
 								cause="orthographic_grammatical">exaceruaueris</rdg>
 							<rdg wit="#Br1" varSeq="1" type="minor" cause="orthographic"
 								rend="erasure" cert="low">exaceruaueritis</rdg>
@@ -1096,8 +2202,8 @@
 								rend="above">exacerbaueritis</rdg>
 						</app> dominum in desertis <app>
 							<lem>diffidentes</lem>
-							<rdg wit="#Am1" type="substantive" subtype="adiaphoric" cause="unknown"
-								>deficientes</rdg>
+							<rdg wit="#Am1 #P4" type="substantive" subtype="adiaphoric"
+								cause="unknown">deficientes</rdg>
 							<witDetail wit="#Bm" type="damaged"><damage agent="ink"/></witDetail>
 						</app></title>
 				</item>
@@ -1108,7 +2214,7 @@
 						</app></num>
 					<title>Et in choreb <app>
 							<lem>exaceruastis</lem>
-							<rdg wit="#Tu #P8 #K #DeBrA" type="minor" cause="orthographic"
+							<rdg wit="#Tu #P8 #P4 #K #DeBrA" type="minor" cause="orthographic"
 								>exacerbastis</rdg>
 						</app> dominum quando fecistis conflatile</title>
 				</item>
@@ -1138,11 +2244,11 @@
 								rend="above">dominum</rdg>
 						</app> iterum sicut prius<app>
 							<lem>quadraginta</lem>
-							<rdg wit="#Am1 #Tu #Tr #P8 #L2 #Z #B2 #P2 #Bm #K" type="substantive"
+							<rdg wit="#Am1 #Tu #Tr #P8 #P4 #L2 #Z #B2 #P2 #Bm #K" type="substantive"
 								subtype="adiaphoric" cause="orthographic">xl</rdg>
 						</app> diebus et<app>
 							<lem>quadraginta</lem>
-							<rdg wit="#Am1 #Tu #Sg1 #Tr #P8 #L2 #Z #B2 #P2 #Bm #K"
+							<rdg wit="#Am1 #Tu #Sg1 #Tr #P8 #P4 #L2 #Z #B2 #P2 #Bm #K"
 								type="substantive" subtype="adiaphoric" cause="orthographic"
 								>xl</rdg>
 						</app> noctibus panem non<app>
@@ -1181,7 +2287,8 @@
 								<app>
 									<lem>combussi</lem>
 									<rdg wit="#Sg1" type="minor" cause="orthographic">conbussi</rdg>
-									<rdg wit="#L2" type="minor" cause="orthographic">combusi</rdg>
+									<rdg wit="#P4 #L2" type="minor" cause="orthographic"
+										>combusi</rdg>
 								</app> illud</title></lem>
 						<rdg corresp="#XXXVIII" wit="#Am1" varSeq="1" type="transposition"
 							subtype="error" cause="unknown">Et in temptatione exaceruastis
@@ -1215,6 +2322,7 @@
 							<lem>dimisit</lem>
 							<rdg wit="#Sg1 #P8 #Tr #L2 #Z #B2 #P2 #L1 #Bm #P1" type="minor"
 								cause="orthographic">demisit</rdg>
+							<rdg wit="#P4" type="minor" cause="grammatical">misit</rdg>
 						</app>
 						<app>
 							<lem>uos dominus</lem>
@@ -1249,7 +2357,7 @@
 							<rdg wit="#K" type="minor" cause="orthographic">pr&#553;catus</rdg>
 						</app> sum ante dominum<app>
 							<lem>quadraginta</lem>
-							<rdg wit="#Am1 #Tu #P8 #Tr #L2 #Br1 #Z #B2 #P2 #L1 #Bm #K"
+							<rdg wit="#Am1 #Tu #Tr #P8 #P4 #L2 #Br1 #Z #B2 #P2 #L1 #Bm #K"
 								type="substantive" subtype="adiaphoric" cause="orthographic"
 								>xl</rdg>
 						</app>
@@ -1261,7 +2369,7 @@
 								rend="overstrike">diebus</rdg>
 						</app> et<app>
 							<lem>quadraginta</lem>
-							<rdg wit="#Am1 #Tu #Sg1 #P8 #Tr #L2 #Br1 #Z #B2 #P2 #L1 #Bm #K"
+							<rdg wit="#Am1 #Tu #Sg1 #Tr #P8 #P4 #L2 #Br1 #Z #B2 #P2 #L1 #Bm #K"
 								type="substantive" subtype="adiaphoric" cause="orthographic"
 								>xl</rdg>
 						</app> noctibus</title>
@@ -1316,8 +2424,17 @@
 					<title><app>
 							<lem/>
 							<rdg wit="#B2" type="addition" cause="unknown">et</rdg>
-						</app> In illo tempore separauit dominus tribum leui ut portarent
-						arcam</title>
+						</app> In illo tempore separauit dominus<app>
+							<lem/>
+							<rdg wit="#P4" varSeq="1" type="addition" cause="diplography"
+								>dominus</rdg>
+							<rdg wit="#P4" varSeq="2" type="substantive" subtype="error"
+								cause="falseEmendation">deus</rdg>
+						</app>
+						<app>
+							<lem>tribum</lem>
+							<rdg wit="#P4" type="minor" cause="grammatical">tribu</rdg>
+						</app> leui ut portarent arcam</title>
 				</item>
 				<item n="45">
 					<num>XLV</num>
@@ -1357,7 +2474,7 @@
 					<num>XLVII</num>
 					<title>Cum <app>
 							<lem>septuaginta quinque</lem>
-							<rdg wit="#Am1 #Tu #P8 #Tr #L2 #Br1 #Bm #K" type="substantive"
+							<rdg wit="#Am1 #Tu #Tr #P8 #P4 #L2 #Br1 #Bm #K" type="substantive"
 								subtype="adiaphoric" cause="orthographic">lxxv</rdg>
 							<rdg wit="#Z" varSeq="1" type="minor" cause="orthographic_numbering"
 								>lxx</rdg>
@@ -1373,6 +2490,7 @@
 							<rdg wit="#Am1" type="minor" cause="orthographic">&#553;gyptum</rdg>
 						</app> et fecit<app>
 							<lem>te</lem>
+							<rdg wit="#P4" type="omission" cause="slip"/>
 							<rdg wit="#Z" varSeq="1" type="omission" cause="slip"/>
 							<rdg wit="#Z" varSeq="2" type="lem" cause="correction" hand="#m"
 								rend="above">te</rdg>
@@ -1399,6 +2517,7 @@
 								>nathan</rdg>
 						</app> et<app>
 							<lem>abiron</lem>
+							<rdg wit="#P4" type="minor" cause="orthographic">habiron</rdg>
 							<rdg wit="#Br1" varSeq="1" type="minor" cause="slip" cert="low"
 								>abir*n</rdg>
 							<rdg wit="#Br1" varSeq="2" type="lem" cause="correction" cert="low"
@@ -1410,7 +2529,7 @@
 						</app>
 						<app>
 							<lem>eliab</lem>
-							<rdg wit="#Mb2" type="minor" cause="orthographic">heliab</rdg>
+							<rdg wit="#P4 #Mb2" type="minor" cause="orthographic">heliab</rdg>
 						</app></title>
 				</item>
 				<item n="49">
@@ -1429,6 +2548,8 @@
 							<rdg wit="#Tu" varSeq="2" type="lem" cause="correction" hand="#m"
 								rend="above">satietatem</rdg>
 							<rdg wit="#Sg1 #L2" type="minor" cause="orthographic">sacietatem</rdg>
+							<rdg wit="#P4" type="minor" cause="orthographic_grammatical"
+								>societatem</rdg>
 						</app> in agris uestris</title>
 				</item>
 				<item n="50">
@@ -1441,7 +2562,7 @@
 						</app></num>
 					<title>Et si obaudieritis <app>
 							<lem>omne</lem>
-							<rdg wit="#Sg1 #Z" varSeq="1" type="minor" cause="grammatical"
+							<rdg wit="#Sg1 #P4 #Z" varSeq="1" type="minor" cause="grammatical"
 								rend="erasure">omnem</rdg>
 							<witDetail wit="#Sg1" cert="low"/>
 							<rdg wit="#Sg1 #Z" varSeq="2" type="lem" cause="correction" hand="#u"
@@ -1494,6 +2615,7 @@
 								rend="overstrike">afferetis</rdg>
 							<rdg wit="#Tr #Br1 #Z #Mb2 #L1 #P1 #K" type="minor" cause="orthographic"
 								>afferetis</rdg>
+							<rdg wit="#P4" type="minor" cause="grammatical">auferetis</rdg>
 						</app>
 						<app>
 							<lem>omnia</lem>
@@ -1505,14 +2627,24 @@
 							<rdg wit="#Tr" varSeq="2" type="lem" cause="correction" hand="#u"
 								rend="above">quae</rdg>
 							<rdg wit="#Am1 #K" type="minor" cause="orthographic">qu&#553;</rdg>
-						</app> ego mando uobis</title>
+						</app> ego mando <app>
+							<lem>uobis</lem>
+							<rdg wit="#P4" type="omission" cause="slip"/>
+						</app></title>
 				</item>
 				<item n="55">
 					<num><app>
 							<lem>LV</lem>
 							<rdg wit="#L2" type="maior" cause="numbering">LIIII</rdg>
 						</app></num>
-					<title>Omnes primitias tuas in conspectu domini<app>
+					<title>Omnes <app>
+							<lem>primitias</lem>
+							<rdg wit="#P4" type="minor" cause="orthographic">primicias</rdg>
+						</app>
+						<app>
+							<lem>tuas</lem>
+							<rdg wit="#P4" type="omission" cause="slip"/>
+						</app> in conspectu domini<app>
 							<lem>dei</lem>
 							<rdg wit="#P8" varSeq="1" type="substantive" subtype="error"
 								cause="paleographicConfusion" rend="erasure">domin</rdg>
@@ -1546,10 +2678,13 @@
 					<title>Omne <app>
 							<lem>uerbum</lem>
 							<rdg wit="#Am1" type="minor" cause="grammatical">uerbo</rdg>
-						</app> quod ego mando tibi custodi et fac et<app>
+						</app> quod ego mando tibi <app>
+							<lem>custodi</lem>
+							<rdg wit="#P4" type="omission" cause="slip"/>
+						</app> et fac et<app>
 							<lem>prophetam</lem>
 							<rdg wit="#Am1" type="minor" cause="orthographic">profetam</rdg>
-							<rdg wit="#P8" type="minor" cause="grammatical">propheta</rdg>
+							<rdg wit="#P8 #P4" type="minor" cause="grammatical">propheta</rdg>
 						</app>
 						<app>
 							<lem/>
@@ -1558,14 +2693,22 @@
 							<rdg wit="#Am1" varSeq="2" type="lem" cause="correction" hand="#l"
 								rend="strikethrough"/>
 						</app><app>
-							<lem>qui dixerit</lem>
+							<lem>qui</lem>
+							<rdg wit="#P4" type="minor" cause="grammatical">qu&#553;</rdg>
+						</app>
+						<app>
+							<lem>dixerit</lem>
 							<rdg wit="#L2" type="omission" cause="material"/>
 							<witDetail wit="#L2"><damage agent="trimming"/></witDetail>
 						</app><app>
 							<lem>tibi eamus et seruiamus diis non</lem>
 							<rdg wit="#L2" type="omission" cause="material"/>
 							<witDetail wit="#L2"><damage agent="trimming"/></witDetail>
-						</app> audies</title>
+						</app>
+						<app>
+							<lem>audies</lem>
+							<rdg wit="#P4" type="minor" cause="grammatical">audias</rdg>
+						</app></title>
 				</item>
 				<pb facs="data/images/single/L2_62r.jpeg" n="L2_62r"/>
 				<pb facs="data/images/single/Bm_63v.jpeg" n="Bm_63v"/>
@@ -1595,8 +2738,8 @@
 						</app> tuus aut filius aut coniux aut amicus dixerit tibi eamus seruiamus
 						diis non parces<app>
 							<lem>ei sed</lem>
-							<rdg wit="#Sg1 #L2 #Z #B2 #L1 #Bm" type="medium" cause="grammatical">eis
-								et</rdg>
+							<rdg wit="#Sg1 #P4 #L2 #Z #B2 #L1 #Bm" type="medium" cause="grammatical"
+								>eis et</rdg>
 							<rdg wit="#Mb2" type="minor" cause="grammatical">eis sed</rdg>
 						</app><app>
 							<lem>deferes</lem>
@@ -1692,7 +2835,7 @@
 						</app></num>
 					<title>Omnem<app>
 							<lem>auem</lem>
-							<rdg wit="#Z" type="minor" cause="grammatical">autem</rdg>
+							<rdg wit="#P4 #Z" type="minor" cause="grammatical">autem</rdg>
 						</app><app>
 							<lem>mundam</lem>
 							<rdg wit="#Z" varSeq="1" type="minor" cause="grammatical">mundum</rdg>
@@ -1751,7 +2894,10 @@
 				</item>
 				<item n="70">
 					<num>LXX</num>
-					<title>Si factus <app>
+					<title>Si<app>
+							<lem/>
+							<rdg wit="#P4" type="addition" cause="unknown">autem</rdg>
+						</app> factus <app>
 							<lem>fuerit</lem>
 							<rdg wit="#Tr" type="minor" cause="grammatical">fueris</rdg>
 						</app> in te egens de fratribus tuis</title>
@@ -1775,6 +2921,7 @@
 						</app> puerum <app>
 							<lem>hebraeum</lem>
 							<rdg wit="#Am1 #Tu" type="minor" cause="orthographic">hebreum</rdg>
+							<rdg wit="#P4" type="minor" cause="orthographic">haebraeum</rdg>
 						</app><app>
 							<lem>sex</lem>
 							<rdg wit="#Am1 #P8 #Z #B2 #Bm" type="substantive" subtype="adiaphoric"
@@ -1798,9 +2945,18 @@
 				</item>
 				<item n="73">
 					<num>LXXIII</num><!-- numero illeggibile in digitalizzazione B2 -->
-					<title>Custodi mensem nouorum et facies <app>
+					<title>Custodi <app>
+							<lem>mensem</lem>
+							<rdg wit="#P4" varSeq="1" type="minor" cause="grammatical">mensam</rdg>
+							<rdg wit="#P4" varSeq="2" type="lem" cause="correction" hand="#m"
+								rendition="overstrike">mensem</rdg>
+						</app> nouorum et <app>
+							<lem>facies</lem>
+							<rdg wit="#P4" type="minor" cause="grammatical">facias</rdg>
+						</app>
+						<app>
 							<lem>pascha</lem>
-							<rdg wit="#B2" type="minor" cause="orthographic">pasca</rdg>
+							<rdg wit="#P4 #B2" type="minor" cause="orthographic">pasca</rdg>
 						</app> domino deo tuo</title>
 				</item>
 				<item n="74">
@@ -1812,11 +2968,20 @@
 							<rdg wit="#Tu" varSeq="2" type="lem" cause="correction" hand="#l"
 								rend="above">constitues</rdg>
 							<rdg wit="#Tr" type="minor" cause="slip">contitues</rdg>
+							<rdg wit="#P4" type="minor" cause="haplography">consties</rdg>
 							<rdg wit="#K" varSeq="1" type="minor" cause="grammatical" rend="erasure"
 								>constituas</rdg>
 							<rdg wit="#K" varSeq="2" type="lem" cause="correction" hand="#m"
 								rend="overstrike">constitues</rdg>
-						</app> ut iudicent iuste</title>
+						</app>
+						<app>
+							<lem>ut</lem>
+							<rdg wit="#P4" type="medium" cause="slip_grammatical">et</rdg>
+						</app>
+						<app>
+							<lem>iudicent</lem>
+							<rdg wit="#P4" type="minor" cause="orthographic">iudicennt</rdg>
+						</app> iuste</title>
 				</item>
 				<item n="75">
 					<num>LXXV</num><!-- numero illeggibile in digitalizzazione B2 -->
@@ -1831,6 +2996,7 @@
 								rend="erasure">lutum</rdg>
 							<rdg wit="#Sg1" varSeq="2" type="lem" cause="correction" hand="#u"
 								>lucum</rdg>
+							<rdg wit="#P4" type="minor" cause="orthogrphic">lutum</rdg>
 						</app></title>
 				</item>
 				<item n="76">
@@ -1959,7 +3125,10 @@
 						</app> si <app>
 							<lem>locutus</lem>
 							<rdg wit="#Tu" type="minor" cause="orthographic">loquutus</rdg>
-						</app> fuerit uerbum et non contigerit</title>
+						</app> fuerit uerbum et non <app>
+							<lem>contigerit</lem>
+							<rdg wit="#P4" type="minor" cause="slip">contingerit</rdg>
+						</app></title>
 				</item>
 				<item n="84">
 					<num><app>
@@ -1992,7 +3161,10 @@
 								>tranfferes</rdg>
 							<rdg wit="#Tr" varSeq="2" type="lem" cause="correction" hand="#u"
 								rend="overstrike" cert="low">transferes</rdg>
-						</app> terminos quos<app>
+						</app> terminos <app>
+							<lem>quos</lem>
+							<rdg wit="#P4" type="minor" cause="grammatical">quas</rdg>
+						</app><app>
 							<lem>posuerant</lem>
 							<rdg wit="#DeBrA" type="minor" subtype="adiaphoric" cause="grammatical"
 								>posuerunt</rdg>
@@ -2168,7 +3340,10 @@
 					<title>Si<app>
 							<lem>fuerit</lem>
 							<rdg wit="#Sg1" type="minor" cause="grammatical">fuerint</rdg>
-						</app> in aliquo peccatum ad mortem</title>
+						</app> in <app>
+							<lem>aliquo</lem>
+							<rdg wit="#P4" type="minor" cause="grammatical">alio</rdg>
+						</app> peccatum ad mortem</title>
 				</item>
 				<item n="96">
 					<num><app>
@@ -2297,6 +3472,7 @@
 						</app></num>
 					<title>Si <app>
 							<lem>dormierit</lem>
+							<rdg wit="#P4" type="minor" cause="grammatical">dormieris</rdg>
 							<rdg wit="#B2" type="minor" cause="orthographic">donmierit</rdg>
 						</app> aliquis cum <app>
 							<lem>puella</lem>
@@ -2399,6 +3575,8 @@
 								rend="strikethrough"/>
 						</app> fornicaria nec <app>
 							<lem>ammanites</lem>
+							<rdg wit="#P4" type="minor" cause="orthographic" ana="hebrew"
+								>amanites</rdg>
 							<rdg wit="#K" varSeq="1" type="minor" cause="orthographic" ana="hebrew"
 								rend="subpunctuatued">ammanita</rdg>
 							<rdg wit="#K" varSeq="2" type="lem" cause="correction" hand="#m"
@@ -2409,6 +3587,8 @@
 								>nec</rdg>
 						</app><app>
 							<lem>moabites</lem>
+							<rdg wit="#P4" type="minor" cause="orthographic" ana="hebrew"
+								>moabitas</rdg>
 							<rdg wit="#B2" varSeq="1" type="minor" cause="misspelling">mol</rdg>
 							<rdg wit="#B2" varSeq="2" type="lem" cause="correction" hand="#m"
 								rend="overstrike">moabites</rdg>
@@ -2433,8 +3613,8 @@
 						</app></num>
 					<title>Non<app>
 							<lem>abominabis</lem>
-							<rdg wit="#Sg1 #Tr #Mb2 #P2 #P1 #K" type="minor" cause="orthographic"
-								>abhominabis</rdg>
+							<rdg wit="#Sg1 #Tr #P4 #Mb2 #P2 #P1 #K" type="minor"
+								cause="orthographic">abhominabis</rdg>
 							<rdg wit="#L2" varSeq="1" type="minor" cause="slip" cert="low"
 								>anominabis</rdg>
 							<rdg wit="#L2" varSeq="2" type="lem" cause="correction" hand="#m"
@@ -2448,7 +3628,7 @@
 							<rdg wit="#Am1" type="minor" cause="orthographic_grammatical"
 								>idumeam</rdg>
 							<rdg wit="#Tr #K" type="minor" cause="orthographic">idum&#553;um</rdg>
-							<rdg wit="#P8 #L2 #Br1 #Z #B2 #L1 #Bm #P1" type="minor"
+							<rdg wit="#P8 #P4 #L2 #Br1 #Z #B2 #L1 #Bm #P1" type="minor"
 								cause="orthographic">idumeum</rdg>
 						</app> neque<app>
 							<lem>aegyptium</lem>
@@ -2497,7 +3677,7 @@
 							<title xml:id="CXI">Non<app>
 									<lem>trades</lem>
 									<rdg wit="#Am1" type="omission" cause="unknown"/>
-									<rdg wit="#P8" type="minor" cause="grammatical">tradas</rdg>
+									<rdg wit="#P8 #P4" type="minor" cause="grammatical">tradas</rdg>
 								</app>seruum domino suo </title></lem>
 						<rdg wit="#Am1" type="omission" cause="unknown"/>
 						<rdg corresp="#CX" wit="#Z" varSeq="1" type="transposition" subtype="error"
@@ -2517,6 +3697,7 @@
 							<lem>israhelites</lem>
 							<rdg wit="#Am1" type="minor" cause="misspelling">israhel lites</rdg>
 							<rdg wit="#Sg1" type="minor" cause="orthographic">israhelitaes</rdg>
+							<rdg wit="#P4" type="minor" cause="orthographic">israhelitas</rdg>
 							<rdg wit="#Mb2" varSeq="1" type="minor"
 								cause="orthographic_paleographicConfusion" rend="erasure" cert="low"
 								>israbelites</rdg>
@@ -2552,9 +3733,10 @@
 					<title>Non<app>
 							<lem>exiges</lem>
 							<rdg wit="#Am1 #Tu" type="minor" cause="grammatical">exigens</rdg>
+							<rdg wit="#P4" type="minor" cause="slip">exies</rdg>
 						</app> a <app>
 							<lem>fratre</lem>
-							<rdg wit="#Am1" type="minor" cause="grammatical">fratri</rdg>
+							<rdg wit="#Am1 #P4" type="minor" cause="grammatical">fratri</rdg>
 						</app> tuo usuram</title>
 				</item>
 				<item n="115">
@@ -2613,6 +3795,7 @@
 					<title>Si quis <app>
 							<lem>acceperit</lem>
 							<rdg wit="#Am1" type="minor" cause="orthographic">acciperit</rdg>
+							<rdg wit="#P4" type="minor" cause="grammatical">acceperis</rdg>
 						</app> uxorem et inuenerit<app>
 							<lem>in</lem>
 							<rdg wit="#L2" varSeq="1" type="omission" cause="slip"/>
@@ -2714,9 +3897,12 @@
 						</app> non dormies et mercedem laboranti ne <app>
 							<lem>tarde</lem>
 							<rdg wit="#Am1" type="minor" cause="orthographic">tardi</rdg>
+							<rdg wit="#P4" type="maior" subtype="error" cause="misspelling"
+								>tardideris</rdg>
 						</app><app>
 							<lem>reddideris</lem>
 							<rdg wit="#P8" type="omission" cause="space"/>
+							<rdg wit="#P4" type="medium" cause="grammatical">reddere</rdg>
 						</app></title>
 				</item>
 				<item n="125">
@@ -2729,18 +3915,21 @@
 						</app></num>
 					<title>Non morientur patres pro filiis</title>
 				</item>
-				<item n="126"><!-- FIN QUI CON P1 -->
+				<item n="126">
 					<num><app>
 							<lem>CXXVI</lem>
 							<rdg wit="#Sg1" varSeq="1" type="minor" cause="numbering">CXXV</rdg>
 							<rdg wit="#Sg1" varSeq="2" type="lem" cause="correction" hand="#l"
 								rend="inline">CXXVI</rdg>
 						</app></num>
-					<title>Non declinabis iudicium<app>
+					<title>Non declinabis <app>
+							<lem>iudicium</lem>
+							<rdg wit="#P4" type="medium" cause="grammatical">in iuditio</rdg>
+						</app><app>
 							<lem>aduenae</lem>
 							<rdg wit="#Am1 #Tr #Bm #K" type="minor" cause="orthographic"
 								>aduen&#553;</rdg>
-							<rdg wit="#L2" type="minor" cause="orthographic">aduene</rdg>
+							<rdg wit="#P4 #L2" type="minor" cause="orthographic">aduene</rdg>
 						</app> et<app>
 							<lem>orfani</lem>
 							<rdg wit="#DeBrA" type="minor" cause="orthographic">orphani</rdg>
@@ -2783,7 +3972,8 @@
 						</app></num>
 					<title>Si<app>
 							<lem>liges</lem>
-							<rdg wit="#Am1 #Tu #DeBrA" type="minor" cause="orthographic">leges</rdg>
+							<rdg wit="#Am1 #Tu #P4 #DeBrA" type="minor" cause="orthographic"
+								>leges</rdg>
 							<rdg wit="#Sg1" varSeq="1" type="lem">liges</rdg>
 							<rdg wit="#Sg1" varSeq="2" type="medium" cause="falseEmendation"
 								hand="#l" rend="above">colliges</rdg>
@@ -2826,7 +4016,7 @@
 						</app></num>
 					<title>Si iudicaueris impium dabis ei<app>
 							<lem>quadraginta</lem>
-							<rdg wit="#Am1 #Tr #P8 #L2 #Z #B2 #P2 #L1 #Bm #K" type="substantive"
+							<rdg wit="#Am1 #Tr #P8 #P4 #L2 #Z #B2 #P2 #L1 #Bm #K" type="substantive"
 								subtype="adiaphoric" cause="orthographic">xl</rdg>
 						</app> flagellos</title>
 				</item>
@@ -2870,7 +4060,13 @@
 							<rdg wit="#Sg1" varSeq="2" type="lem" cause="correction" hand="#l"
 								rend="above">CXXXV</rdg>
 						</app></num>
-					<title>Si rixauerint duo <app>
+					<title>Si <app>
+							<lem>rixauerint</lem>
+							<rdg wit="#P4" varSeq="1" type="minor" cause="orthographic"
+								rend="erasure">rexauerint</rdg>
+							<rdg wit="#P4" varSeq="2" type="lem" cause="correction" hand="#u"
+								rend="above">rixauerint</rdg>
+						</app> duo <app>
 							<lem>homines</lem>
 							<rdg wit="#Am1" varSeq="1" type="minor" cause="orthographic_grammatical"
 								>hominis</rdg>
@@ -2901,12 +4097,13 @@
 						</app> erit tibi pondus iniquum et <app>
 							<lem>mensurae</lem>
 							<rdg wit="#Am1" type="minor" cause="orthographic">mensure</rdg>
-							<rdg wit="#Tu" type="minor" cause="grammatical">mensura</rdg>
+							<rdg wit="#Tu #P4" type="minor" cause="grammatical">mensura</rdg>
 							<rdg wit="#K" type="minor" cause="orthographic">mensur&#553;</rdg>
 						</app>
 						<app>
 							<lem>duplices</lem>
 							<rdg wit="#Tu" type="minor" cause="grammatical">duplicis</rdg>
+							<rdg wit="#P4" type="medium" cause="grammatical">duplex</rdg>
 						</app></title>
 				</item>
 				<item n="137">
@@ -2931,7 +4128,8 @@
 						</app></num>
 					<title>Cum <app>
 							<lem>introieritis</lem>
-							<rdg wit="#Am1 #Br1" type="minor" cause="grammatical">introieris</rdg>
+							<rdg wit="#Am1 #P4 #Br1" type="minor" cause="grammatical"
+								>introieris</rdg>
 						</app><app>
 							<lem>in</lem>
 							<rdg wit="#Tu" type="omission" cause="slip"/>
@@ -2941,7 +4139,7 @@
 							<rdg wit="#L1" type="omission" cause="unknown"/>
 						</app><app>
 							<lem>terram</lem>
-							<rdg wit="#L2" type="minor" cause="grammatical">terra</rdg>
+							<rdg wit="#P4 #L2" type="minor" cause="grammatical">terra</rdg>
 						</app> quam dominus<app>
 							<lem>deus</lem>
 							<rdg wit="#Z" varSeq="1" type="omission" cause="slip_haplography"/>
@@ -2970,7 +4168,7 @@
 							<rdg wit="#Sg1" varSeq="2" type="lem" cause="correction" hand="#l"
 								rend="inline">CXXXVIIII</rdg>
 						</app></num>
-					<title>Et dixit moyses ad populum tacete et audite</title>
+					<title>Et dixit moyses ad populum <q type="spoken">tacete et audite</q></title>
 				</item>
 				<item n="140">
 					<num><app>
@@ -2999,9 +4197,11 @@
 							<rdg wit="#Tu" varSeq="1" type="omission" cause="slip"/>
 							<rdg wit="#Tu" varSeq="2" type="lem" cause="correction" hand="#m"
 								rend="above">hi</rdg>
+							<rdg wit="#P4" type="minor" cause="orthographic">hii</rdg>
 							<rdg wit="#P1" varSeq="1" type="lem">hi</rdg>
 							<rdg wit="#P1" varSeq="2" type="minor"
-								cause="grammatical_falseEmendation" hand="#l" rend="above">hii</rdg>
+								cause="orthographic_falseEmendation" hand="#l" rend="above"
+								>hii</rdg>
 						</app> maledicere</title>
 				</item>
 				<item n="141">
@@ -3085,7 +4285,9 @@
 							<rdg wit="#Sg1" varSeq="1" type="addition" subtype="error"
 								cause="numbering" rend="strikethrough"><num>CXLIIII</num></rdg>
 							<rdg wit="#Sg1" varSeq="2" type="lem" cause="correction" hand="#u"/>
-						</app> scitis quanta fecerit dominus pharaoni propter uos</title>
+						</app>
+						<q type="spoken">scitis quanta fecerit dominus pharaoni propter
+						uos</q></title>
 				</item>
 				<item n="145">
 					<num><app>
@@ -3142,10 +4344,14 @@
 				</item>
 				<item n="149">
 					<num>CXLVIIII</num>
-					<title>Et uocauit moyses iesum et dixit ei uiriliter age <app>
-							<lem>et</lem>
-							<rdg wit="#Am1" type="omission" cause="slip_paleographicConfusion"/>
-						</app> conualesce</title>
+					<title>Et uocauit moyses iesum et dixit ei <q type="spoken">uiriliter age <app>
+								<lem>et</lem>
+								<rdg wit="#Am1" type="omission" cause="slip_paleographicConfusion"/>
+							</app>
+							<app>
+								<lem>conualesce</lem>
+								<rdg wit="#P4" type="minor" cause="grammatical">conualescite</rdg>
+							</app></q></title>
 				</item>
 				<item n="150">
 					<num><app>
@@ -3161,19 +4367,20 @@
 								cert="low">moyse?</rdg>
 							<rdg wit="#Am1" varSeq="2" type="lem" cause="correction" hand="#l"
 								rend="overstrike">moysen</rdg>
-						</app> tu dormies cum patribus tuis et fornicabitur<app>
-							<lem>plebs</lem>
-							<rdg wit="#Sg1" type="minor" cause="slip">ples</rdg>
-							<rdg wit="#Bm" varSeq="1" type="lem">plebs</rdg>
-							<rdg wit="#Bm" varSeq="2" type="minor"
-								cause="grammatical_falseEmendation" hand="#l" rend="above"
-								cert="low">plebis</rdg>
-						</app><app>
-							<lem>haec</lem>
-							<rdg wit="#Am1" type="minor" cause="orthographic">h&#553;c</rdg>
-							<rdg wit="#P8" type="minor" cause="orthographic">h&#230;c</rdg>
-							<rdg wit="#P2" type="omission" cause="slip"/>
-						</app> post deos alienos</title>
+						</app>
+						<q type="spoken">tu dormies cum patribus tuis et fornicabitur<app>
+								<lem>plebs</lem>
+								<rdg wit="#Sg1" type="minor" cause="slip">ples</rdg>
+								<rdg wit="#Bm" varSeq="1" type="lem">plebs</rdg>
+								<rdg wit="#Bm" varSeq="2" type="minor"
+									cause="grammatical_falseEmendation" hand="#l" rend="above"
+									cert="low">plebis</rdg>
+							</app><app>
+								<lem>haec</lem>
+								<rdg wit="#Am1" type="minor" cause="orthographic">h&#553;c</rdg>
+								<rdg wit="#P8" type="minor" cause="orthographic">h&#230;c</rdg>
+								<rdg wit="#P2" type="omission" cause="slip"/>
+							</app> post deos alienos</q></title>
 				</item>
 				<item n="151">
 					<num>CLI</num>
@@ -3184,14 +4391,15 @@
 				</item>
 				<item n="152">
 					<num>CLII</num>
-					<title>Dixit dominus ad moysen ascende in montem abarim et<app>
-							<lem>morire</lem>
-							<rdg wit="#Am1 #Tu #DeBrA" type="minor" cause="grammatical">morere</rdg>
-							<rdg wit="#Sg1" varSeq="1" type="lem">morire</rdg>
-							<rdg wit="#Sg1" varSeq="2" type="minor"
-								cause="grammatical_falseEmendation" hand="#l" rend="overstrike"
-								cert="low">morere</rdg>
-						</app> ibi</title>
+					<title>Dixit dominus ad moysen <q type="spoken">ascende in montem abarim et<app>
+								<lem>morire</lem>
+								<rdg wit="#Am1 #Tu #DeBrA" type="minor" cause="grammatical"
+									>morere</rdg>
+								<rdg wit="#Sg1" varSeq="1" type="lem">morire</rdg>
+								<rdg wit="#Sg1" varSeq="2" type="minor"
+									cause="grammatical_falseEmendation" hand="#l" rend="overstrike"
+									cert="low">morere</rdg>
+							</app> ibi</q></title>
 				</item>
 				<item n="153">
 					<num>CLIII</num>
@@ -3204,7 +4412,10 @@
 							<rdg wit="#P8" varSeq="1" type="omission" cause="slip"/>
 							<rdg wit="#P8" varSeq="2" type="lem" cause="correction" hand="#l"
 								rend="above">est</rdg>
-						</app> moyses in terra moab</title>
+						</app> moyses in <app>
+							<lem>terra</lem>
+							<rdg wit="#P4" type="minor" cause="grammatical">terram</rdg>
+						</app> moab</title>
 				</item>
 				<item n="155">
 					<num>CLV</num>
@@ -3249,6 +4460,7 @@
 							DEUTERO NOMII</rdg>
 						<rdg wit="#P8" type="omission" cause="material"/>
 						<witDetail wit="#P8"><damage agent="trimming"/></witDetail>
+						<rdg wit="#P4" rendition="#Ca #textink">EXPLiciuNT CAPITULA DEUTERONOMII</rdg>
 						<rdg wit="#L2" rendition="#Ca #textink">EXPLiciuNT CAPiTuLa</rdg>
 						<witDetail wit="#Br1" rendition="#Ca #textink"/>
 						<witDetail wit="#Z" rendition="#Ca #textink"/>

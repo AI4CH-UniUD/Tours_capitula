@@ -155,21 +155,21 @@
 
     "variantColorLight": "rgb(224,224,224)",
     "variantColorDark": "rgb(164,164,164)",
-    "heatmapColor": "",
+    "heatmapColor": "rgb(255,51,53)",
     "variantColors": {
         "type": {
-            "omission": "rgb(108, 145, 207)",
-            "addition": "rgb(229, 103, 175)",
-            "minor": "rgb(91, 204, 203)",
-            "medium": "rgb(248, 253, 136)",
-            "transposition": "rgb(255, 117, 118)",
-            "lem": "rgb(171, 104, 206)",
-            "substantive": "rgb(255, 192, 126)",
+            "omission": "rgb(108,145,207)",
+			"addition": "rgb(250,200,200)",
+			"transposition": "rgb(241,102,255)",
+			"minor": "rgb(25,255,15)",
+			"medium": "rgb(255,255,51)",
+			"substantive": "rgb(255,51,51)",
+			"lem": "rgb(224,224,224)",
             "unclear": "rgb(100, 230, 121)"
         },
         "varSeq": {
-            "1": "rgb(250, 0, 0)",
-            "2": "rgb(250, 0, 0)"
+            "1": "rgb(92,10,10)",
+            "2": "rgb(92,10,10)"
         }
     },
 
